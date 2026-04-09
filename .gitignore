@@ -4,8 +4,3 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 .vscode/
-*.csv
-*.egg-info/
-
-# Ignore dataset folder
-e-commerce data/

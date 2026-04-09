@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/product_recommendation_system/__init__.py
+src/product_recommendation_system/data_ingestion.py
+src/product_recommendation_system/data_preprocessing_new.py
+src/product_recommendation_system/data_split.py
+src/product_recommendation_system/interaction_prepration.py
+src/product_recommendation_system/main_new.py
+src/product_recommendation_system/model_development.py
+src/product_recommendation_system.egg-info/PKG-INFO
+src/product_recommendation_system.egg-info/SOURCES.txt
+src/product_recommendation_system.egg-info/dependency_links.txt
+src/product_recommendation_system.egg-info/requires.txt
+src/product_recommendation_system.egg-info/top_level.txt
