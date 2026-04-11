@@ -13,7 +13,7 @@ customer_unique_id,category,weight,price_bucket
 000bfa1d2f1a41876493be685390d6d3,fashion_bags_accessories,1.0,low
 000c8bdb58a29e7115cfc257230fb21b,bed_bath_table,1.0,budget
 000d460961d6dbfa3ec6c9f5805769e1,telephony,1.0,budget
-000de6019bb59f34c099a907c151d855,bed_bath_table,1.0,mid
+000de6019bb59f34c099a907c151d855,bed_bath_table,1.0,mid-high
 000e309254ab1fc5ba99dd469d36bdb4,fashion_underwear_beach,1.0,low
 000ec5bff359e1c0ad76a81a45cb598f,home_appliances,1.0,budget
 000ed48ceeb6f4bf8ad021a10a3c7b43,computers_accessories,1.0,budget
@@ -281,8 +281,8 @@ customer_unique_id,category,weight,price_bucket
 010d3cb666c64c115a144d3e6fcbd1d8,bed_bath_table,1.0,low
 0113282a7fe79b3d8489193ccc601efb,watches_gifts,1.0,mid-high
 01147fb2cf81b69cdcfdc1ac4c6fae7e,stationery,1.0,mid
-011575986092c30523ecb71ff10cb473,musical_instruments,0.5,mid
-011575986092c30523ecb71ff10cb473,toys,0.5,mid
+011575986092c30523ecb71ff10cb473,musical_instruments,0.5,mid-high
+011575986092c30523ecb71ff10cb473,toys,0.5,mid-high
 011620d7c45f4d1599c68b2f19e4b73e,electronics,1.0,budget
 0116dc6ddf277eb8413a0393cca11c32,bed_bath_table,1.0,low
 0116f610fa1418cda75e0d96e1639a03,sports_leisure,1.0,budget
@@ -501,7 +501,7 @@ customer_unique_id,category,weight,price_bucket
 01f163c912209bc42fd9c0e169e8039e,computers_accessories,1.0,budget
 01f173d576ec0a01bbe13dccf0942696,health_beauty,1.0,mid-high
 01f1af590b3fa6e09ee79551635926b4,telephony,1.0,high
-01f2285f85a1c603eb7ef755ad311769,sports_leisure,1.0,mid-high
+01f2285f85a1c603eb7ef755ad311769,sports_leisure,1.0,high
 01f492ebceb9747c71cb86d983afb9e0,auto,1.0,budget
 01f7f7e1b4aefac99dea303f9eb5f7c4,bed_bath_table,1.0,mid
 01fdfc6e1f85ad504461c6699adb246c,electronics,1.0,budget
@@ -994,8 +994,8 @@ customer_unique_id,category,weight,price_bucket
 03ec08f1dfebcf9f6f68a74d58ba405c,sports_leisure,1.0,mid-high
 03ede110a49c83121893d499aa0ecd85,sports_leisure,1.0,mid
 03ef5112b45dc8833a3bb89eb748461c,telephony,1.0,low
-03ef7f03905227e15c7b6c860554b3cb,health_beauty,0.5,mid
-03ef7f03905227e15c7b6c860554b3cb,small_appliances,0.5,mid
+03ef7f03905227e15c7b6c860554b3cb,health_beauty,0.5,mid-high
+03ef7f03905227e15c7b6c860554b3cb,small_appliances,0.5,mid-high
 03effb562752f2d9b2d0edde00f45874,sports_leisure,1.0,low
 03f05c2a180d57b7451f87cb4864ba53,watches_gifts,1.0,high
 03f0c74d63209a537c87c988f204c2b2,watches_gifts,1.0,mid-high
@@ -1819,7 +1819,7 @@ customer_unique_id,category,weight,price_bucket
 07314acd6253564af6a73a1cc8aca080,electronics,1.0,budget
 0732796b9e3fd8d74a8314a2e1b14c36,computers_accessories,1.0,mid-high
 0734186c93d9d5488a3a77c8178cb794,telephony,1.0,budget
-07342638d0e0aad32c3cf0efc1a37ba5,computers_accessories,1.0,mid
+07342638d0e0aad32c3cf0efc1a37ba5,computers_accessories,1.0,mid-high
 07351daa62f3b9d1ba90f22e7f106407,health_beauty,1.0,budget
 073692054d45969288eea0fbb867d7a5,watches_gifts,1.0,high
 0736c3512f09264b684b2b291a662689,bed_bath_table,1.0,low
@@ -2210,7 +2210,7 @@ customer_unique_id,category,weight,price_bucket
 089bc915af34d9041b3a88a1aa84292b,housewares,0.5,low
 089d956fa7f8bc8b1d996030baed0fd7,housewares,1.0,low
 089e0b8881ba4daa4ead7b2332dd16fa,health_beauty,1.0,mid
-08a14d6f05e910296326bdfd02e0da04,perfumery,1.0,mid-high
+08a14d6f05e910296326bdfd02e0da04,perfumery,1.0,high
 08a151ec3a5cbe140edd1fa285f6c853,garden_tools,1.0,low
 08a1c6b42a93c9e79a4405e0660fbe79,computers_accessories,1.0,mid
 08a26f73b94297d13b59e2e7d1e3f5e7,sports_leisure,1.0,mid
@@ -2865,7 +2865,7 @@ customer_unique_id,category,weight,price_bucket
 0b2bb52a5ca5a3380b2161a2d7c1bec3,computers_accessories,1.0,low
 0b2cd89a7b3c4a299f3634228f41cd2a,consoles_games,1.0,budget
 0b2d0021b09dd4791c0010d4be6e1760,bed_bath_table,1.0,mid
-0b2d68f9e4d2d28dcce0d670234323c2,furniture_decor,1.0,mid
+0b2d68f9e4d2d28dcce0d670234323c2,furniture_decor,1.0,mid-high
 0b301ba858fea6e878faa5da12b044c6,computers_accessories,1.0,mid
 0b3035733532ec8176a6dfcbde18815c,bed_bath_table,1.0,mid
 0b305bb360d9372963fd0f464eb34d20,small_appliances,1.0,mid-high
@@ -2914,8 +2914,8 @@ customer_unique_id,category,weight,price_bucket
 0b504e5d0d04238ccbfe246fe621eb33,auto,1.0,mid
 0b5057cd51031b814ac5667fb3ff0dbc,sports_leisure,1.0,low
 0b50686075367ac77b5688558d3a0ec4,auto,1.0,low
-0b51518c7deffd54b13b007c9f91c3f0,perfumery,0.5,mid
-0b51518c7deffd54b13b007c9f91c3f0,toys,0.5,mid
+0b51518c7deffd54b13b007c9f91c3f0,perfumery,0.5,mid-high
+0b51518c7deffd54b13b007c9f91c3f0,toys,0.5,mid-high
 0b52c0db190fe9e3558ddcfa4407ea90,computers_accessories,1.0,mid-high
 0b52ff15d625f247ff8622d2fb778319,bed_bath_table,1.0,mid-high
 0b53fbff0a78346548a4dbbede242150,books_technical,1.0,mid-high
@@ -3192,7 +3192,7 @@ customer_unique_id,category,weight,price_bucket
 0c87588b9dd67f28843422011075f492,small_appliances,1.0,mid
 0c8761c28faa9b9930e4a9bb545905da,health_beauty,1.0,budget
 0c896fb1fe1fc0c624cf035a4fc46699,watches_gifts,1.0,mid-high
-0c8ac932c65f67489929f9164a86606d,sports_leisure,1.0,mid
+0c8ac932c65f67489929f9164a86606d,sports_leisure,1.0,mid-high
 0c8bb533d7d2ce68d17177bc8fb5c22d,bed_bath_table,1.0,mid-high
 0c8c9d632cdaea590c5e62cdf6db4b9d,perfumery,1.0,low
 0c8da417423d25d53b4d3d034768c4d0,auto,1.0,low
@@ -3357,7 +3357,7 @@ customer_unique_id,category,weight,price_bucket
 0d438f4ed85a1dd9a50341954a7221be,health_beauty,1.0,mid-high
 0d4393a1abe4dca62098942cc50ba744,watches_gifts,1.0,low
 0d45b97cf7630e0b26daf19e761687ba,housewares,1.0,mid
-0d4644eff058d75937ca1eec574bf87d,bed_bath_table,1.0,mid
+0d4644eff058d75937ca1eec574bf87d,bed_bath_table,1.0,mid-high
 0d46709487736ac09ae4a157b72a4d8f,health_beauty,1.0,budget
 0d46cd4e7277279d60087c46ce456fdd,toys,1.0,mid
 0d46fe250a42969e1c64feb1b8747159,cool_stuff,1.0,mid-high
@@ -3725,7 +3725,7 @@ customer_unique_id,category,weight,price_bucket
 0ecb483ec3b1129ea16585c65458bc73,health_beauty,1.0,mid-high
 0ecb758da76c45b5fdf19d38792fbe2f,telephony,1.0,budget
 0ecb7751a7060a4fa039126fd7c30323,garden_tools,1.0,low
-0ecc403ec5d6ce000fd84f00cd5efb0a,sports_leisure,1.0,mid
+0ecc403ec5d6ce000fd84f00cd5efb0a,sports_leisure,1.0,high
 0ecd3ca191dadcc6c5f04db2afa63e6f,bed_bath_table,1.0,mid
 0ecd96d106724c17375912061bd5af84,housewares,1.0,budget
 0ecdb574e2d70ee122c5e7b0036a756c,computers_accessories,1.0,mid-high
@@ -4022,7 +4022,7 @@ customer_unique_id,category,weight,price_bucket
 0fdb7af80b0cfbb2008de275294f8e00,musical_instruments,1.0,mid-high
 0fdec6c625ebd21f4304696b1dd3b37f,health_beauty,1.0,budget
 0fdf87696b45ff2116afbbe3c86c42f2,sports_leisure,1.0,mid
-0fdfbef2ae337480fe00523dac271cb3,bed_bath_table,1.0,mid
+0fdfbef2ae337480fe00523dac271cb3,bed_bath_table,1.0,mid-high
 0fe3da4907f8a47e5a6d07aac0532a28,sports_leisure,1.0,mid-high
 0fe4648879b1c1206113180c42df57aa,sports_leisure,1.0,mid
 0fe65f1865925542754cce1d1cc65005,sports_leisure,1.0,low
@@ -4198,7 +4198,7 @@ customer_unique_id,category,weight,price_bucket
 10802ca4d040d1050857e990f25f32c9,christmas_supplies,1.0,budget
 10857eac17ae63c78ec6eec1b63e5a22,garden_tools,1.0,mid-high
 1085f6b722fc9b27136d022ba46e1d72,sports_leisure,1.0,low
-10867a902e32dd54061b2cda9c55b0b6,computers_accessories,1.0,mid
+10867a902e32dd54061b2cda9c55b0b6,computers_accessories,1.0,mid-high
 108c10f28afef3e87de5cc5ee055cc8e,telephony,1.0,budget
 108e63f3c5e4e864bde7ff1916f5e92a,health_beauty,1.0,mid-high
 108f924d058105b1232afffeb8649b89,musical_instruments,1.0,low
@@ -4917,11 +4917,11 @@ customer_unique_id,category,weight,price_bucket
 136ddb206001812bab8ed623debd7cf7,computers_accessories,1.0,mid-high
 136eb08f0912a8214c8e3b7fb9c789cb,telephony,1.0,low
 1371f85d096a94c49457db7b87b538b7,art,1.0,low
-1372bab98f9966bcd4a6fa3e6df6dde8,furniture_decor,0.5,mid
-1372bab98f9966bcd4a6fa3e6df6dde8,fashion_male_clothing,0.5,mid
+1372bab98f9966bcd4a6fa3e6df6dde8,furniture_decor,0.5,mid-high
+1372bab98f9966bcd4a6fa3e6df6dde8,fashion_male_clothing,0.5,mid-high
 13739ee4b146d7f384d8687514bd73a6,fashion_male_clothing,1.0,low
-1373e04979cfa0fb2092909abbd57f25,luggage_accessories,0.5,mid
-1373e04979cfa0fb2092909abbd57f25,fashion_bags_accessories,0.5,mid
+1373e04979cfa0fb2092909abbd57f25,luggage_accessories,0.5,mid-high
+1373e04979cfa0fb2092909abbd57f25,fashion_bags_accessories,0.5,mid-high
 1376526de7f8d851f34bcd6707dcd622,telephony,1.0,budget
 1377d9215edc3e6561ea64d1287f215f,watches_gifts,0.5,budget
 1377d9215edc3e6561ea64d1287f215f,construction_tools_construction,0.5,budget
@@ -4997,7 +4997,7 @@ customer_unique_id,category,weight,price_bucket
 13b708e763ba3e24a290dd972fd0f8fd,bed_bath_table,1.0,mid
 13b7ead8ba1531e08ca813488641c12e,auto,1.0,low
 13b803281d115aedb3ef271db9be3f2d,bed_bath_table,1.0,mid-high
-13b8b68267d513acad9147fcbe1b0e5a,housewares,1.0,mid
+13b8b68267d513acad9147fcbe1b0e5a,housewares,1.0,mid-high
 13b92150914d5e20e5cdba2d262a374e,computers_accessories,1.0,mid
 13b9a05fe8f9f08a09933cab3b0c2107,cool_stuff,1.0,mid
 13bc34cccc360483090d846208423d08,health_beauty,1.0,mid
@@ -5344,8 +5344,8 @@ customer_unique_id,category,weight,price_bucket
 1504b719eb728716ff7583dc7b86a0b0,telephony,1.0,low
 1504eefae6728d7313abdf9939af2443,small_appliances_home_oven_and_coffee,1.0,mid
 15054d5f81a772f6deb7985eb77a9c69,baby,1.0,budget
-1506abf10c09a2872e24d79f33e4eb12,watches_gifts,0.5,mid-high
-1506abf10c09a2872e24d79f33e4eb12,auto,0.5,mid-high
+1506abf10c09a2872e24d79f33e4eb12,watches_gifts,0.5,high
+1506abf10c09a2872e24d79f33e4eb12,auto,0.5,high
 15082f95929d5bd7952e2e5e96b0011c,auto,1.0,mid-high
 1508a07c19134ddc099d6161ef9ae4d9,electronics,1.0,budget
 15090f48004f3b0fc18a167ef82af4db,garden_tools,1.0,low
@@ -5367,8 +5367,8 @@ customer_unique_id,category,weight,price_bucket
 151ab282634af790930a7587fba71ba9,sports_leisure,1.0,mid
 151c7a254677ee4c823935f5cd076d11,garden_tools,1.0,mid-high
 151d5f38ccb6d949456e8b1aaf2008fc,perfumery,1.0,mid
-151e9edb34867eaece4d6e7ae188f261,watches_gifts,0.5,mid-high
-151e9edb34867eaece4d6e7ae188f261,musical_instruments,0.5,mid-high
+151e9edb34867eaece4d6e7ae188f261,watches_gifts,0.5,high
+151e9edb34867eaece4d6e7ae188f261,musical_instruments,0.5,high
 151f9d52c624c7222a3f4f8f722e08d6,health_beauty,1.0,mid
 1520ebe0915772d3bd92d082a1afdf06,pet_shop,1.0,low
 15219300c0299c01fef6cbc7444494e5,books_general_interest,1.0,low
@@ -5415,7 +5415,7 @@ customer_unique_id,category,weight,price_bucket
 1555f7704991e30952ba1661d95f53ae,housewares,1.0,mid-high
 15566172fd4a1459fc3868bf46d4b589,costruction_tools_tools,1.0,budget
 1556832478b62ecc7322e3c27aab2af6,watches_gifts,1.0,mid
-155af62b6c947689a67af5c16acd5c55,bed_bath_table,1.0,mid-high
+155af62b6c947689a67af5c16acd5c55,bed_bath_table,1.0,high
 155afb44c72c6831771bf7d519789cf9,fashion_bags_accessories,1.0,budget
 155b7286ce86009c8902fd815243076f,bed_bath_table,1.0,mid-high
 155bae4d7dcd3e55b5c72bc1ac871c17,auto,1.0,low
@@ -5740,7 +5740,7 @@ customer_unique_id,category,weight,price_bucket
 16a845f59b445d33206af8c7ddebb2de,fashion_bags_accessories,1.0,low
 16a853c27d847b8331fc1995a143a9f0,garden_tools,1.0,mid-high
 16a860be408af5ee2e9f8a8dad56ef17,fashion_bags_accessories,1.0,budget
-16a909e83380bb2ae4676ca69ac30886,sports_leisure,1.0,mid
+16a909e83380bb2ae4676ca69ac30886,sports_leisure,1.0,mid-high
 16adfb3d3d55b81af6248041ba561882,bed_bath_table,1.0,low
 16af24ff6522cf97fce5e0579a001054,electronics,1.0,budget
 16af5a4497ebeae6536ab81286a76f5f,computers_accessories,1.0,budget
@@ -6365,7 +6365,7 @@ customer_unique_id,category,weight,price_bucket
 19377ae5b9288f8ac17a6586a839c4d8,bed_bath_table,1.0,mid-high
 1939089d1f55440973623f02d10185cb,consoles_games,1.0,mid
 193c557222b982733aa8b9fa483a6c5e,telephony,1.0,budget
-193d38bc62a6c4e9fc3596337593c2fe,bed_bath_table,1.0,mid
+193d38bc62a6c4e9fc3596337593c2fe,bed_bath_table,1.0,mid-high
 193fd9d5cf15050e14d7e67726c07364,bed_bath_table,1.0,mid-high
 19400d6a4f870689c3463cd68bae0b2f,baby,1.0,mid
 19416a0da35288cfce110f84839ff052,computers_accessories,1.0,mid-high
@@ -6694,7 +6694,7 @@ customer_unique_id,category,weight,price_bucket
 1a74d9e5d5382168097ec7008b5ce470,bed_bath_table,1.0,mid
 1a75d590a6e6744b9732cd9feab4206a,stationery,1.0,low
 1a75fd349131568b7063e35ba91efc66,furniture_decor,1.0,low
-1a76265119d59d42762c37c8cfb675dc,perfumery,1.0,mid
+1a76265119d59d42762c37c8cfb675dc,perfumery,1.0,mid-high
 1a786635b3c66e50118171046b72fd5c,sports_leisure,1.0,mid
 1a79769ccd69fe7f1d489aa90960fc66,furniture_decor,1.0,mid-high
 1a79e37b43ca28f0a454d156d49e988c,telephony,1.0,low
@@ -6863,7 +6863,7 @@ customer_unique_id,category,weight,price_bucket
 1b25a34c8e47da8c942c2a9b3bab1a05,bed_bath_table,1.0,mid-high
 1b25ea1318d69e729374305c521abdb8,watches_gifts,1.0,low
 1b26eaba229e33466f3a6872485c7dfa,baby,1.0,mid-high
-1b270bd97f6e1d9af2d5d06f0d4a80e8,computers_accessories,1.0,mid
+1b270bd97f6e1d9af2d5d06f0d4a80e8,computers_accessories,1.0,mid-high
 1b277f8bf9377e4d88b9022df406e9a6,furniture_decor,0.5,low
 1b277f8bf9377e4d88b9022df406e9a6,housewares,0.3333,low
 1b277f8bf9377e4d88b9022df406e9a6,home_construction,0.1667,low
@@ -7162,7 +7162,7 @@ customer_unique_id,category,weight,price_bucket
 1c39693424c4a52777303876787cc1ba,health_beauty,1.0,mid-high
 1c39a48708a75f7cebb03b348be1777d,bed_bath_table,1.0,mid
 1c3a2bab6b3e18d65aa3923e2ec7b5db,garden_tools,1.0,low
-1c3ab93570fa6946d63927f8f2a836c1,furniture_decor,1.0,mid
+1c3ab93570fa6946d63927f8f2a836c1,furniture_decor,1.0,mid-high
 1c3c50eaa30aa34ec0e5e2c18891f30b,christmas_supplies,1.0,mid
 1c3c6ce3bb27b92bbae8498782f39778,costruction_tools_garden,1.0,low
 1c3d5b4553fa2f3d68aa846c916e8e0f,garden_tools,1.0,low
@@ -7529,7 +7529,7 @@ customer_unique_id,category,weight,price_bucket
 1da5dd752a84dafc9fbabf624c53fb94,bed_bath_table,1.0,mid-high
 1da6142cc08a390d56aca00ca0bf334e,baby,1.0,mid
 1da711f9e39c5e80c145a5285cb4acdf,housewares,1.0,budget
-1da80fc5606ba186a1023c811d3487f1,bed_bath_table,1.0,mid
+1da80fc5606ba186a1023c811d3487f1,bed_bath_table,1.0,mid-high
 1da985e4ee4dc38c69358279fd0bc226,health_beauty,1.0,low
 1daa562c534b75b0f9d1ca6d9faaab64,watches_gifts,1.0,mid
 1daabd01c6325eb962b5576e02202b5b,computers_accessories,1.0,low
@@ -7722,7 +7722,7 @@ customer_unique_id,category,weight,price_bucket
 1e6b3b686959e1b1bff43b2673ac184b,sports_leisure,1.0,budget
 1e6ce5289bcd4e007ac2ed4a271745b6,computers_accessories,1.0,high
 1e6d7c07f42a314237ff8f33f85812c0,sports_leisure,1.0,mid-high
-1e6dc17adde78e52b6fa5e634f4454e0,sports_leisure,1.0,mid
+1e6dc17adde78e52b6fa5e634f4454e0,sports_leisure,1.0,mid-high
 1e6eb60a6afbfdc9aabb0150ca76fb2c,consoles_games,1.0,mid-high
 1e6f0994c009e61f06c1ee96f53f09c9,sports_leisure,1.0,mid
 1e70248c64829f54e02845cc16e25638,sports_leisure,1.0,mid
@@ -8071,7 +8071,7 @@ customer_unique_id,category,weight,price_bucket
 1fe85e555c98c51d647d78ec86593c60,computers_accessories,1.0,budget
 1fe94445d73fea2425589dea8942c3d1,watches_gifts,1.0,budget
 1fe990cccf38a264f1ace358f24093bd,books_technical,1.0,mid-high
-1fea3244d38e951f0196b2728aee3bdf,sports_leisure,1.0,mid
+1fea3244d38e951f0196b2728aee3bdf,sports_leisure,1.0,mid-high
 1feb5dc3a11a657cdd12b1cbaed93f65,bed_bath_table,1.0,mid-high
 1fec1fa184792edf944cf27e17c97b45,electronics,1.0,budget
 1fecbdd138569a232889e77a0a30f08b,books_general_interest,1.0,low
@@ -9107,7 +9107,7 @@ customer_unique_id,category,weight,price_bucket
 2404e4d7e62d9b6b34eb3a2880667d26,garden_tools,1.0,budget
 24058044dcbcb7313582db0305dbe7f4,baby,1.0,low
 2405f1b2ab4f5660d9338425029ddb50,bed_bath_table,1.0,low
-24072811917876a84c81166f96aed0c1,watches_gifts,1.0,mid-high
+24072811917876a84c81166f96aed0c1,watches_gifts,1.0,high
 240c5abec165ada0d6479f5e09f8910f,watches_gifts,1.0,budget
 240d6ca7f1f29661932f1fefda62ec95,telephony,1.0,budget
 240f601d04eca6821d5b4d9f9a7dc477,cool_stuff,1.0,mid
@@ -9776,7 +9776,7 @@ customer_unique_id,category,weight,price_bucket
 26cf5e64987576e1338ba6a877425a62,garden_tools,1.0,high
 26d011d527e0a9fc7e93674895f73193,sports_leisure,1.0,mid
 26d1739aa061131f1461646969d85f20,perfumery,1.0,low
-26d1b63e9b8478f84f87188c4877049e,sports_leisure,1.0,mid-high
+26d1b63e9b8478f84f87188c4877049e,sports_leisure,1.0,high
 26d2deab12236d9b5683602c5cd9348f,health_beauty,1.0,mid
 26d32698f8b6644adba42fdd2d226407,garden_tools,1.0,mid-high
 26d3ee07c142ba376bcf0a0d6ccb4a28,auto,1.0,low
@@ -9892,8 +9892,8 @@ customer_unique_id,category,weight,price_bucket
 272cc626226c97554c44fb1bebc2c75d,furniture_decor,1.0,low
 272e033710a2d35aaa9f5f5e36763514,telephony,1.0,budget
 272e809ad03db04778059764d26e80e0,toys,1.0,low
-272f0ffe236b0bf765e14f5a2b577a6b,housewares,0.5,mid
-272f0ffe236b0bf765e14f5a2b577a6b,computers_accessories,0.5,mid
+272f0ffe236b0bf765e14f5a2b577a6b,housewares,0.5,high
+272f0ffe236b0bf765e14f5a2b577a6b,computers_accessories,0.5,high
 272f7dfe5a6714f61a473c8d2f2862f1,computers_accessories,1.0,mid-high
 272fb8eb2fb19932bbc3f78ac1ddf321,consoles_games,1.0,high
 272fe23cbba5cc6c8fd54636eb56937f,electronics,1.0,budget
@@ -10200,8 +10200,8 @@ customer_unique_id,category,weight,price_bucket
 2864a61fd48b467734363359fb9d513f,health_beauty,1.0,mid
 28650ae59f91b5215b7ac85371600caa,bed_bath_table,1.0,mid-high
 28676fd63ebb086ed1dfb24785877302,bed_bath_table,1.0,low
-28693ecfa07672ed4eb44f8e6c0fd4a1,food,0.5,mid
-28693ecfa07672ed4eb44f8e6c0fd4a1,health_beauty,0.5,mid
+28693ecfa07672ed4eb44f8e6c0fd4a1,food,0.5,mid-high
+28693ecfa07672ed4eb44f8e6c0fd4a1,health_beauty,0.5,mid-high
 2869e1b1f396e46a0cad5f8e640545ff,watches_gifts,1.0,mid-high
 286af58dd53e53cac21c7985527712ce,watches_gifts,1.0,mid
 286b32b0c700fe3b21326f14d19c6d21,fashion_bags_accessories,1.0,low
@@ -10449,7 +10449,7 @@ customer_unique_id,category,weight,price_bucket
 29829306a1ae979ec4542f001b85822d,health_beauty,1.0,mid
 2983fa4a4a704ab43f2f131e065a550c,sports_leisure,1.0,budget
 2985795121ad4d51185c81a2e49b89fc,pet_shop,1.0,mid
-2986880c7bff6286784a02c253850535,sports_leisure,1.0,mid
+2986880c7bff6286784a02c253850535,sports_leisure,1.0,mid-high
 29869c1422b9c068973f8e44575f73d6,sports_leisure,1.0,mid-high
 29874a4e8a2bac67f388b5ee0bb48bce,toys,1.0,mid
 29877a81378fcbf6a85c4520f6e34894,computers_accessories,1.0,mid
@@ -10537,7 +10537,7 @@ customer_unique_id,category,weight,price_bucket
 29d208881a7c8202ddd852afaefbb076,telephony,1.0,budget
 29d4565784c57f7afdd2d646af68f6d7,pet_shop,1.0,budget
 29d56ba9603f96d29d2a776a5b321635,health_beauty,1.0,low
-29d72fba272ad06ed0b2ac6351da042f,bed_bath_table,1.0,mid
+29d72fba272ad06ed0b2ac6351da042f,bed_bath_table,1.0,mid-high
 29d749901b95401b85e0ea6fe3a22764,cool_stuff,1.0,mid-high
 29d7f781472bbb9d4c76050dee6cc80b,bed_bath_table,1.0,budget
 29dac432248361c1b0ac8d21a3e5cc25,consoles_games,1.0,mid
@@ -10631,8 +10631,8 @@ customer_unique_id,category,weight,price_bucket
 2a31a3b7124e88b7a191f2d87c549ffd,food,1.0,budget
 2a33cf3a3b8b9554ce4b8fb18def4b92,sports_leisure,1.0,mid
 2a342fa405796e94c20d5679d77a7771,sports_leisure,1.0,budget
-2a34af7c4b1b83d78b14cf6b9c32c3b9,toys,0.5,mid
-2a34af7c4b1b83d78b14cf6b9c32c3b9,stationery,0.5,mid
+2a34af7c4b1b83d78b14cf6b9c32c3b9,toys,0.5,mid-high
+2a34af7c4b1b83d78b14cf6b9c32c3b9,stationery,0.5,mid-high
 2a357a879d61172c33daeae85b0539f7,computers_accessories,1.0,mid
 2a358bf509c82258d0d6171fcb325870,cool_stuff,1.0,low
 2a3630241dec9a716bca43c506653394,housewares,1.0,budget
@@ -11362,8 +11362,8 @@ customer_unique_id,category,weight,price_bucket
 2d09bcd0f8a0385c3e6674b927991983,toys,1.0,low
 2d0a1ec21a4f50a208963991a3bdc979,cool_stuff,1.0,low
 2d0aa39055b967248bf551e220b55f59,food_drink,1.0,budget
-2d0b5c3a0b200f10d09a3927412a9203,drinks,0.5,mid-high
-2d0b5c3a0b200f10d09a3927412a9203,health_beauty,0.5,mid-high
+2d0b5c3a0b200f10d09a3927412a9203,drinks,0.5,high
+2d0b5c3a0b200f10d09a3927412a9203,health_beauty,0.5,high
 2d0c669e022d0eb2c7e8affa8851a688,toys,1.0,mid-high
 2d0d69cb131ce9922d4b8684f3fdc720,auto,1.0,low
 2d10b4a9a412ef6bf4476223677a7a7a,garden_tools,1.0,low
@@ -11538,7 +11538,7 @@ customer_unique_id,category,weight,price_bucket
 2db30afa2e791f20edcaf11c2522572d,computers_accessories,1.0,mid
 2db37a6c0fec55e442c67454f0de22d5,baby,1.0,mid-high
 2db396fe726c663b1c77300ff38aeb69,housewares,1.0,low
-2db405cc6d4123953d36594dbff12a73,bed_bath_table,1.0,mid
+2db405cc6d4123953d36594dbff12a73,bed_bath_table,1.0,mid-high
 2db8aae1759be06242d5199c61fa7706,watches_gifts,1.0,high
 2db9428c0db436ef77b83f60655dceae,bed_bath_table,1.0,mid
 2dbad1ecf3e38836eacff9531adc5b4a,auto,1.0,budget
@@ -11983,8 +11983,8 @@ customer_unique_id,category,weight,price_bucket
 2f78bf8f3acd1ebd6cfddd420083f942,health_beauty,1.0,low
 2f7920af5858f8f73ae5af711c28471a,housewares,1.0,mid
 2f7c13c9fa506d0b141990d5b55fd936,furniture_decor,1.0,low
-2f7c8c8386941ce0ef458ca7ff304123,fashion_shoes,0.5,mid
-2f7c8c8386941ce0ef458ca7ff304123,baby,0.5,mid
+2f7c8c8386941ce0ef458ca7ff304123,fashion_shoes,0.5,mid-high
+2f7c8c8386941ce0ef458ca7ff304123,baby,0.5,mid-high
 2f7e7c1e0ffc11d52f04d25e18b267b2,drinks,1.0,low
 2f807c19f9b26287b3a549114e67cd4d,watches_gifts,1.0,mid-high
 2f82eaf909f9d07081cb6a23f1108508,health_beauty,1.0,budget
@@ -12442,7 +12442,7 @@ customer_unique_id,category,weight,price_bucket
 315d030ea450e5e6610db422579ef367,telephony,1.0,high
 315f25397a360576f1218717717c4364,health_beauty,1.0,mid-high
 3160d045339a86518702dd3aa75d7b78,books_general_interest,1.0,budget
-316107d320bc2ee4b4b0d66c60cbc2a2,sports_leisure,1.0,mid
+316107d320bc2ee4b4b0d66c60cbc2a2,sports_leisure,1.0,mid-high
 3163b4de066c9bfee60e6608c99a0bbc,furniture_decor,1.0,mid
 3167351a6b465cbd9e31e92b2d9cd9de,sports_leisure,1.0,mid
 31679ddfa8293ff186216eec51ba574f,toys,1.0,budget
@@ -13100,7 +13100,7 @@ customer_unique_id,category,weight,price_bucket
 33fe3258191eb8d23fcbd966967dffa0,bed_bath_table,1.0,mid
 33febb33a42a35f5826a22584b127f9d,garden_tools,1.0,low
 3400f61105605d1ae80dd5a7f36e589f,bed_bath_table,1.0,low
-3401b2c012028523ff2264050b7f68b3,watches_gifts,1.0,mid
+3401b2c012028523ff2264050b7f68b3,watches_gifts,1.0,mid-high
 3402cf3b5f91bf471e15ef6d3e4d45c0,baby,1.0,low
 3402f0b7180d733ed9a7a779df26df9b,housewares,1.0,budget
 3403616dd5549cd1df35efd87f2d6683,furniture_decor,1.0,budget
@@ -13172,7 +13172,7 @@ customer_unique_id,category,weight,price_bucket
 343fc5ba6c25583233f749bca311cca4,toys,1.0,budget
 344141eaf792762726864ba90bafff13,furniture_decor,1.0,mid
 3442337a73c2faa75a6aa7ebcaa7a5a8,health_beauty,1.0,low
-3442a61b2d5bfd9d605d6943701ad650,construction_tools_construction,1.0,mid-high
+3442a61b2d5bfd9d605d6943701ad650,construction_tools_construction,1.0,high
 3443aa1df045d475ffb79648c36494e7,garden_tools,1.0,low
 3443f8095ad309eebbdc8caa8b2bf936,watches_gifts,1.0,low
 34460b56c2c9c568ebf4e27935086855,computers_accessories,1.0,budget
@@ -13584,7 +13584,7 @@ customer_unique_id,category,weight,price_bucket
 35cd47c762d9677a58dbe27d5e6c5630,baby,1.0,low
 35ce6fd04c838f77d9c7ad7031b18168,furniture_decor,1.0,budget
 35ce9d5d07eaf50e906ff634874a3ff5,telephony,1.0,low
-35d0b790a53b0d57ae2c785a6f27ad6b,furniture_decor,1.0,mid
+35d0b790a53b0d57ae2c785a6f27ad6b,furniture_decor,1.0,mid-high
 35d4b26aec1a5b78fa922135093c9377,housewares,1.0,low
 35d4b67f1f0e72796088a52048cc6abd,consoles_games,1.0,mid
 35d5991f246b8b9c4e1b4b1a927b1465,watches_gifts,1.0,high
@@ -13598,8 +13598,8 @@ customer_unique_id,category,weight,price_bucket
 35db55585fcbe791032c24fbb9d09c18,pet_shop,1.0,budget
 35dd02aa966dc8f3f5d2277e0cb8fff9,fashion_underwear_beach,1.0,mid
 35dd6fdbd3caca7333ef2c6675547bd1,luggage_accessories,1.0,low
-35de25c73544f00e8adde226a4d1bdcc,health_beauty,0.5,mid
-35de25c73544f00e8adde226a4d1bdcc,cool_stuff,0.5,mid
+35de25c73544f00e8adde226a4d1bdcc,health_beauty,0.5,high
+35de25c73544f00e8adde226a4d1bdcc,cool_stuff,0.5,high
 35de44379ecaf98f3108cdd5fd07b949,bed_bath_table,1.0,mid
 35df860e510c7ef88e093a50ece745b8,housewares,1.0,mid-high
 35dfd97c18fdac5b44db61ce1cf39704,auto,1.0,budget
@@ -13678,7 +13678,7 @@ customer_unique_id,category,weight,price_bucket
 3623d7f9088cbd2b63887e5c3b40c46a,electronics,1.0,budget
 3624709887ff423ab8951f89ddd25dba,auto,1.0,budget
 3624922ce5eb67c51426dadf911508fa,watches_gifts,1.0,low
-362928c8cd61df2e6951751dffb4be85,bed_bath_table,1.0,mid
+362928c8cd61df2e6951751dffb4be85,bed_bath_table,1.0,mid-high
 3629c99b2eeb7ce39e112a13db76a08f,garden_tools,1.0,low
 3629d3f48ea96718f82645e0dc0525ab,garden_tools,1.0,mid-high
 362b4253f6e5a0752223fb2a97867ad1,stationery,1.0,low
@@ -15803,8 +15803,8 @@ customer_unique_id,category,weight,price_bucket
 3e9cbbcb5ec1e2929319f717ce437777,health_beauty,1.0,budget
 3ea1c0d5c92973751f10c90168fb2f52,sports_leisure,1.0,budget
 3ea232fed25a7658e342455efdf64e47,electronics,1.0,budget
-3ea4185126195c34ed9949d8e406d570,auto,0.5,mid
-3ea4185126195c34ed9949d8e406d570,stationery,0.5,mid
+3ea4185126195c34ed9949d8e406d570,auto,0.5,mid-high
+3ea4185126195c34ed9949d8e406d570,stationery,0.5,mid-high
 3ea87a15f27801f0b807d5f254aa68b8,bed_bath_table,1.0,mid
 3ea8d85ed194aaa70297d0591bfd7c0a,baby,1.0,low
 3ea9b55e60d8d47ba74d9f232aa1df1c,watches_gifts,1.0,mid-high
@@ -15903,8 +15903,8 @@ customer_unique_id,category,weight,price_bucket
 3eff2684f5dd08b7e1b65b828d930cbe,sports_leisure,1.0,mid
 3eff47149425984172e11e18a974e80e,stationery,1.0,budget
 3effc73099890b57bda399120a52d14e,furniture_decor,1.0,low
-3f00548d480f59bdac5e1ad8a68dcfe1,health_beauty,0.5,mid
-3f00548d480f59bdac5e1ad8a68dcfe1,perfumery,0.5,mid
+3f00548d480f59bdac5e1ad8a68dcfe1,health_beauty,0.5,mid-high
+3f00548d480f59bdac5e1ad8a68dcfe1,perfumery,0.5,mid-high
 3f006686765a7a0fa7d67e17fa09f8c6,baby,1.0,mid
 3f00e82898c6f4746ce5c78d9e29c7ce,telephony,0.5,budget
 3f00e82898c6f4746ce5c78d9e29c7ce,watches_gifts,0.5,budget
@@ -16101,8 +16101,8 @@ customer_unique_id,category,weight,price_bucket
 3fe205252c153bf71775e1fe3a198e57,garden_tools,1.0,low
 3fe21e99079faf8150493fc8d9a2112c,housewares,1.0,low
 3fe3e0d408b68fa56e91134d1fa11b7e,stationery,1.0,mid-high
-3fe3e628c6c7a15ae96416826a4c5952,watches_gifts,0.5,mid-high
-3fe3e628c6c7a15ae96416826a4c5952,toys,0.5,mid-high
+3fe3e628c6c7a15ae96416826a4c5952,watches_gifts,0.5,high
+3fe3e628c6c7a15ae96416826a4c5952,toys,0.5,high
 3fe413dde400746c53c5d0d38b266ca2,pet_shop,1.0,mid
 3fe678665ed174230c56f10c156b20db,toys,1.0,mid-high
 3fe77d4d4a0d8193e91d54e26a927964,bed_bath_table,1.0,mid
@@ -16275,8 +16275,8 @@ customer_unique_id,category,weight,price_bucket
 409e8a6295a7d058f80414c3437fb4d4,small_appliances,1.0,budget
 409fcb2cab28b569f410d1bfe4918a5e,furniture_decor,1.0,mid
 409fd577bc2f7f6046d077ec56678abc,computers_accessories,1.0,low
-409fffcdaf4d0eb689458f1df6b2c240,furniture_mattress_and_upholstery,0.5,mid-high
-409fffcdaf4d0eb689458f1df6b2c240,sports_leisure,0.5,mid-high
+409fffcdaf4d0eb689458f1df6b2c240,furniture_mattress_and_upholstery,0.5,high
+409fffcdaf4d0eb689458f1df6b2c240,sports_leisure,0.5,high
 40a04f5967ed1b1676064fe5542a0eff,cool_stuff,1.0,low
 40a09d9ceaa2b711f08bb3bcb25d3703,bed_bath_table,1.0,mid
 40a0dbd020711f857b4231af1a289fd2,bed_bath_table,1.0,low
@@ -17051,8 +17051,8 @@ customer_unique_id,category,weight,price_bucket
 43c626b276eda6206691e657b858fc47,cool_stuff,1.0,mid
 43c66c87dcdc671a0cd775ec6c8e9a0c,bed_bath_table,1.0,mid-high
 43c6df1e7e000a1a44ab1e7540868732,watches_gifts,1.0,mid-high
-43c73f9043398f0dd2163fc5f825e61a,cool_stuff,0.5,mid
-43c73f9043398f0dd2163fc5f825e61a,bed_bath_table,0.5,mid
+43c73f9043398f0dd2163fc5f825e61a,cool_stuff,0.5,mid-high
+43c73f9043398f0dd2163fc5f825e61a,bed_bath_table,0.5,mid-high
 43c76d8449efa11b096323bb6ed593e3,pet_shop,1.0,mid-high
 43c783f99323669984a2e82bb6509030,baby,1.0,budget
 43c82245d9a277c68978713e3d4fb1a1,computers_accessories,1.0,low
@@ -18180,8 +18180,8 @@ customer_unique_id,category,weight,price_bucket
 480993c197cc786a5e3722e58304de38,food_drink,1.0,low
 4809ad05ee38cba6a7d06d6df9fc4b42,toys,1.0,mid
 480ca1a9f688a4c482177efdeeb5c3a3,food_drink,1.0,budget
-481060b29de0e9b3d7f4b2991cfb0767,construction_tools_lights,0.5,mid
-481060b29de0e9b3d7f4b2991cfb0767,furniture_decor,0.5,mid
+481060b29de0e9b3d7f4b2991cfb0767,construction_tools_lights,0.5,mid-high
+481060b29de0e9b3d7f4b2991cfb0767,furniture_decor,0.5,mid-high
 48109d2c6b2edba91c3146a83ba631ac,health_beauty,1.0,low
 4812bbd35d1412c209481b349966ed9e,cool_stuff,1.0,mid
 4813129045e3a1b6cd49a062bd036c16,pet_shop,1.0,mid-high
@@ -18200,8 +18200,8 @@ customer_unique_id,category,weight,price_bucket
 481ef475da1dac8aeaa1330ae9c3b029,sports_leisure,1.0,low
 481f9c20ac611142924e15eadf505d2e,luggage_accessories,1.0,mid-high
 4820478e8cb6198530212821746419e9,cool_stuff,1.0,mid-high
-4820f42c8203dcad5d2c17cf363048b0,watches_gifts,0.5,mid
-4820f42c8203dcad5d2c17cf363048b0,home_appliances,0.5,mid
+4820f42c8203dcad5d2c17cf363048b0,watches_gifts,0.5,high
+4820f42c8203dcad5d2c17cf363048b0,home_appliances,0.5,high
 482100e419953116ee03dca7416277e0,furniture_decor,1.0,high
 48210a876860296297555f929507893f,luggage_accessories,1.0,mid-high
 48231ad5b4e5b8943d02ba5ea6e4a56b,telephony,1.0,budget
@@ -18313,8 +18313,8 @@ customer_unique_id,category,weight,price_bucket
 48932180a853ca54fd808eacb1c15d1b,health_beauty,1.0,mid
 4893ad4ea28b2c5b3ddf4e82e79db9e6,cool_stuff,1.0,mid-high
 48943e1c3938a59b72e1373c74796b0f,perfumery,1.0,low
-4897a3c64a635a703a71dd2d9189bffa,telephony,0.5,mid-high
-4897a3c64a635a703a71dd2d9189bffa,watches_gifts,0.5,mid-high
+4897a3c64a635a703a71dd2d9189bffa,telephony,0.5,high
+4897a3c64a635a703a71dd2d9189bffa,watches_gifts,0.5,high
 48988315c344c6964a309c67916e250e,construction_tools_construction,1.0,low
 489ccb1244834cd56e1d39137c48320b,sports_leisure,1.0,mid-high
 489ef50b97569793de42830945ecd4d3,bed_bath_table,1.0,mid-high
@@ -18452,7 +18452,7 @@ customer_unique_id,category,weight,price_bucket
 491b3ec2fbdef3623670205db5266209,telephony,1.0,budget
 491c8ead771b1d8889ae896780d5fc79,dvds_blu_ray,1.0,budget
 491d12855e9e662e70c1a848b0a0107d,toys,1.0,budget
-491ff9a75657c235ae85cfd9611e7f7e,health_beauty,1.0,mid
+491ff9a75657c235ae85cfd9611e7f7e,health_beauty,1.0,mid-high
 4922dae71ab06cbcbbc608ef6affebfb,health_beauty,1.0,mid-high
 4923b8ab746ce20a1fd5e6cb567a948b,furniture_decor,0.5,budget
 4923b8ab746ce20a1fd5e6cb567a948b,bed_bath_table,0.5,budget
@@ -19125,7 +19125,7 @@ customer_unique_id,category,weight,price_bucket
 4be5500602a748a39dd1bf67d57a5d6b,cool_stuff,1.0,mid-high
 4be56b706e670d37ea3f1a81927425d3,fashion_bags_accessories,1.0,budget
 4be5a194d167bb836c360258f6592026,computers_accessories,1.0,mid-high
-4be6b69e888b296631d72107b2409276,fashion_male_clothing,1.0,mid-high
+4be6b69e888b296631d72107b2409276,fashion_male_clothing,1.0,high
 4be8154b42b4593fae17f1b2cb375615,bed_bath_table,1.0,budget
 4be873e3bf0455763882101d7eccc78c,fixed_telephony,1.0,mid-high
 4be9df1cd93bed5e405591d930305b80,garden_tools,1.0,mid-high
@@ -19322,7 +19322,7 @@ customer_unique_id,category,weight,price_bucket
 4ca8854dd8e7df762fdaa3141840c47a,perfumery,1.0,mid-high
 4ca9d5bd0850282d87754ca17be42525,stationery,1.0,low
 4caa3cab5f94e58575a93a3891eb2f34,watches_gifts,1.0,high
-4caac8767772d0298e73536889ad919f,auto,1.0,mid
+4caac8767772d0298e73536889ad919f,auto,1.0,mid-high
 4cac39a165a3de1c35e26650a9da1d4c,housewares,1.0,low
 4cad7368c391ac8e5661ca1db1752901,furniture_decor,1.0,low
 4cadda4ceeff8e011cb33d9ef96aaee6,health_beauty,1.0,budget
@@ -20119,7 +20119,7 @@ customer_unique_id,category,weight,price_bucket
 4fce08bb64f8d392226d876734e6cca0,fashion_bags_accessories,1.0,low
 4fcf005606ebb2a031f3f9b5e22fa90b,housewares,1.0,mid-high
 4fcf03fe433130324a017681a545cdb4,baby,1.0,mid
-4fcf7b9d6a54ded837b9a0ff601bf7ef,sports_leisure,1.0,mid-high
+4fcf7b9d6a54ded837b9a0ff601bf7ef,sports_leisure,1.0,high
 4fd108f5f7abef94264971be7542bcf6,books_general_interest,1.0,low
 4fd113823bb24c496078c6f937487fa9,bed_bath_table,1.0,mid
 4fd1a56f7500d9a023a1dc23a9e014cc,bed_bath_table,1.0,low
@@ -20756,8 +20756,8 @@ customer_unique_id,category,weight,price_bucket
 524e35dd7c90f48c76141a4bd25b3d4b,toys,1.0,low
 524efd82e1a2d4a85f0c87e3c5afe56a,pet_shop,1.0,budget
 5250c9708a2b44c10bd5cd9f94235290,bed_bath_table,1.0,low
-525236008daa62b6022f35142ef864d3,auto,0.5,mid
-525236008daa62b6022f35142ef864d3,housewares,0.5,mid
+525236008daa62b6022f35142ef864d3,auto,0.5,mid-high
+525236008daa62b6022f35142ef864d3,housewares,0.5,mid-high
 52533f6c65301d7e2f24b0a002aabbbc,health_beauty,1.0,high
 5253bf3e02cc87bd4515abc761a2cc59,fixed_telephony,1.0,low
 5254c0eec4d1c586e4e6b59fba3d33ea,stationery,1.0,high
@@ -21139,8 +21139,8 @@ customer_unique_id,category,weight,price_bucket
 53bdc79ef8d5c3f599884b10e8f1e2af,auto,1.0,mid-high
 53be1842ffad4f91d5989d098d64411e,electronics,1.0,budget
 53beaaaafb7b657172c341e7f69e2ca0,housewares,1.0,low
-53beace9d0aa08b64d759d5f5a66550c,garden_tools,0.5,mid
-53beace9d0aa08b64d759d5f5a66550c,perfumery,0.5,mid
+53beace9d0aa08b64d759d5f5a66550c,garden_tools,0.5,mid-high
+53beace9d0aa08b64d759d5f5a66550c,perfumery,0.5,mid-high
 53beb2a965c48be8e323b41204c86f57,luggage_accessories,1.0,low
 53bfb7666b508a9d940d714d534c4192,audio,1.0,budget
 53c1ca2af996751e36df70530bf56aed,bed_bath_table,1.0,mid
@@ -21323,7 +21323,7 @@ customer_unique_id,category,weight,price_bucket
 546ed56ed469aa89580be8bb1b51a6fc,audio,1.0,budget
 54704ece600862ec7b97cdadb31383a4,electronics,1.0,low
 5472581443d2221c04182a33205feeee,consoles_games,1.0,low
-54732c804725f94304b9f2d1107a3d6e,computers_accessories,1.0,mid-high
+54732c804725f94304b9f2d1107a3d6e,computers_accessories,1.0,high
 5473d80ee730a2ec3551d464d93b90ce,baby,1.0,mid-high
 5476bd5b740654cbc1c5ee1458f446af,furniture_decor,1.0,budget
 5477633464629dfe2250f058ced9efa8,garden_tools,1.0,low
@@ -21946,8 +21946,8 @@ customer_unique_id,category,weight,price_bucket
 56e0fb715b2712f5f126f8143ac8014f,christmas_supplies,1.0,low
 56e12d11717c2ee5ee0097a665266456,bed_bath_table,1.0,budget
 56e298bed3f665a2f3bf0212f88331b2,health_beauty,1.0,low
-56e3a158ef88285f2c15a83db0b13d93,cool_stuff,0.5,mid
-56e3a158ef88285f2c15a83db0b13d93,computers_accessories,0.5,mid
+56e3a158ef88285f2c15a83db0b13d93,cool_stuff,0.5,mid-high
+56e3a158ef88285f2c15a83db0b13d93,computers_accessories,0.5,mid-high
 56e3a984ef5040797608df8afcba3d75,telephony,1.0,budget
 56e484b0c50cc7e21b082b9d4ebe4ef7,telephony,1.0,budget
 56e4f649cb3c7534c9a74660a8c804fa,bed_bath_table,1.0,mid
@@ -22162,8 +22162,8 @@ customer_unique_id,category,weight,price_bucket
 57b29f12929a5677e0299f5da91d145d,health_beauty,1.0,low
 57b516d9c309aeed9d897fe0a6f16477,luggage_accessories,1.0,low
 57b5598b1181e344c027ecf8ef6c6dc6,books_general_interest,1.0,mid-high
-57b5d9f9fa4f1ff41befbfbf0fcbc3ca,watches_gifts,0.5,mid
-57b5d9f9fa4f1ff41befbfbf0fcbc3ca,sports_leisure,0.5,mid
+57b5d9f9fa4f1ff41befbfbf0fcbc3ca,watches_gifts,0.5,mid-high
+57b5d9f9fa4f1ff41befbfbf0fcbc3ca,sports_leisure,0.5,mid-high
 57b605c7fea3ab53074a581ef3bfca87,electronics,1.0,budget
 57b6dc6d57b7e7d0dd7cdd700e2a054a,telephony,1.0,low
 57b9cb9f0c8a4092d734565f9b5f7b51,watches_gifts,1.0,high
@@ -22427,7 +22427,7 @@ customer_unique_id,category,weight,price_bucket
 58ad94c521ac249ea3349c4bf19df446,housewares,1.0,budget
 58ae5eb68517e2234eef2fb8b4bae48f,telephony,1.0,low
 58af0e5c887a99edea7b7b28038970a4,furniture_decor,1.0,low
-58af2ee44a9ca5487bd47d13db071ea5,home_construction,1.0,mid
+58af2ee44a9ca5487bd47d13db071ea5,home_construction,1.0,mid-high
 58af698714ef0f1b2ebc16796b763b9d,telephony,1.0,low
 58af8ab36593ab5d41e63ba8a55ccc1c,drinks,1.0,low
 58b051c30d684ac12a2049a49c856203,health_beauty,1.0,budget
@@ -22968,7 +22968,7 @@ customer_unique_id,category,weight,price_bucket
 5ad4267a0c9f746beecd94440a8665ab,baby,1.0,low
 5ad755f2bc4d98be17d9f42b3c1f0c4b,toys,1.0,mid
 5ad76b2e1b9830ec678ccda420872dcf,sports_leisure,1.0,mid
-5ad84888519e10ff52d8af00641d41bc,furniture_decor,1.0,mid-high
+5ad84888519e10ff52d8af00641d41bc,furniture_decor,1.0,high
 5adaea6b8fef96ea29207caf25e7d54c,computers_accessories,1.0,low
 5adb335dc5587a3e8a1518e1a28761d5,sports_leisure,1.0,low
 5adb949d6dbe858471d4e41e8e2758d1,home_confort,1.0,mid
@@ -23045,7 +23045,7 @@ customer_unique_id,category,weight,price_bucket
 5b2402c844755fa710ac2144f9db61c4,furniture_decor,1.0,mid-high
 5b247efc13eaa924df67ddd1e4b4d558,housewares,1.0,low
 5b2619f25effc97c9b3cca189d789d23,health_beauty,1.0,mid
-5b26618da34612cc4947bbf6ef4fb67c,sports_leisure,1.0,mid
+5b26618da34612cc4947bbf6ef4fb67c,sports_leisure,1.0,mid-high
 5b2c2b2a8d9e890debe309928d321f20,fashion_shoes,1.0,budget
 5b2c769a6c6475aaa3a8c17d0a2109c6,sports_leisure,1.0,low
 5b2cbadec92c22d7f9672eb315800c52,furniture_decor,1.0,budget
@@ -23071,7 +23071,7 @@ customer_unique_id,category,weight,price_bucket
 5b3b19201bb81179198a9ce0d26ae56f,auto,1.0,budget
 5b3df683034ea4e172c34caa161740ed,toys,1.0,low
 5b4022860c7de252d3cc645fa65090f9,musical_instruments,1.0,mid-high
-5b409ca5e4383fcfa2d21b68c21e5a04,furniture_decor,1.0,mid
+5b409ca5e4383fcfa2d21b68c21e5a04,furniture_decor,1.0,mid-high
 5b40a8eb3d0fe9467298ce9d35f22dec,toys,1.0,mid
 5b4270eb80fe2d60cde8289dc6a20fe4,toys,1.0,low
 5b43d4825caf7058ddbaa8f1f6e7f81c,health_beauty,1.0,low
@@ -23118,7 +23118,7 @@ customer_unique_id,category,weight,price_bucket
 5b6f720d6417604a1f8b46edc1837f56,housewares,1.0,mid
 5b6f7e886ed4a13a0a666740e4788729,health_beauty,1.0,mid-high
 5b707ef55dab6b40b8345eccbd262a88,perfumery,1.0,low
-5b71ca52f13f79c2be72b2aad8755c0a,auto,1.0,mid
+5b71ca52f13f79c2be72b2aad8755c0a,auto,1.0,mid-high
 5b739e40ca3a2cdf70114f04e4384634,art,1.0,mid-high
 5b7457a521492ba35573e2ea4c2e364a,health_beauty,1.0,mid-high
 5b75fed624dfb67890f5d9345f4dc062,sports_leisure,1.0,mid
@@ -23146,7 +23146,7 @@ customer_unique_id,category,weight,price_bucket
 5b8985d0e84c11c2d841ee82f53c4d83,auto,1.0,mid
 5b89c2cd3ebc74a8f5b51b6353bc8cca,electronics,1.0,budget
 5b89d722f7f9e8a96939fb9324f39ce3,health_beauty,1.0,mid-high
-5b8a75e77489899ad9e6d57273aafd7f,sports_leisure,1.0,mid
+5b8a75e77489899ad9e6d57273aafd7f,sports_leisure,1.0,mid-high
 5b8a91824cfd2e0cf24bf25307921983,bed_bath_table,1.0,mid
 5b8b8afbf37c38e18e196e47078854ed,health_beauty,1.0,mid-high
 5b8c80a20366ff668e44bf7571988b72,fashion_bags_accessories,1.0,low
@@ -23211,7 +23211,7 @@ customer_unique_id,category,weight,price_bucket
 5bc738a48bdb9ca1f798d56de2cce84c,garden_tools,1.0,low
 5bc8c5d5447bbc14693f42df5ed88fbc,housewares,0.5,budget
 5bc8c5d5447bbc14693f42df5ed88fbc,furniture_decor,0.5,budget
-5bc94b60050224af3dfdd2377c7e93e6,furniture_decor,1.0,mid
+5bc94b60050224af3dfdd2377c7e93e6,furniture_decor,1.0,mid-high
 5bca215da9b5206f88f2be0051d57d6e,health_beauty,1.0,budget
 5bcad71b7324e8e45e079e34fb4d1d0b,telephony,1.0,budget
 5bcb3b3af07be38f0a4ed0433745481d,housewares,1.0,low
@@ -23227,7 +23227,7 @@ customer_unique_id,category,weight,price_bucket
 5bd7cb3c37bc312786b7b16d99074356,toys,1.0,low
 5bdaa4b24e612053513384e8dd5fa752,computers_accessories,1.0,mid-high
 5bdb6f56a8fb4272b802f504bb6d1287,sports_leisure,1.0,high
-5be2630961b92684db5a1db32cbd41bc,auto,1.0,mid
+5be2630961b92684db5a1db32cbd41bc,auto,1.0,mid-high
 5be3022901f0cf917eac009d29fea360,auto,1.0,high
 5be8242f4f7ca2f0bd389c867a889f0f,musical_instruments,1.0,low
 5bea48b58d826f80d9ae64dd4622d5a1,home_confort,1.0,budget
@@ -23543,7 +23543,7 @@ customer_unique_id,category,weight,price_bucket
 5d3d3539f749446b5af78ae09691e272,sports_leisure,1.0,low
 5d3d97309808a1d8b162d0dd2ad273e3,musical_instruments,1.0,mid-high
 5d3dd81d78174c092167fc4806807abd,computers_accessories,1.0,low
-5d3e6a61592164c2924ccec5c7f56058,sports_leisure,1.0,mid
+5d3e6a61592164c2924ccec5c7f56058,sports_leisure,1.0,mid-high
 5d3eea6203ec9bb336962c4f24afcb1b,sports_leisure,1.0,mid-high
 5d3f4c134fd624f70c76e47d1ed81903,telephony,1.0,budget
 5d41002a0cde85106a34fab3000075e5,toys,1.0,low
@@ -23922,8 +23922,8 @@ customer_unique_id,category,weight,price_bucket
 5ec2088063a452edc9e72375fccec9f8,food_drink,1.0,low
 5ec2831cf2e8adf04f14fbf2ebcf3494,health_beauty,1.0,budget
 5ec298eebe73373cb565666554959950,auto,1.0,budget
-5ec4c90f549177a8cbbbc7419353e66a,telephony,0.5,mid
-5ec4c90f549177a8cbbbc7419353e66a,baby,0.5,mid
+5ec4c90f549177a8cbbbc7419353e66a,telephony,0.5,mid-high
+5ec4c90f549177a8cbbbc7419353e66a,baby,0.5,mid-high
 5ec5450f2fd590b9dcc0dc9197b6af37,computers_accessories,1.0,mid
 5ec6ec6338fe161e42b765f5ded9d69c,telephony,1.0,mid
 5ec923ab8b42bee304595138015f7a47,telephony,1.0,budget
@@ -24034,7 +24034,7 @@ customer_unique_id,category,weight,price_bucket
 5f320e7c84da424e070bad73f40a50dc,housewares,1.0,mid-high
 5f3417e9a4199b947a7418ff484f8a8b,costruction_tools_tools,1.0,mid
 5f349193a205124186b7433d20ac52e6,watches_gifts,1.0,low
-5f351efac8e4116350a242abcabbe3ca,bed_bath_table,1.0,mid
+5f351efac8e4116350a242abcabbe3ca,bed_bath_table,1.0,mid-high
 5f35bc4d7414e7400a695e667a5ef456,books_technical,1.0,mid
 5f368cf48b83a0e72935486a7a822c51,health_beauty,1.0,mid
 5f36b55048cb51c5b249d619ac843d30,telephony,1.0,budget
@@ -24179,8 +24179,8 @@ customer_unique_id,category,weight,price_bucket
 5fb203a0b6157948f715f04737dd20ad,electronics,1.0,high
 5fb3e0df1466635a522eba550ebbbd66,toys,1.0,mid
 5fb5468ac27cad3558c885f041d90fb0,fashion_bags_accessories,1.0,low
-5fb5bf48cd408d971f873069e5178898,pet_shop,0.5,mid
-5fb5bf48cd408d971f873069e5178898,computers_accessories,0.5,mid
+5fb5bf48cd408d971f873069e5178898,pet_shop,0.5,mid-high
+5fb5bf48cd408d971f873069e5178898,computers_accessories,0.5,mid-high
 5fb6501e19cae6167698a7753a73f36c,perfumery,1.0,budget
 5fb65a8446d3bf2c80fe97c2589eac8c,health_beauty,1.0,mid
 5fb6f88b6f6e71575a20628934bfa33a,perfumery,1.0,low
@@ -24332,8 +24332,8 @@ customer_unique_id,category,weight,price_bucket
 60602f1d7ae0b345d323bb1685725a30,consoles_games,1.0,mid
 6060f2b3fb37525b73537598fe4bfebc,baby,1.0,mid
 6062db3c28f344c28ece2698c5061cf1,watches_gifts,1.0,high
-606441378b517f9eeb89f9154a1c4d4f,housewares,0.5,mid
-606441378b517f9eeb89f9154a1c4d4f,small_appliances,0.5,mid
+606441378b517f9eeb89f9154a1c4d4f,housewares,0.5,mid-high
+606441378b517f9eeb89f9154a1c4d4f,small_appliances,0.5,mid-high
 60644632d8dd09641b19ce98407815f2,furniture_decor,1.0,low
 60652323a3edeb46c166db5284202d6d,pet_shop,1.0,high
 606590dbb585f7ea2236c868ee4f4d27,housewares,1.0,high
@@ -24385,7 +24385,7 @@ customer_unique_id,category,weight,price_bucket
 6096c8a2d6a86ebdc3e61955cc460dd4,bed_bath_table,1.0,mid
 609846ecfa57e90e8ce0fe6c0e06b0ad,toys,1.0,mid-high
 609854a129474911451a1f000a125c3b,garden_tools,1.0,low
-609adc68db390a15fd21648c496f50b7,bed_bath_table,1.0,mid
+609adc68db390a15fd21648c496f50b7,bed_bath_table,1.0,mid-high
 609b49af42511dbb7d8c3e8e37932c07,furniture_decor,1.0,mid
 609b7feab0f0c9726929ec4891447b02,garden_tools,1.0,low
 609b898de7bf85ab7fcd4ab825ad49b2,computers_accessories,1.0,low
@@ -24592,8 +24592,8 @@ customer_unique_id,category,weight,price_bucket
 61874864cf4e41cdcb375dbde0a2c5d4,pet_shop,1.0,low
 61874f8c7b44358a1ccea938e70ad6c6,computers_accessories,1.0,mid
 618a492ef520f1e6bbce42700ced93d4,home_appliances_2,1.0,mid-high
-618ea9a8cb3ce57899efbd62532ba6e7,bed_bath_table,0.5,mid
-618ea9a8cb3ce57899efbd62532ba6e7,furniture_decor,0.5,mid
+618ea9a8cb3ce57899efbd62532ba6e7,bed_bath_table,0.5,mid-high
+618ea9a8cb3ce57899efbd62532ba6e7,furniture_decor,0.5,mid-high
 618ed607b912cbcfe33126652c0afbe3,housewares,1.0,low
 6191a18ad888e6de7ec193cae71b943c,furniture_decor,1.0,mid-high
 619384cde3f360023bb190ab688f1926,furniture_decor,1.0,mid
@@ -24921,7 +24921,7 @@ customer_unique_id,category,weight,price_bucket
 62e2de03150e64b4ebe3fde98b934b72,health_beauty,1.0,low
 62e32e0b239b36c93427f7910eb6a173,garden_tools,1.0,low
 62e4743e0989ccae8320767889e71aa9,construction_tools_construction,1.0,mid-high
-62e539dbae33b2188f41136488f334fe,watches_gifts,1.0,mid
+62e539dbae33b2188f41136488f334fe,watches_gifts,1.0,mid-high
 62e56e1303a37e1ec99b7b7330aaadba,bed_bath_table,1.0,mid-high
 62e60ff1f96c2e132ca02e04b34247f4,computers_accessories,1.0,mid-high
 62e69a7b8e3d109af287f367e3b0f143,stationery,1.0,mid
@@ -25277,7 +25277,7 @@ customer_unique_id,category,weight,price_bucket
 64486bf653abe2d395affb980587b5a2,sports_leisure,1.0,mid
 6449a8997d152f9b43f12f31b12a951d,bed_bath_table,1.0,low
 64510e766d989ff92d22b0b2c2c04884,toys,1.0,high
-645153adc47a2b420c17687062c364bb,watches_gifts,1.0,mid-high
+645153adc47a2b420c17687062c364bb,watches_gifts,1.0,high
 6451b2bb432ab9345e77287e6863fd25,sports_leisure,1.0,mid
 6451d702a671528c2723ae647cf9df54,computers_accessories,1.0,mid
 6451ebe7033f6195c50a0505bc19eab0,computers_accessories,1.0,low
@@ -26574,7 +26574,7 @@ customer_unique_id,category,weight,price_bucket
 696fca7af7f751e1749087433a92c790,health_beauty,1.0,budget
 6970a688df55d8db6a5c3b531aedadaa,drinks,1.0,mid-high
 6971ee5006902524460371fdbd952cbf,watches_gifts,1.0,low
-697452ef6f8c549b18ffecd3e0197460,fashion_bags_accessories,1.0,mid
+697452ef6f8c549b18ffecd3e0197460,fashion_bags_accessories,1.0,mid-high
 69766a92d074c9160685ba9b6b613c3f,bed_bath_table,1.0,budget
 697671013583b8fae7f2b54890c249a9,audio,1.0,mid
 69768afd389429f6ec48199e5fb8e61a,bed_bath_table,0.75,budget
@@ -26686,7 +26686,7 @@ customer_unique_id,category,weight,price_bucket
 69d5451bdb58302b28ba780ae9f2ef5d,computers_accessories,1.0,mid
 69d6764ac70e1f490d29a9a7d26160be,bed_bath_table,1.0,low
 69dbe3694c52cd73bcbf1bc7b0d5d3ab,furniture_decor,1.0,mid
-69dc49b6115371d02775f2baabd26cfa,bed_bath_table,1.0,mid-high
+69dc49b6115371d02775f2baabd26cfa,bed_bath_table,1.0,high
 69dcbbaaa2bb81be7a3beed044cc523c,home_appliances,1.0,mid
 69dddc9c5b3a0e2641f9431e8e1241b4,watches_gifts,1.0,mid-high
 69de2f5d39283da764d28336701fa8e8,health_beauty,1.0,mid-high
@@ -27475,8 +27475,8 @@ customer_unique_id,category,weight,price_bucket
 6cf8793a63d3b4b2f8af32ac5d87ed98,electronics,1.0,budget
 6cfde434af484ecd9ba516600818805d,auto,1.0,budget
 6cfeb0d60f06829e81e8cab82cd8f252,electronics,1.0,budget
-6cff9b48c421876c5595aad7913b4806,cool_stuff,0.5,mid-high
-6cff9b48c421876c5595aad7913b4806,consoles_games,0.5,mid-high
+6cff9b48c421876c5595aad7913b4806,cool_stuff,0.5,high
+6cff9b48c421876c5595aad7913b4806,consoles_games,0.5,high
 6d00968d345231e30a9927c65bf9a5fe,auto,1.0,mid-high
 6d053f472a670c33c21c012f7c72c4cc,baby,1.0,low
 6d0572dd5acc888fae43a2e5789bb990,electronics,1.0,mid-high
@@ -28058,8 +28058,8 @@ customer_unique_id,category,weight,price_bucket
 6f64406ed5cfa4a2d9bd35e91bfd6587,sports_leisure,1.0,mid-high
 6f650c260a56758b49a89481701376e0,computers_accessories,1.0,mid
 6f657798db8faf0781e345923ff13175,computers_accessories,1.0,mid-high
-6f65f19c2dcfcab8b76b2fafb5b840e1,housewares,0.5,mid
-6f65f19c2dcfcab8b76b2fafb5b840e1,furniture_decor,0.5,mid
+6f65f19c2dcfcab8b76b2fafb5b840e1,housewares,0.5,mid-high
+6f65f19c2dcfcab8b76b2fafb5b840e1,furniture_decor,0.5,mid-high
 6f66c072ff5a7307dfce47b246844ff7,garden_tools,1.0,low
 6f68b458736739a2740b3bfc9a3a2d39,sports_leisure,1.0,budget
 6f68bd1eaca4aff135be0967231ecbbd,housewares,1.0,low
@@ -28501,7 +28501,7 @@ customer_unique_id,category,weight,price_bucket
 712a37215ac220745ee48767d253c1c4,home_appliances,1.0,low
 712a6037ba2faaf9c99cadcd3bcc3d9d,sports_leisure,1.0,low
 712b4d26b1563f15615763c0d12a5d7f,toys,1.0,low
-712c4abfd9b054e7872aad2021a4aee3,computers_accessories,1.0,mid-high
+712c4abfd9b054e7872aad2021a4aee3,computers_accessories,1.0,high
 712c9e0b60317d7902a5e6678650cf07,garden_tools,1.0,low
 712ca24816b7413fe4000bdf6d547aea,fashion_bags_accessories,1.0,mid
 7133682044321f8d798e5007e0924dda,construction_tools_safety,1.0,mid
@@ -29199,8 +29199,8 @@ customer_unique_id,category,weight,price_bucket
 73f2248eb4705834587fc9e1ef45b3bf,computers_accessories,1.0,mid-high
 73f2d3f8659c11325d46a63bfd8e08bd,auto,1.0,high
 73f44c9ccfdba449a65cd59eed6f4691,telephony,1.0,budget
-73f543ac7cc557af011be584a4dde8af,furniture_decor,0.5,mid
-73f543ac7cc557af011be584a4dde8af,construction_tools_lights,0.5,mid
+73f543ac7cc557af011be584a4dde8af,furniture_decor,0.5,mid-high
+73f543ac7cc557af011be584a4dde8af,construction_tools_lights,0.5,mid-high
 73f71caec99de82e5ec02b5b59c6c2d8,watches_gifts,1.0,mid-high
 73f90b219c69253bddd6d6111783f47b,health_beauty,1.0,budget
 73f97c6a5af65a71194cc2265ae82501,auto,0.5,budget
@@ -29390,7 +29390,7 @@ customer_unique_id,category,weight,price_bucket
 74b90a2c4250b43e544e95d3b99b3c7e,computers_accessories,1.0,mid-high
 74b91fb33070df7709adad417fd214ec,food_drink,1.0,low
 74b9d75c6668eb6085d39795dd645ad7,toys,1.0,mid-high
-74ba3ec548ea09a1df6d06fd31072d71,computers_accessories,1.0,mid
+74ba3ec548ea09a1df6d06fd31072d71,computers_accessories,1.0,mid-high
 74ba462fb8ab5c99b43159448025269a,garden_tools,1.0,low
 74ba7d396fc92ee64392f33a54ea47fd,bed_bath_table,1.0,budget
 74bb35834cc90f8b98adc9da1c4c8556,housewares,1.0,mid-high
@@ -29843,8 +29843,8 @@ customer_unique_id,category,weight,price_bucket
 769bf8d89148758310bb519de4a030ed,baby,1.0,low
 769c0ea95d3febeee4fed19038785cbf,health_beauty,1.0,low
 769c31b58146e21b6142ba3f6f1fbb43,toys,1.0,mid-high
-769de7c55f035c3f3575750bcc242c87,luggage_accessories,0.5,mid
-769de7c55f035c3f3575750bcc242c87,baby,0.5,mid
+769de7c55f035c3f3575750bcc242c87,luggage_accessories,0.5,mid-high
+769de7c55f035c3f3575750bcc242c87,baby,0.5,mid-high
 76a03efeb938e41c28c9fb57fd252a86,auto,1.0,budget
 76a0491dd70c125840fa259f00dfc351,garden_tools,0.6667,low
 76a0491dd70c125840fa259f00dfc351,sports_leisure,0.3333,low
@@ -30106,7 +30106,7 @@ customer_unique_id,category,weight,price_bucket
 7794b57f872f890cdfdc0787ae708591,watches_gifts,1.0,mid-high
 7794c9d71cf38a0d9a272739a6659547,watches_gifts,1.0,mid
 779a561648d742f4e20e1139bb2c804b,baby,1.0,low
-779f7ec7155dfd74a8425e40c4d34497,watches_gifts,1.0,mid
+779f7ec7155dfd74a8425e40c4d34497,watches_gifts,1.0,high
 77a00465cf641d4c2160e40c247305a1,auto,1.0,high
 77a077a1a20ce37d0843a933d9043b45,auto,1.0,budget
 77a1941e1240e00af4be4e1f18b13297,garden_tools,1.0,high
@@ -30241,8 +30241,8 @@ customer_unique_id,category,weight,price_bucket
 7823a8988612aff9a03896c51e2c5f7b,bed_bath_table,0.5,budget
 7824884ec60635edc70c6706b71488b8,bed_bath_table,1.0,low
 7828008dbc4fd6aeb04ab42dddd35a74,health_beauty,1.0,mid
-7828a4a1ee004bbe6665cbffbc4bf2d9,health_beauty,0.5,mid
-7828a4a1ee004bbe6665cbffbc4bf2d9,stationery,0.5,mid
+7828a4a1ee004bbe6665cbffbc4bf2d9,health_beauty,0.5,mid-high
+7828a4a1ee004bbe6665cbffbc4bf2d9,stationery,0.5,mid-high
 782987b81c92239d922aa49d6bd4200b,computers_accessories,1.0,mid
 782abc6e6455e4956e840d789d721505,bed_bath_table,1.0,mid
 782af02f37e30c4732391dcf40fd5225,auto,1.0,budget
@@ -30406,7 +30406,7 @@ customer_unique_id,category,weight,price_bucket
 78d3e255b3ad3aac95d3a8abc75539d1,toys,1.0,low
 78d3e9eb8049ab569d7b3265e0a7c50b,garden_tools,1.0,low
 78d448a4ba93427cc4455949fb162ab8,sports_leisure,1.0,mid
-78d4b99ae47914661abd3c888cb94efb,sports_leisure,1.0,mid
+78d4b99ae47914661abd3c888cb94efb,sports_leisure,1.0,mid-high
 78d500411f37b330a860dad74fb8751b,furniture_decor,1.0,low
 78d5c3c9deba30df275b5b5afa827f3b,auto,1.0,low
 78d5f7c0aefaa7f0ae663dd466f83627,sports_leisure,1.0,mid
@@ -30668,7 +30668,7 @@ customer_unique_id,category,weight,price_bucket
 79ca17363ac09cf705b7af2593ca1277,perfumery,1.0,budget
 79cb10643c4c675f8b4ec966ebbd14db,bed_bath_table,1.0,low
 79cbc033cfc6d82c3fd8d1f4b2500135,computers_accessories,1.0,mid
-79cd4aa52496125d2b3af331e6639a4e,bed_bath_table,1.0,mid
+79cd4aa52496125d2b3af331e6639a4e,bed_bath_table,1.0,mid-high
 79cf3ce992d319c1037e32e9f1235b06,sports_leisure,1.0,mid-high
 79cf56dffbb0db446fd33876c53cd181,computers_accessories,1.0,mid-high
 79d0029455373fa2185c76bb52b96fbc,watches_gifts,1.0,high
@@ -30900,7 +30900,7 @@ customer_unique_id,category,weight,price_bucket
 7ac97af02f1b3af23fdca333aeda4122,health_beauty,1.0,mid
 7aca7fa71177ac495838674257adc8e7,housewares,1.0,mid-high
 7ace8d1bfd4dfd86d60c6d568b16c38c,computers_accessories,1.0,low
-7acf19ddc75a0935581845e1c89edb3c,bed_bath_table,1.0,mid-high
+7acf19ddc75a0935581845e1c89edb3c,bed_bath_table,1.0,high
 7acfb833cd8ba1d316b560898fe0616d,watches_gifts,1.0,budget
 7ad04c71bfca958e6f2ec44bce34e2da,perfumery,1.0,mid-high
 7ad069b7a8d066039d2db63cd490d408,air_conditioning,1.0,mid-high
@@ -31198,7 +31198,7 @@ customer_unique_id,category,weight,price_bucket
 7bef4a9ca5f6e11c24a94b7f816cc4a4,bed_bath_table,1.0,mid
 7bf123bf9763c4606d3bf1423de0462b,bed_bath_table,1.0,low
 7bf1c2498a0443a66167a89668326f7c,home_confort,1.0,mid
-7bf1c59401206e31a78523077f3a1144,computers_accessories,1.0,mid
+7bf1c59401206e31a78523077f3a1144,computers_accessories,1.0,mid-high
 7bf3fced4decee3bc4cf1917acccbd24,costruction_tools_tools,1.0,low
 7bf4f2ba9ddd4842999dd89a22d34179,electronics,1.0,low
 7bf56febc715134c54dff6a212e63d19,watches_gifts,1.0,mid-high
@@ -31499,8 +31499,8 @@ customer_unique_id,category,weight,price_bucket
 7d1706157b6f3c9c99f2f6b096deda26,housewares,1.0,low
 7d185d821a11c769636247766f1fd45e,bed_bath_table,1.0,mid-high
 7d19ebd08ad749039d0fa34250b76cee,telephony,1.0,budget
-7d19f93ed7e2ea8211975b68525b0598,toys,0.5,mid
-7d19f93ed7e2ea8211975b68525b0598,sports_leisure,0.5,mid
+7d19f93ed7e2ea8211975b68525b0598,toys,0.5,high
+7d19f93ed7e2ea8211975b68525b0598,sports_leisure,0.5,high
 7d1bdf714530faf2db78556bdff7fa3b,pet_shop,1.0,mid
 7d1e8d7edd852e45bc70c0d90a57c0d3,bed_bath_table,1.0,mid
 7d1e984a4531da606a7a8defa2605656,baby,1.0,mid
@@ -31863,8 +31863,8 @@ customer_unique_id,category,weight,price_bucket
 7e712f9d29b767848f4120d479f75aff,computers_accessories,1.0,budget
 7e72d16376d45fad2609a12cda155671,sports_leisure,1.0,low
 7e72fbca23c0cdc174ce9a6121692407,perfumery,1.0,mid
-7e7301841ddb4064c2f3a31e4c154932,watches_gifts,0.5,mid
-7e7301841ddb4064c2f3a31e4c154932,furniture_decor,0.5,mid
+7e7301841ddb4064c2f3a31e4c154932,watches_gifts,0.5,mid-high
+7e7301841ddb4064c2f3a31e4c154932,furniture_decor,0.5,mid-high
 7e731c275a5520c69e72f43467916247,bed_bath_table,1.0,mid
 7e7382610d6c06ffe9f8fc3ff566a21c,computers_accessories,1.0,budget
 7e73a6f2fa0243bedb51f58a544f30d5,bed_bath_table,1.0,high
@@ -31932,7 +31932,7 @@ customer_unique_id,category,weight,price_bucket
 7ebdbdb58c8897d6f84dba51360f6a62,books_technical,1.0,low
 7ebe00e01c4656d609e1ca0f7e566999,stationery,1.0,mid
 7ebe3f683282a3df95d323a008f0c4d1,housewares,1.0,mid
-7ec0077665fe9020e7dfdb05b2be0162,health_beauty,1.0,mid
+7ec0077665fe9020e7dfdb05b2be0162,health_beauty,1.0,mid-high
 7ec00a2a05fe53efc7c3a87f4b97f053,bed_bath_table,1.0,mid
 7ec0e18938791c57eb16ad7f03edcc06,fashion_bags_accessories,1.0,budget
 7ec163471da7520f672fef86422f42d5,furniture_decor,1.0,mid
@@ -31976,8 +31976,8 @@ customer_unique_id,category,weight,price_bucket
 7ee89b8a801ff33528deae962a8a212a,furniture_decor,1.0,mid
 7ee9123ff8563b97fcba63c8f8e21d62,computers_accessories,1.0,mid
 7ee99f5c522d01621617d63bda047019,furniture_decor,1.0,mid
-7ee9e6c80bf1b7ec4a52639eab6c128c,watches_gifts,0.5,mid-high
-7ee9e6c80bf1b7ec4a52639eab6c128c,sports_leisure,0.5,mid-high
+7ee9e6c80bf1b7ec4a52639eab6c128c,watches_gifts,0.5,high
+7ee9e6c80bf1b7ec4a52639eab6c128c,sports_leisure,0.5,high
 7eea63c4b53d09000f70a7147eef433b,musical_instruments,1.0,mid
 7eeb6421712844795dd8ff9ec6a58b18,fashion_underwear_beach,0.8333,budget
 7eeb6421712844795dd8ff9ec6a58b18,watches_gifts,0.1667,budget
@@ -32297,8 +32297,8 @@ customer_unique_id,category,weight,price_bucket
 803911f2e60553ddd6c785a6bfa4460f,housewares,1.0,budget
 8039b3eb4692041e3e7a17a18dffdf84,bed_bath_table,1.0,mid-high
 803ab0230700aa3e3f02a4c1ef9b2d9c,housewares,1.0,mid
-803b4fc75d3fe8c5dbed83f50b3fbd8c,audio,0.5,mid
-803b4fc75d3fe8c5dbed83f50b3fbd8c,health_beauty,0.5,mid
+803b4fc75d3fe8c5dbed83f50b3fbd8c,audio,0.5,mid-high
+803b4fc75d3fe8c5dbed83f50b3fbd8c,health_beauty,0.5,mid-high
 803c530613f5c4ee03502be0d6894de0,home_construction,1.0,mid
 803c9b252709beca97a308a9197371ff,sports_leisure,1.0,mid-high
 803cf2051fccfd1c128910329ecc6968,watches_gifts,1.0,mid
@@ -32818,7 +32818,7 @@ customer_unique_id,category,weight,price_bucket
 823bb2a171fa5c2e6cb24b45c8bcd896,sports_leisure,1.0,budget
 823d0e3d556f32b40fb5ee165deb2292,sports_leisure,1.0,budget
 823e768b373b1acb9edf618e67bb0145,bed_bath_table,1.0,low
-8240b20d1e0a04ed761ece5c6f56bb52,computers_accessories,1.0,mid
+8240b20d1e0a04ed761ece5c6f56bb52,computers_accessories,1.0,mid-high
 8241424764e0bfa6bfcb3c6cda391ac8,health_beauty,1.0,budget
 82420a84a2781a5afca48b917bd9c228,costruction_tools_tools,1.0,mid
 82436f2f6b32629877454b5b597a0d10,cool_stuff,1.0,mid
@@ -33143,8 +33143,8 @@ customer_unique_id,category,weight,price_bucket
 838f7d52022dc0a6b56432af33155111,computers_accessories,1.0,low
 83915016a26b0ca42e3caf1070664d1f,housewares,0.5,budget
 83915016a26b0ca42e3caf1070664d1f,fashion_bags_accessories,0.5,budget
-83935d750c83951d7d0211a3c60e78fd,baby,0.5,mid
-83935d750c83951d7d0211a3c60e78fd,cool_stuff,0.5,mid
+83935d750c83951d7d0211a3c60e78fd,baby,0.5,mid-high
+83935d750c83951d7d0211a3c60e78fd,cool_stuff,0.5,mid-high
 83941fec1ea0d5752f8a0bfa124a5bb0,housewares,1.0,budget
 83945e32b8d6b4308401bd4030c1b3d6,sports_leisure,1.0,low
 83947230de9d7dd167a59ffdc8efc11a,furniture_decor,1.0,low
@@ -33186,7 +33186,7 @@ customer_unique_id,category,weight,price_bucket
 83b42a717fc81d01b8e6f6a356001f71,home_appliances_2,1.0,low
 83b4a40f95e870ed87dab271eaa053c2,furniture_decor,1.0,mid
 83b718d277e811cc84d2d60c375a4573,bed_bath_table,1.0,mid
-83b82ec5bf93a47ccfbe05452ea32009,books_imported,1.0,mid
+83b82ec5bf93a47ccfbe05452ea32009,books_imported,1.0,mid-high
 83b859a319481b265d7d0bbcae31fe93,drinks,1.0,low
 83bbdfc5767b40bda08721ba85b619a8,telephony,1.0,budget
 83bcfeb972ccaa57c18425b7e67ff5b5,sports_leisure,1.0,mid
@@ -33359,8 +33359,8 @@ customer_unique_id,category,weight,price_bucket
 8470a01721d0c023de20efdfea0c9b78,construction_tools_lights,1.0,budget
 84719028dec21814e9a26fbfc82f3633,construction_tools_lights,1.0,low
 8471affc394b9e5ae05893ba08417854,fixed_telephony,1.0,mid-high
-84720447172b234e7504da52ee639435,computers_accessories,0.5,mid
-84720447172b234e7504da52ee639435,cool_stuff,0.5,mid
+84720447172b234e7504da52ee639435,computers_accessories,0.5,mid-high
+84720447172b234e7504da52ee639435,cool_stuff,0.5,mid-high
 84724d5d1b8330a86d1b683db20041ed,bed_bath_table,1.0,budget
 84732c5050c01db9b23e19ba39899398,perfumery,1.0,budget
 8476f20594a14e575f2a2cf36c29916e,computers_accessories,1.0,mid
@@ -33753,7 +33753,7 @@ customer_unique_id,category,weight,price_bucket
 861823ec53b4999b3a3cd107d97c611e,health_beauty,1.0,mid-high
 86198788a3820aea74bf6d0520f4eef9,health_beauty,1.0,mid-high
 861ca43c14540a2b540964728a1a26d1,sports_leisure,1.0,budget
-861e2a5848de1a3e8fa544236a8369f9,health_beauty,1.0,mid-high
+861e2a5848de1a3e8fa544236a8369f9,health_beauty,1.0,high
 861eacb5ba040554b10b52a1456e3b32,fashion_bags_accessories,1.0,mid-high
 861ed4dff1719a5dec6ce78b1132f2de,fixed_telephony,1.0,low
 86203c9a693c6372142af3aa3752c8eb,health_beauty,1.0,mid-high
@@ -34087,8 +34087,8 @@ customer_unique_id,category,weight,price_bucket
 876a8881e182fb3a64af97b737cfe889,fashion_bags_accessories,1.0,budget
 876b7343b50c63c8f32b59908a9e554d,bed_bath_table,1.0,mid-high
 876c0e3a8a14fb0488dcbda3757e929d,health_beauty,1.0,low
-876c5f7ffcad19a82c0da218ecf56ba3,construction_tools_lights,0.5,mid
-876c5f7ffcad19a82c0da218ecf56ba3,furniture_decor,0.5,mid
+876c5f7ffcad19a82c0da218ecf56ba3,construction_tools_lights,0.5,mid-high
+876c5f7ffcad19a82c0da218ecf56ba3,furniture_decor,0.5,mid-high
 876ca68be83ef8385a63eb0a0fdda2aa,food,1.0,budget
 876ce950970e67cb731e5f668ee4b523,housewares,1.0,low
 8770740d878dc0c47af0dc5f73d9cfca,food,1.0,mid
@@ -34440,7 +34440,7 @@ customer_unique_id,category,weight,price_bucket
 88cf5a1158e80342ac26f64e41a8cf1c,fashion_bags_accessories,1.0,low
 88cfa66b93eef91293b73b44addaee71,watches_gifts,1.0,mid-high
 88d0279c935c078fb22ab064fd30874c,sports_leisure,1.0,mid-high
-88d083c794a4e721f296f8423e68821f,bed_bath_table,1.0,mid
+88d083c794a4e721f296f8423e68821f,bed_bath_table,1.0,mid-high
 88d1bf70ec79c1649769d6ef5c1dbfa0,fashion_sport,1.0,mid
 88d22eed30483c666a90137a8af4a675,garden_tools,1.0,low
 88d4a0d8f4e8f3637e0d191ff7350796,electronics,1.0,mid
@@ -34548,7 +34548,7 @@ customer_unique_id,category,weight,price_bucket
 893a3e18a09332571b4cbb3d5b723c90,watches_gifts,1.0,low
 893fb50b22dec93d66929eaf81aebb93,toys,1.0,budget
 8941b0fdd661725e6daf5e4d6d1d19b0,watches_gifts,1.0,mid
-894382535eef1ce243ec19088626be0e,auto,1.0,mid
+894382535eef1ce243ec19088626be0e,auto,1.0,mid-high
 8944ddfaf0d834d65a45fd1997847b28,health_beauty,1.0,mid
 8945ec516bc0abfe2390c3c2863f7285,bed_bath_table,1.0,mid
 8945fdd252616652ec0fc1bd55d8c125,furniture_decor,1.0,mid
@@ -34569,7 +34569,7 @@ customer_unique_id,category,weight,price_bucket
 8953237dbe1191529ee4acbfc8aae276,bed_bath_table,1.0,mid-high
 895426eb9b03b8f386d336cfefea0311,books_general_interest,1.0,mid-high
 8959429661bc7683b7f9d9cb8c5a8c27,telephony,1.0,budget
-8959d4251989df68934d67c1d32c5718,sports_leisure,1.0,mid
+8959d4251989df68934d67c1d32c5718,sports_leisure,1.0,mid-high
 895ae7e95f846cf2a68eb3e693c01950,telephony,1.0,budget
 895d0298218c0deb5e1ef700f0293070,telephony,1.0,low
 895d99faf0ebe2007bddaacb3f419f07,baby,1.0,budget
@@ -35035,7 +35035,7 @@ customer_unique_id,category,weight,price_bucket
 8b42400c4cb61d91fbc68a94467a700a,dvds_blu_ray,1.0,budget
 8b429fe2fd8755277abee28da314e18c,watches_gifts,1.0,mid-high
 8b433c0e7b7d2a1f1148b4277cc673f8,stationery,1.0,mid-high
-8b4447c69feb2b408e29edc0fe9d0253,watches_gifts,1.0,mid
+8b4447c69feb2b408e29edc0fe9d0253,watches_gifts,1.0,mid-high
 8b44f4fc8087c0c82f94b1a504ea44d8,health_beauty,1.0,mid
 8b47b0dde4ee217c6f8193774830efad,bed_bath_table,1.0,mid-high
 8b480743fbc5cbebc7c83868fa796001,watches_gifts,1.0,budget
@@ -35454,8 +35454,8 @@ customer_unique_id,category,weight,price_bucket
 8d1053da497baa33eb8a13e8147c4846,home_appliances,1.0,mid-high
 8d16f90176ff5f123973cb5cd65c2e16,health_beauty,1.0,mid-high
 8d174d46566bd4824dea80be4d00a2ce,computers_accessories,1.0,mid
-8d187f36fa18c60c2ac49e7a966d8ff7,health_beauty,0.5,mid
-8d187f36fa18c60c2ac49e7a966d8ff7,drinks,0.5,mid
+8d187f36fa18c60c2ac49e7a966d8ff7,health_beauty,0.5,mid-high
+8d187f36fa18c60c2ac49e7a966d8ff7,drinks,0.5,mid-high
 8d1a13e7dfad1cb8bfe501505643f8e4,health_beauty,1.0,mid
 8d1a2e101cf7b1718f7a0193cd9e3cb6,health_beauty,1.0,high
 8d1b75d2f05067cf8aed47d96d14345f,health_beauty,1.0,mid-high
@@ -36504,7 +36504,7 @@ customer_unique_id,category,weight,price_bucket
 9128b404325e64a95b31473e17cccfde,fashion_bags_accessories,1.0,low
 912c1327b5d6bdb9ec0276784a9fd3b8,bed_bath_table,1.0,low
 912c80f32c41b9e56400ef8e073a866b,computers_accessories,1.0,budget
-912d43df8dc8e521c94fcdd4c94f5879,bed_bath_table,1.0,mid
+912d43df8dc8e521c94fcdd4c94f5879,bed_bath_table,1.0,mid-high
 912e2ccff19e46260d7de4bc22a7d012,housewares,1.0,budget
 9130059f7c7d7f3c6f270e9141a90ece,telephony,1.0,budget
 913117091937d5839a6c3f449ab26da0,cool_stuff,1.0,budget
@@ -36577,8 +36577,8 @@ customer_unique_id,category,weight,price_bucket
 9173fcef0550bc27e0d9b9dc99f5b2e5,perfumery,1.0,high
 917449084a17a1c5497d6eaa812e0162,computers_accessories,1.0,mid
 9176a9ea5acac529c987e679e80a953c,computers_accessories,1.0,low
-9177736727dc747f69fceccc193c125a,garden_tools,0.5,mid
-9177736727dc747f69fceccc193c125a,furniture_decor,0.5,mid
+9177736727dc747f69fceccc193c125a,garden_tools,0.5,mid-high
+9177736727dc747f69fceccc193c125a,furniture_decor,0.5,mid-high
 917973917330d733f54ebca92bb47001,perfumery,1.0,mid
 9179832aca79ed90c8cf9bcca3e6a219,bed_bath_table,1.0,low
 91798cca876208ae649532488494682b,sports_leisure,1.0,low
@@ -36703,7 +36703,7 @@ customer_unique_id,category,weight,price_bucket
 91ec50a00ae74d0a229d2efdf4344e1e,auto,1.0,mid-high
 91edbad4917604a9a24f004c02d788e7,housewares,1.0,mid
 91efc249c62720440837bcc4954de645,telephony,1.0,budget
-91f10558da786019ebe471d3ab0dab5e,baby,1.0,mid
+91f10558da786019ebe471d3ab0dab5e,baby,1.0,mid-high
 91f2905ffeaa3f3c3adfd1de363b27ab,sports_leisure,1.0,mid
 91f2f9c97d6c7f8fcc24dde97291587a,cool_stuff,1.0,low
 91f3a63e7a6e55e11f8a41dea6bb0505,health_beauty,1.0,mid
@@ -36791,7 +36791,7 @@ customer_unique_id,category,weight,price_bucket
 925384b320baf4ebc25693e871529794,electronics,1.0,low
 9256f26e99c25928eab7f63799ec4885,furniture_decor,1.0,low
 925742ddab5f1e085496a74ac67657e5,health_beauty,1.0,mid
-925751a747a151a7fa97f2f686d028c3,pet_shop,1.0,mid-high
+925751a747a151a7fa97f2f686d028c3,pet_shop,1.0,high
 9259b15717556b7446122d922a1cfa76,fashion_bags_accessories,1.0,low
 925a3849acfb1c22ec3f732af028df33,health_beauty,1.0,mid-high
 925b342758b38ece96f9fd70f55f51e4,construction_tools_construction,1.0,mid
@@ -36826,7 +36826,7 @@ customer_unique_id,category,weight,price_bucket
 9279876eaa8bcd6f1ad8f02678ea251a,perfumery,1.0,mid-high
 927a61d1dc36be0dd568b7a9b884ca8e,bed_bath_table,1.0,low
 927ba5110113360b9eb6737848cbe46a,housewares,1.0,budget
-927c1b4bd2d326409fd16eeedaa9ea30,stationery,1.0,mid
+927c1b4bd2d326409fd16eeedaa9ea30,stationery,1.0,mid-high
 927c22725e28f76affbccac8a8e7413d,books_general_interest,1.0,budget
 927c6529111b5d41b8a8426c649e6d18,toys,1.0,budget
 927c8cf25e96b01a34298a890cbbe406,computers_accessories,1.0,mid
@@ -36874,7 +36874,7 @@ customer_unique_id,category,weight,price_bucket
 929d7b144da6193da36c0390e00992f3,telephony,1.0,budget
 929ef7086a15c4d9fea8d3f33ff59c1a,pet_shop,1.0,mid
 929f54e2e447faf33b0a25d6ca3e4c91,construction_tools_lights,1.0,low
-929f67fce8f269879084f50385a16354,health_beauty,1.0,mid
+929f67fce8f269879084f50385a16354,health_beauty,1.0,mid-high
 929f9299271c7c31c370be4cd8e8675d,computers_accessories,1.0,mid-high
 92a5bc7d33fa61d414f476fde67a367e,bed_bath_table,1.0,mid
 92a80e70ace44b981b773f3c3a91271a,watches_gifts,1.0,high
@@ -37402,8 +37402,8 @@ customer_unique_id,category,weight,price_bucket
 94c767a092f2b908571e91c6ab558b4c,electronics,1.0,budget
 94c78fbcb30456aa60064d87f14165f6,auto,1.0,mid-high
 94c9ed804fdc8ca8cf8ee3df72eebd83,bed_bath_table,1.0,mid
-94cac7a901fa7a145722dfd0a147b050,small_appliances,0.5,mid
-94cac7a901fa7a145722dfd0a147b050,housewares,0.5,mid
+94cac7a901fa7a145722dfd0a147b050,small_appliances,0.5,mid-high
+94cac7a901fa7a145722dfd0a147b050,housewares,0.5,mid-high
 94cba4bdea67266e8e1ab9ee3520a077,toys,1.0,mid
 94cd1a6c9114291539536b858026192b,musical_instruments,1.0,low
 94cda9f737e0360d53ad8191af1ec1a5,computers_accessories,1.0,budget
@@ -37719,13 +37719,13 @@ customer_unique_id,category,weight,price_bucket
 95f35e8d2e1ef9739f8e1aac0f0b74ca,baby,1.0,budget
 95f4669597b88e30179bec5da526e576,toys,1.0,low
 95f4b915c12f5b61a638f3928d23a89c,health_beauty,1.0,budget
-95f6791a1ec23d95cd3a3103aa63b2f0,bed_bath_table,1.0,mid
+95f6791a1ec23d95cd3a3103aa63b2f0,bed_bath_table,1.0,mid-high
 95f6816337a403ab81b562181ae89f28,fashion_bags_accessories,1.0,low
 95f74eb6d7030f1a9367cfd1e063a6a1,auto,1.0,high
 95f9c485da51027740f0d60017c0f5d1,telephony,1.0,low
 95fa05d3222022ab6b98ff95b57a7e2a,fashion_bags_accessories,1.0,low
-95fc0e6f6939f521e44a588ff18eacb9,furniture_decor,0.5,mid
-95fc0e6f6939f521e44a588ff18eacb9,toys,0.5,mid
+95fc0e6f6939f521e44a588ff18eacb9,furniture_decor,0.5,high
+95fc0e6f6939f521e44a588ff18eacb9,toys,0.5,high
 95fc53188be72ccacf7e9f211d76cb4c,bed_bath_table,1.0,mid
 95fcf12c03df68bb5fe496b5a6421e9f,food_drink,1.0,budget
 95ffcfce436c8486268d9602aa865d0a,electronics,1.0,mid-high
@@ -37776,8 +37776,8 @@ customer_unique_id,category,weight,price_bucket
 96203e330958f1908308a1463243fddd,toys,1.0,mid
 96205f597195e44b719881e1a1f62c07,telephony,1.0,high
 9620623f9ea546719cb3cd99bbb879a9,sports_leisure,1.0,budget
-9620e26af0dfec5a16a52cd2afa81717,cool_stuff,0.5,mid
-9620e26af0dfec5a16a52cd2afa81717,bed_bath_table,0.5,mid
+9620e26af0dfec5a16a52cd2afa81717,cool_stuff,0.5,mid-high
+9620e26af0dfec5a16a52cd2afa81717,bed_bath_table,0.5,mid-high
 96210b041c07fae4d3ed07549185bebb,watches_gifts,1.0,mid-high
 96210b5e060ddc56b30d2625dbade4cc,baby,1.0,budget
 9622a5e690173e69309e964cdec06605,furniture_decor,1.0,mid
@@ -37812,8 +37812,8 @@ customer_unique_id,category,weight,price_bucket
 9641f1cf48626e09ff0d94f3029b55bf,fashion_bags_accessories,1.0,low
 9642985d03ebb10ead7cd4b9e20a5519,baby,1.0,budget
 9642e3a3287af4d3afc3aa04e95cc0c7,toys,1.0,mid-high
-964419499a4f095f129f60a9e45e419b,art,0.5,mid
-964419499a4f095f129f60a9e45e419b,furniture_decor,0.5,mid
+964419499a4f095f129f60a9e45e419b,art,0.5,mid-high
+964419499a4f095f129f60a9e45e419b,furniture_decor,0.5,mid-high
 96442609daeda9b89a7cb0c9a2838db4,bed_bath_table,1.0,mid
 9645b21c9729854b350d4f7c595f4037,food,1.0,budget
 9645d96362e0503554b30d8e71d47a73,bed_bath_table,1.0,mid-high
@@ -37921,7 +37921,7 @@ customer_unique_id,category,weight,price_bucket
 969dd25b9d814d90fcfc93a163ef5316,cool_stuff,1.0,budget
 969de71d3e19a266e7eefaeab10c527b,computers_accessories,1.0,mid
 969df6f6e673e73cac594a693bcf7524,toys,1.0,low
-969e73f799937ce78f0d1c0777201bfa,health_beauty,1.0,mid
+969e73f799937ce78f0d1c0777201bfa,health_beauty,1.0,mid-high
 969eb8bf4c0fce047dfd0ee78ce9a205,garden_tools,1.0,low
 96a04b750becee1bc31899835b1084a6,perfumery,1.0,mid-high
 96a285c966eb31d58a6afcc38d7e2f83,computers_accessories,1.0,mid-high
@@ -38095,7 +38095,7 @@ customer_unique_id,category,weight,price_bucket
 973fe649ac96d8a5764ace509f146b0f,watches_gifts,1.0,high
 974031adca0845cb59b0b4d523af091e,health_beauty,1.0,budget
 9740a89827a6ba72b44c816cf50dc982,sports_leisure,1.0,low
-974148f722b785f187ae13ec0040abcf,sports_leisure,1.0,mid-high
+974148f722b785f187ae13ec0040abcf,sports_leisure,1.0,high
 9743725ca6404a6e62af8588bd833c3b,electronics,1.0,budget
 9743f86fe8889750e37fd08b88f83a89,housewares,1.0,low
 974444820df2071adf9a67db0a5a29d9,cool_stuff,1.0,budget
@@ -38472,8 +38472,8 @@ customer_unique_id,category,weight,price_bucket
 98a50bee84861e9791db5d436b08babb,housewares,1.0,low
 98a5e58898b04ec9f77f6e26e67050a7,computers_accessories,1.0,low
 98a6680f69a45da8df54e74a91818ff1,telephony,1.0,budget
-98a8081d6f922b47f0b48d0b10665047,sports_leisure,0.5,mid
-98a8081d6f922b47f0b48d0b10665047,food,0.5,mid
+98a8081d6f922b47f0b48d0b10665047,sports_leisure,0.5,mid-high
+98a8081d6f922b47f0b48d0b10665047,food,0.5,mid-high
 98a9923e83c945ab8989ee2c5a3ce671,telephony,1.0,mid-high
 98a999d2745802e76ee3055041359237,home_appliances,1.0,low
 98aade720fde092ebf69cb336b0fc8ac,garden_tools,1.0,low
@@ -38565,7 +38565,7 @@ customer_unique_id,category,weight,price_bucket
 990bdb18726e889e74b7bb975c831c83,computers_accessories,1.0,mid-high
 990e9e5aff5387a6c9cc79d9c4a4c5f6,drinks,1.0,low
 990ea08bf56e7bf32dc4375aa8da230a,home_construction,1.0,mid
-9910e92c18776a14048773cef6592b91,sports_leisure,1.0,mid
+9910e92c18776a14048773cef6592b91,sports_leisure,1.0,mid-high
 99122059531527e956da6b9c64922771,sports_leisure,1.0,budget
 9912f49baede3c786db172a7251e93c2,auto,1.0,low
 9914622c6a061c28715cc3982743d50e,baby,1.0,budget
@@ -38777,8 +38777,8 @@ customer_unique_id,category,weight,price_bucket
 99d5d0fd4b317355327c8d1d229fef60,perfumery,1.0,low
 99d5d413cb5c987d03bfceba3e6728cd,cool_stuff,1.0,mid-high
 99d5de0da9444405c735ec20ec173d78,computers_accessories,1.0,low
-99d697dd68fad729283560abe0adae43,sports_leisure,0.5,mid-high
-99d697dd68fad729283560abe0adae43,toys,0.5,mid-high
+99d697dd68fad729283560abe0adae43,sports_leisure,0.5,high
+99d697dd68fad729283560abe0adae43,toys,0.5,high
 99d77e2a8eae6867fb4e50b1fca4a33d,telephony,1.0,mid-high
 99d909bacd88dc7a0298d3256ff13716,sports_leisure,1.0,mid-high
 99d962949dec36484a681779402ed748,health_beauty,1.0,high
@@ -39202,7 +39202,7 @@ customer_unique_id,category,weight,price_bucket
 9b7614f405928f1979f3abfea10ddee2,cool_stuff,1.0,low
 9b764b9f6829eea2701477c0092cbcbb,watches_gifts,1.0,high
 9b7692a400c448c6f65b990f5bb0f89a,bed_bath_table,1.0,mid
-9b76c588a7a8d495bce4f71d2559d3ee,toys,1.0,mid
+9b76c588a7a8d495bce4f71d2559d3ee,toys,1.0,mid-high
 9b785ba9f0eb9634f87b2676139c0af3,health_beauty,1.0,low
 9b791f541984503464d67d47758713be,bed_bath_table,1.0,low
 9b79aec89c7df00d67d7a0ec8a9bbb7e,fashion_bags_accessories,1.0,low
@@ -39497,8 +39497,8 @@ customer_unique_id,category,weight,price_bucket
 9c9edf191f58b820c7400829edacf495,musical_instruments,1.0,low
 9c9f02b5c53391f4313ffe0dff1ba387,stationery,1.0,mid
 9ca02217ef5f69e71ae75b08ea605666,cool_stuff,1.0,mid
-9ca25c67e315e2a59b00eca2d4797734,auto,0.5,mid
-9ca25c67e315e2a59b00eca2d4797734,stationery,0.5,mid
+9ca25c67e315e2a59b00eca2d4797734,auto,0.5,mid-high
+9ca25c67e315e2a59b00eca2d4797734,stationery,0.5,mid-high
 9ca2a14f0722294f9fcee61185904820,garden_tools,1.0,low
 9ca4608810d3c844fb7150b66f12b155,baby,1.0,budget
 9ca6439ec56424b2717501565e0d5689,perfumery,1.0,mid-high
@@ -39716,7 +39716,7 @@ customer_unique_id,category,weight,price_bucket
 9d7fc38b946974fdabeeab8cda8098c3,garden_tools,1.0,mid
 9d80519e08456666caea8e3d582488f2,garden_tools,0.5,low
 9d80519e08456666caea8e3d582488f2,pet_shop,0.5,low
-9d8130e675ce6c1f24cd519444f7642b,sports_leisure,1.0,mid
+9d8130e675ce6c1f24cd519444f7642b,sports_leisure,1.0,mid-high
 9d81de3675b1ec4046623404d280f462,bed_bath_table,1.0,mid-high
 9d841a91b5b7d1451157dbc8cd94ae8e,baby,1.0,low
 9d84314b106db001197713e2ebb8b253,health_beauty,1.0,mid
@@ -40187,7 +40187,7 @@ customer_unique_id,category,weight,price_bucket
 9f46168e683fd402e6951fe5999ac7a9,consoles_games,1.0,mid-high
 9f46352a4fc71c0593a7bb8f6728f88d,auto,1.0,budget
 9f47d1faa823b516aa62727aef6c1158,health_beauty,1.0,mid
-9f48470c2d3437ff6894dac1603b3e44,cool_stuff,1.0,mid
+9f48470c2d3437ff6894dac1603b3e44,cool_stuff,1.0,high
 9f487d2a91b3d0bc162b18e0d579fee1,watches_gifts,1.0,mid-high
 9f4c36aa1686f840116ee318a5f32b11,furniture_decor,1.0,budget
 9f4c68ce46a6cb44330dcf4ba7d7d9b7,bed_bath_table,1.0,budget
@@ -40655,8 +40655,8 @@ a146081765b59c325434932f131e2a98,watches_gifts,1.0,mid
 a14720d62153eabc4a7cbbd84afbcda9,bed_bath_table,1.0,mid
 a1474bfdd3eff4638e5b21ca08fba768,books_imported,1.0,budget
 a147a860f58faf7715ae9e9e5c1e49a0,auto,1.0,mid
-a147b35c04951884b4bbd65a0085cf88,health_beauty,0.5,mid
-a147b35c04951884b4bbd65a0085cf88,watches_gifts,0.5,mid
+a147b35c04951884b4bbd65a0085cf88,health_beauty,0.5,mid-high
+a147b35c04951884b4bbd65a0085cf88,watches_gifts,0.5,mid-high
 a148ade3f3bc84f9c71ab58521221a7a,bed_bath_table,1.0,mid-high
 a149aa32a965245135f7e25b4c04c438,perfumery,1.0,high
 a14b178930d5095e2beda5ffa0641e7a,watches_gifts,1.0,high
@@ -40880,8 +40880,8 @@ a2370b590b2453d5a748d4c4c35f900b,garden_tools,0.5,budget
 a2370b590b2453d5a748d4c4c35f900b,sports_leisure,0.5,budget
 a2379176074b7a64180d0018c341be56,housewares,1.0,low
 a239165e9cdb4caa2391755d6d61d3b7,telephony,1.0,budget
-a239b8e2fbce33780f1f1912e2ee5275,bed_bath_table,0.5,mid
-a239b8e2fbce33780f1f1912e2ee5275,housewares,0.5,mid
+a239b8e2fbce33780f1f1912e2ee5275,bed_bath_table,0.5,mid-high
+a239b8e2fbce33780f1f1912e2ee5275,housewares,0.5,mid-high
 a23be1160dc558e9c86a79491b808156,cool_stuff,1.0,mid-high
 a23c501587d77f83f65fc18639c811fe,stationery,1.0,mid
 a23e613e253483c976dcc6567efdddcd,sports_leisure,1.0,high
@@ -41041,7 +41041,7 @@ a2cc1d19b7e7709a50efc5501e2d52df,garden_tools,1.0,low
 a2cca46dd02d0fd48d837526fae3a16e,electronics,1.0,budget
 a2ccc2257b3da3b2411007336ee17e09,perfumery,1.0,low
 a2ccecfe739bd1ecef99dbaf1e3b4422,bed_bath_table,1.0,mid
-a2d2201f14b81eb836de9fef6d305311,health_beauty,1.0,mid
+a2d2201f14b81eb836de9fef6d305311,health_beauty,1.0,mid-high
 a2d236fe3d62f946f3b74ae2fda7084f,toys,1.0,low
 a2d342f34a61db2ee336a2db0d246f97,telephony,1.0,budget
 a2d6e2bd889620a0eecb67d20f27c441,books_technical,1.0,low
@@ -41696,8 +41696,8 @@ a562159e3d08acc0eed0e08886989fcd,computers_accessories,1.0,budget
 a5642c7d744bd5a4732b82feacde4faf,sports_leisure,1.0,mid
 a5649030a6a7f0b0378708b5a342d7db,telephony,1.0,budget
 a5655b3be974f536935de53cb9ec2795,electronics,1.0,budget
-a565d889e6411ccbb4232fdfec246789,cool_stuff,0.5,mid
-a565d889e6411ccbb4232fdfec246789,bed_bath_table,0.5,mid
+a565d889e6411ccbb4232fdfec246789,cool_stuff,0.5,mid-high
+a565d889e6411ccbb4232fdfec246789,bed_bath_table,0.5,mid-high
 a5672afee78e23d8ddf6e39eeabe556b,computers_accessories,1.0,mid-high
 a5676d84cbaa52218865e55f75e9ea36,computers_accessories,1.0,high
 a568272296f24447991f33f62d7a7f0e,watches_gifts,1.0,mid-high
@@ -42006,8 +42006,8 @@ a6872613cbe95b87b2b042f530a122fb,stationery,1.0,budget
 a689fe2b66cd8b68f8eb95a9c0e44cb9,bed_bath_table,1.0,mid
 a68aa5b6d22ffe2ac0fc2cb41a383072,furniture_decor,1.0,low
 a68abb9d3c4674963db5ac9460b516ec,luggage_accessories,1.0,mid
-a68ad412c53f45ccc69644d62568224f,toys,0.5,mid
-a68ad412c53f45ccc69644d62568224f,baby,0.5,mid
+a68ad412c53f45ccc69644d62568224f,toys,0.5,mid-high
+a68ad412c53f45ccc69644d62568224f,baby,0.5,mid-high
 a68bc5cea21d3278f03955a921281a52,cool_stuff,1.0,mid
 a68c9c34242f5364df4ff3e06debd8c7,computers_accessories,1.0,mid-high
 a68cad6fa267ebb67ed54e2cef2b6a6f,musical_instruments,1.0,low
@@ -42089,7 +42089,7 @@ a6cc2b0e951069e78ca04b7c5d68d8af,sports_leisure,0.5,mid
 a6cc2b0e951069e78ca04b7c5d68d8af,health_beauty,0.5,mid
 a6cc322a1e6b64d3910e682894989306,housewares,1.0,low
 a6cc6e3138236cf4795743335351594c,housewares,1.0,budget
-a6ccdaa678f87c99610b6767570a0bce,watches_gifts,1.0,mid
+a6ccdaa678f87c99610b6767570a0bce,watches_gifts,1.0,high
 a6ced6eb5fb6258b6fbad5db4ea02d05,cool_stuff,1.0,budget
 a6cf899cf6e51cb274fa411f7b31dc63,watches_gifts,1.0,budget
 a6d002c321561b33d7270deb354080b5,health_beauty,1.0,low
@@ -42121,8 +42121,8 @@ a6e133827723fce5495b107deacfbace,sports_leisure,1.0,mid-high
 a6e17e76c0bb659bc2fd0e002e46407d,health_beauty,1.0,mid-high
 a6e1eb7e78b8557118e99b34281f66f4,watches_gifts,1.0,mid
 a6e5393c3e4bad6306694167e0f224e8,electronics,1.0,budget
-a6e56ce065f297714559452de03a2ca6,computers_accessories,0.5,mid
-a6e56ce065f297714559452de03a2ca6,health_beauty,0.5,mid
+a6e56ce065f297714559452de03a2ca6,computers_accessories,0.5,mid-high
+a6e56ce065f297714559452de03a2ca6,health_beauty,0.5,mid-high
 a6e6272914b42fffb616e5c975d14533,bed_bath_table,1.0,low
 a6e6d1405cfe3bf27d153f4ce68cdcab,fashion_bags_accessories,1.0,low
 a6e7a18b4177a30844f7b0158cb9d6a7,housewares,1.0,low
@@ -42273,8 +42273,8 @@ a77c5403d6e63616dffdeab9af21cf7a,computers_accessories,1.0,mid
 a77e0b55e1b2093ceefa1b64e57ac392,home_confort,1.0,mid
 a77f74ce9d935c30a4328d684c5d738b,books_technical,1.0,low
 a780e35026006a36e9f57915e7ec3d45,health_beauty,1.0,mid
-a783997c6d6e57782d4d2dcbc5c9edaf,computers_accessories,0.5,mid
-a783997c6d6e57782d4d2dcbc5c9edaf,telephony,0.5,mid
+a783997c6d6e57782d4d2dcbc5c9edaf,computers_accessories,0.5,mid-high
+a783997c6d6e57782d4d2dcbc5c9edaf,telephony,0.5,mid-high
 a783a0f8a5f59ae9e1632ef9ac3f4ee3,furniture_decor,1.0,mid-high
 a784c03aa8b195a1b7bf3894516de858,luggage_accessories,1.0,mid
 a7852e944e9e5d5ab99513436a5f9acd,computers_accessories,1.0,low
@@ -42579,7 +42579,7 @@ a8c73e4441ced5cb5f0a78d3de155f9e,housewares,1.0,mid
 a8c78f8c4faf800e1d0c164deda39157,health_beauty,1.0,mid-high
 a8c7a4ada12f540aee63befb54e78e6c,fashion_bags_accessories,1.0,low
 a8cace4dc9e5fcc3be52319160150f24,construction_tools_lights,1.0,low
-a8cb771f0d1d230407948d4ce2af5c3e,perfumery,1.0,mid
+a8cb771f0d1d230407948d4ce2af5c3e,perfumery,1.0,high
 a8cbb9e5d8df4f4750d87964ab5c23b4,toys,1.0,mid
 a8cd58c8bf99980918e0177f7883dbf9,bed_bath_table,1.0,mid-high
 a8ce57ad761366c926c70443d813c172,perfumery,1.0,low
@@ -43135,7 +43135,7 @@ aaff146bd210808c7d004a05966472a7,bed_bath_table,1.0,mid
 aaff6c421ec4f859d446b009e7c11131,health_beauty,1.0,low
 ab017161bffa67a5a68d762fc993a35d,auto,1.0,mid-high
 ab02a4af72314247580be211300463cc,computers_accessories,1.0,mid-high
-ab0346c6a304480b94e622b3cf1c5482,housewares,1.0,mid
+ab0346c6a304480b94e622b3cf1c5482,housewares,1.0,mid-high
 ab0369f66ee9ae7a31ebc491f73b5c5b,watches_gifts,1.0,mid
 ab05837da015d47b4a9d06b1ee6d1b73,musical_instruments,1.0,mid
 ab071ec5dbdbd6f95c6ae54cfbb39424,watches_gifts,1.0,mid-high
@@ -43148,8 +43148,8 @@ ab0dc0d400ee0c7ee496b4be90bf3e62,telephony,1.0,low
 ab0f33695ad11caefa534dc00326bce2,computers_accessories,1.0,mid-high
 ab0f956f72812ae4636be4e15b58031e,electronics,0.5,budget
 ab0f956f72812ae4636be4e15b58031e,watches_gifts,0.5,budget
-ab0faabf48c8c0108c13277d2b701f16,bed_bath_table,0.5,mid
-ab0faabf48c8c0108c13277d2b701f16,fashion_underwear_beach,0.5,mid
+ab0faabf48c8c0108c13277d2b701f16,bed_bath_table,0.5,mid-high
+ab0faabf48c8c0108c13277d2b701f16,fashion_underwear_beach,0.5,mid-high
 ab10e9f940aee13c952a78e570f2486a,sports_leisure,1.0,budget
 ab11b5d596ebdebaaf525b451d159297,auto,1.0,budget
 ab126864b391ef4fdf42ed349a82acdc,bed_bath_table,1.0,low
@@ -43211,8 +43211,8 @@ ab565ab96ec57b4fb15e8ca2843f0594,electronics,1.0,low
 ab56d7563ecd7aff00cb5fe00db3dd9d,health_beauty,1.0,mid
 ab57ab4e155920943304b81d9ac5495c,health_beauty,1.0,mid
 ab585ec071ab510855a8ddd19f4fbd52,bed_bath_table,1.0,low
-ab58f2fb5f71caac6366303095c0cd41,cool_stuff,0.5,mid
-ab58f2fb5f71caac6366303095c0cd41,health_beauty,0.5,mid
+ab58f2fb5f71caac6366303095c0cd41,cool_stuff,0.5,mid-high
+ab58f2fb5f71caac6366303095c0cd41,health_beauty,0.5,mid-high
 ab59824b3eabcd466c4eb205c3945702,housewares,1.0,low
 ab5a887e09eadc6c0a79c1ac34615c77,consoles_games,1.0,budget
 ab5cc494deb02196afe86cac127ae4e9,sports_leisure,1.0,mid
@@ -43415,8 +43415,8 @@ ac3c7067a82f6ecca81065c90fdb932d,watches_gifts,1.0,high
 ac3d0170d3ca79e7512a06a516f4621d,furniture_decor,1.0,mid-high
 ac3dcee918e6c96eb2ab467158143697,home_appliances,1.0,mid
 ac3fd22565a646030d903d8746797333,construction_tools_safety,1.0,low
-ac41f579acca6c3b73f910753216d632,stationery,0.5,mid
-ac41f579acca6c3b73f910753216d632,toys,0.5,mid
+ac41f579acca6c3b73f910753216d632,stationery,0.5,mid-high
+ac41f579acca6c3b73f910753216d632,toys,0.5,mid-high
 ac4316047f392ac02340c4b6160d95a8,watches_gifts,1.0,low
 ac43d10842889f8c06b6c615be7085f7,health_beauty,1.0,mid
 ac43e0a3a9403aa4caed320690089bf4,auto,1.0,budget
@@ -43934,8 +43934,8 @@ ae3759d2ee307574752179acccd595b6,books_general_interest,1.0,budget
 ae37f0d2cc61ec9ec8726270abcbfbd9,bed_bath_table,1.0,mid
 ae3b3b982c1ec166edf6883547f6567a,computers_accessories,1.0,mid
 ae3b3ea754f62eaa12630c4e6f69750f,food,1.0,budget
-ae3b415f236744102ea56e54097f16f5,furniture_decor,0.5,mid
-ae3b415f236744102ea56e54097f16f5,garden_tools,0.5,mid
+ae3b415f236744102ea56e54097f16f5,furniture_decor,0.5,mid-high
+ae3b415f236744102ea56e54097f16f5,garden_tools,0.5,mid-high
 ae3b6c7fda9a934098987e72e12aa613,health_beauty,1.0,budget
 ae3bd7bce9fbc6cd1ed1dc06aa79a36e,baby,1.0,mid
 ae3bf7f6d63f0a735b67de84e7ee90a0,sports_leisure,1.0,mid
@@ -44071,7 +44071,7 @@ aeacbc4d74a9cea3ea00c3615c105385,pet_shop,1.0,low
 aeae04ea9b0b9ffeb17c9c254b2c2bca,telephony,1.0,high
 aeaef5c25c767672273ac5feb9341269,food,1.0,low
 aeaf97f4b0d4f5086c1909c64240f31f,watches_gifts,1.0,mid-high
-aeb03c7a39f64d39155d2195c291efc5,furniture_decor,1.0,mid
+aeb03c7a39f64d39155d2195c291efc5,furniture_decor,1.0,mid-high
 aeb171012a7d0d7169ae0867850c56a9,auto,1.0,mid-high
 aeb32a95fba5e0519952a5f4aefd69d7,bed_bath_table,1.0,mid-high
 aeb60b971e54df6473d586ada758ca72,computers_accessories,1.0,budget
@@ -44598,7 +44598,7 @@ b0bd994fd9d1c590949928d2f319587f,health_beauty,1.0,mid-high
 b0bef56c67e978dc9569a9177a8bca61,housewares,1.0,low
 b0c12d544576f6709bd730612a9cfbc8,sports_leisure,1.0,mid-high
 b0c4d159d144823807e39529959ea76f,health_beauty,1.0,mid
-b0c5293ef398d678e68671488c8b87bf,health_beauty,1.0,mid
+b0c5293ef398d678e68671488c8b87bf,health_beauty,1.0,mid-high
 b0c590f3dc9c79208668a16e42ba16a2,bed_bath_table,1.0,low
 b0c5e02d315f15318e37d7aab7ebb289,sports_leisure,0.6667,budget
 b0c5e02d315f15318e37d7aab7ebb289,consoles_games,0.3333,budget
@@ -44667,8 +44667,8 @@ b0fe65e0c24d7ef16eb5df14afacbc8f,baby,1.0,mid-high
 b0fe66a62815dd9f8324bffccd587171,telephony,1.0,low
 b10181bfee799fe0af124582bfd85176,perfumery,1.0,mid-high
 b10199c01d6933cb94c126e0ade1b158,sports_leisure,1.0,mid
-b1039a56990acdddd5438aea568557db,cool_stuff,0.5,mid
-b1039a56990acdddd5438aea568557db,computers_accessories,0.5,mid
+b1039a56990acdddd5438aea568557db,cool_stuff,0.5,mid-high
+b1039a56990acdddd5438aea568557db,computers_accessories,0.5,mid-high
 b1045665363aa8593b245daa0e8c53c9,stationery,1.0,low
 b1053f51d4b97bf522bc083b6a30bb48,computers_accessories,1.0,low
 b106260fccd09b6f8eb44af569153f45,pet_shop,1.0,low
@@ -45171,8 +45171,8 @@ b312ad624f97da964dcedfedc0f302ed,baby,1.0,mid-high
 b315861215eb4ceec45d0c299e7b004e,construction_tools_safety,1.0,mid-high
 b316ca275684997cc9e306ef6ba7e400,consoles_games,1.0,budget
 b316d4be83b834a6fbd884a542fa9da1,bed_bath_table,1.0,low
-b316e256ce45161d3ab81f74834376e8,garden_tools,0.5,mid
-b316e256ce45161d3ab81f74834376e8,fashion_bags_accessories,0.5,mid
+b316e256ce45161d3ab81f74834376e8,garden_tools,0.5,mid-high
+b316e256ce45161d3ab81f74834376e8,fashion_bags_accessories,0.5,mid-high
 b318a9471f7e803303ab808bfd4605f3,bed_bath_table,1.0,mid-high
 b31a94a325327a6510959097a43bd82e,watches_gifts,1.0,mid
 b31a9f05df5545cbe16aedbe65e3c560,housewares,1.0,mid-high
@@ -45450,7 +45450,7 @@ b4452967e6994fe014fb17c73164a493,auto,1.0,mid-high
 b4487f7becb51a93d4d0ef1256e60d99,watches_gifts,1.0,budget
 b44b257779f3aca20ac942b76cbce2ab,health_beauty,1.0,low
 b44b5bf7130f8716dfc324fecd6126ed,sports_leisure,1.0,mid-high
-b44c3e3d672e8d4fa98b45abb3c38d66,bed_bath_table,1.0,mid
+b44c3e3d672e8d4fa98b45abb3c38d66,bed_bath_table,1.0,mid-high
 b450030e85b5f24b9ec56b8c9309aaa4,health_beauty,1.0,mid
 b451327530ee1dc95a3c03f34d97acf2,electronics,1.0,budget
 b451c6a6c5b26e754acb926b131c1ece,telephony,1.0,budget
@@ -45571,7 +45571,7 @@ b4bcefcfe986c3aa133bff1b10802334,computers_accessories,1.0,low
 b4bd56d71a07759d4c4c96123065e77e,auto,1.0,budget
 b4bd5b8eddca5e0b8e0a80a3b4d5e9f9,auto,1.0,mid-high
 b4be434bcbf5fac41b8be0e055135c9a,furniture_decor,1.0,mid-high
-b4be8ffe5a39196f0098f30316f7d7a1,computers_accessories,1.0,mid
+b4be8ffe5a39196f0098f30316f7d7a1,computers_accessories,1.0,mid-high
 b4bea0b73bb3756d0e13180e02d78755,telephony,1.0,low
 b4bfffe1fcd1f298ea8c011b2ee348ae,sports_leisure,1.0,mid
 b4c0401af3cc3af9b0f47ba1c90b1ee0,health_beauty,1.0,low
@@ -45966,7 +45966,7 @@ b64d39d1e77c4d9a7e7d002ad7552178,watches_gifts,1.0,mid-high
 b64e1a36a37264c960ae438f2bbb8ef8,electronics,1.0,budget
 b64ebaf3d11b7209fe566364cc359a51,health_beauty,1.0,low
 b64f854cceeadc9032173e4d5777eca2,sports_leisure,1.0,low
-b651ab27596778b670b66e53ff4edb38,toys,1.0,mid
+b651ab27596778b670b66e53ff4edb38,toys,1.0,mid-high
 b651ac344021309e2dcefe45af53da81,computers_accessories,1.0,mid-high
 b65363c9ba68dfa650c0a5816e155715,bed_bath_table,1.0,budget
 b653779285ec3a8bddff84770b1d896d,health_beauty,1.0,mid-high
@@ -46439,8 +46439,8 @@ b8239433551ada00610698f12e397337,sports_leisure,1.0,low
 b824002ccd372e21ab64ee483b84c5d5,computers_accessories,1.0,mid-high
 b824091af01a40adff77d9f77a8e9eca,computers_accessories,1.0,mid
 b824817bedb40fd8ffce42af94d0d159,housewares,1.0,budget
-b824f6981f2ee1c30533c4138572428c,housewares,0.5,mid
-b824f6981f2ee1c30533c4138572428c,furniture_decor,0.5,mid
+b824f6981f2ee1c30533c4138572428c,housewares,0.5,mid-high
+b824f6981f2ee1c30533c4138572428c,furniture_decor,0.5,mid-high
 b8259702efd15b5abc1566e007ead9f7,dvds_blu_ray,1.0,budget
 b8265c1c085ef9be6f78ddb11c6dca00,art,1.0,budget
 b826ee59f1655f2ae8e6d494b87ab2e2,health_beauty,1.0,low
@@ -46589,7 +46589,7 @@ b8b6a440a96e7b77b019800500453c10,sports_leisure,1.0,mid
 b8b8de7a160be2e9993f6db81a2902e8,bed_bath_table,1.0,low
 b8b8e02a1e6a3ff488f170dc5a0fd9ff,bed_bath_table,1.0,mid
 b8ba68f226b720edd0f6c241b1294a55,consoles_games,1.0,low
-b8baa482e2e3b439ab972fba47c9be48,sports_leisure,1.0,mid-high
+b8baa482e2e3b439ab972fba47c9be48,sports_leisure,1.0,high
 b8bb8927c550a156cc957815ea2b2920,bed_bath_table,1.0,mid-high
 b8bd32de284f12e9662f8f683c96b57c,books_technical,1.0,mid
 b8be1fae7da066ebacc8a77c9529bcab,perfumery,1.0,high
@@ -46904,8 +46904,8 @@ b9fba7ed7a4f5761ffd6c407ad764503,furniture_decor,0.5,mid
 b9fbdcd0c94463abfbb520323ce971dd,electronics,1.0,budget
 b9fc1ffdd7894b8ab1c910d26c415a4c,housewares,1.0,budget
 b9fc2d4c90bdadc7052fabe8353084ed,perfumery,1.0,low
-b9fd889214fcb1a45e4cd51f5af6cba3,watches_gifts,0.5,mid
-b9fd889214fcb1a45e4cd51f5af6cba3,home_appliances,0.5,mid
+b9fd889214fcb1a45e4cd51f5af6cba3,watches_gifts,0.5,mid-high
+b9fd889214fcb1a45e4cd51f5af6cba3,home_appliances,0.5,mid-high
 b9fe4d7c658a3f8555a5b55162e42982,auto,1.0,mid
 b9fe8c4b5fbad9389aa5f425561a2786,fashion_bags_accessories,1.0,low
 b9ff3050810a8baf05ffa45fe65710ff,bed_bath_table,1.0,mid-high
@@ -47149,7 +47149,7 @@ bafe3b46fc75d1d1f93485d4a2d939c6,baby,1.0,low
 bafecc0576ae9dffba7b2ab20722070e,electronics,1.0,budget
 bafee9075bdc48c8b2ebd5c980ce938f,bed_bath_table,1.0,mid
 baff9c477312e87a2dc6d326d9fbcea4,telephony,1.0,budget
-baffecbd1fcc31f8a415cef1cd8cf772,health_beauty,1.0,mid
+baffecbd1fcc31f8a415cef1cd8cf772,health_beauty,1.0,mid-high
 bb0015319dc53a5d162da1372b539931,cool_stuff,1.0,mid
 bb00460af4cda6bd1252e99ef3168b56,garden_tools,1.0,low
 bb00edfbd53d403ccb1f370e016ef44d,telephony,1.0,budget
@@ -47693,7 +47693,7 @@ bd13608b9c6033892ce62269b50a0afc,watches_gifts,1.0,mid-high
 bd13f03e99cf28bc439b63341cd365e4,bed_bath_table,1.0,mid
 bd142e219e9f3631475b3e4e69a69ff2,health_beauty,1.0,mid
 bd155cc5b3221f71c92bb6e61318a2db,sports_leisure,1.0,mid
-bd175eda0510a90fcb57ead16a5e85d3,computers_accessories,1.0,mid-high
+bd175eda0510a90fcb57ead16a5e85d3,computers_accessories,1.0,high
 bd17a745be96285f2460e659b7111c73,telephony,1.0,high
 bd18f3bbff82c791bffcd3097abaa161,perfumery,1.0,mid-high
 bd1925ab08d786bbf347e7ee961d2da7,furniture_decor,1.0,budget
@@ -48215,7 +48215,7 @@ bf0c6fefe4791dca044236e2d50a2c6f,watches_gifts,1.0,mid-high
 bf0d3b466b0f1b7e86bcfe526b9fc43b,furniture_decor,1.0,mid
 bf0dc73305b8c34b3a3961444b7ab411,home_appliances,1.0,mid-high
 bf0de592fe2dca148e8697ef5d8d764c,sports_leisure,1.0,low
-bf0e90f0615f77c26a7b8515b71b321c,sports_leisure,1.0,mid-high
+bf0e90f0615f77c26a7b8515b71b321c,sports_leisure,1.0,high
 bf1059e1fc8837e508d1af3fd636729e,pet_shop,1.0,budget
 bf10b540b885142f2229b261513c0ae6,telephony,1.0,budget
 bf11d74ba342a6de43a89ed03224cf09,telephony,1.0,budget
@@ -48389,8 +48389,8 @@ bfae204aa758b16e2abc5245142c6de6,home_appliances,1.0,budget
 bfb00593503594f777586aee0f73788f,books_technical,1.0,low
 bfb0780e4148d65b5490d6195da4bcb0,computers_accessories,1.0,low
 bfb0ed763a4929dc5b7ef1e172c49308,sports_leisure,1.0,budget
-bfb33fedf91eb21f6d32ad5345989a6e,computers_accessories,0.5,mid
-bfb33fedf91eb21f6d32ad5345989a6e,toys,0.5,mid
+bfb33fedf91eb21f6d32ad5345989a6e,computers_accessories,0.5,mid-high
+bfb33fedf91eb21f6d32ad5345989a6e,toys,0.5,mid-high
 bfb4ff02bbd5e54a6a855c1809b42acc,computers_accessories,1.0,mid
 bfb5363db41e6d47d3f16a1ba3e880ab,air_conditioning,1.0,low
 bfb550a534d1e4081812bc6e3c4229e6,toys,1.0,mid
@@ -48484,7 +48484,7 @@ c01143ba19a137c35b9680de560dadad,health_beauty,1.0,mid
 c0118e2c0a037c31aeca71d0b81f66a1,furniture_decor,0.75,budget
 c0118e2c0a037c31aeca71d0b81f66a1,home_construction,0.25,budget
 c0126bf681e55a07cb86c35b0b88af95,bed_bath_table,1.0,low
-c0140285255813aa0830caed71942ed5,bed_bath_table,1.0,mid
+c0140285255813aa0830caed71942ed5,bed_bath_table,1.0,mid-high
 c01557d537b2fa9a8b6a03b8b876e33d,sports_leisure,1.0,budget
 c015b2be46e1dbfe84981d75273c7932,fashion_bags_accessories,1.0,low
 c0161b5c1e1f07514ef53cdc563c8321,bed_bath_table,1.0,low
@@ -48596,7 +48596,7 @@ c0793ff8d7388fd2a42990943bab00ae,toys,1.0,mid
 c079abb4d146311eb113fffc850247f2,watches_gifts,1.0,mid
 c07a3a4876b8a9b4f06f10a0658fa5df,bed_bath_table,1.0,low
 c07a76a84540a343ff9d63db21c19b5a,sports_leisure,1.0,mid-high
-c07b7aa6f18fd8abce31169a600ec511,bed_bath_table,1.0,mid
+c07b7aa6f18fd8abce31169a600ec511,bed_bath_table,1.0,mid-high
 c07c1558a5eca23b74513a4d04ed2d5b,telephony,1.0,low
 c07ca85bf9d30020143ff9debce16f46,sports_leisure,1.0,mid
 c07e64c68b9365508a2d88604868106a,garden_tools,1.0,low
@@ -49176,7 +49176,7 @@ c2e735ce7b160a6cc0673e8476a02ff2,sports_leisure,1.0,mid
 c2e79de2c0a7751e26564a3917f9e86d,air_conditioning,1.0,mid
 c2e958b910de8004562809e7372bd432,home_appliances,1.0,mid
 c2e971c4b49f34cd0dd4c155c1d541a5,fashion_male_clothing,1.0,budget
-c2e9a50bcf76b5783bc96f906f95bceb,bed_bath_table,1.0,mid
+c2e9a50bcf76b5783bc96f906f95bceb,bed_bath_table,1.0,high
 c2eaa58a554512017ec4273f8065f78f,sports_leisure,1.0,mid-high
 c2eabf7aaa6b49825b31d8e2df1de89e,musical_instruments,1.0,budget
 c2ebfbb42138943376b1e131a832ef13,toys,1.0,mid
@@ -49443,7 +49443,7 @@ c4081e1320a0b7320da135fca270a185,construction_tools_construction,1.0,low
 c4087df3fe3cc151f397a55cf54fbbc9,cool_stuff,1.0,low
 c40a0a2cfc45bb907031a54374a06cbe,fashion_underwear_beach,1.0,low
 c40b4118cb3c231df85664bfc81a6ac5,health_beauty,1.0,budget
-c40b4a21d854ab194280dadc8998061f,bed_bath_table,1.0,mid
+c40b4a21d854ab194280dadc8998061f,bed_bath_table,1.0,mid-high
 c40ce56c2c25e63abdf01bcce654e2ec,perfumery,1.0,mid-high
 c40ea4e3eb5a04876bb65b8fb576a2f8,computers_accessories,1.0,mid
 c411c8b6dbaffd467263f87a23f2cf52,watches_gifts,0.5,budget
@@ -49656,7 +49656,7 @@ c4d8c10b53fd221c20b4c8fb4c81bb70,computers_accessories,1.0,low
 c4d9283195f6ed693c3ec224f26f9101,sports_leisure,1.0,low
 c4d97ae02f462bc5e0733b1cb84156d3,computers_accessories,1.0,mid
 c4d9917748b1c4bc1abe17ae95c7c7a9,furniture_decor,1.0,mid
-c4d9ec8c227594222eedd980cb28a6f4,bed_bath_table,1.0,mid
+c4d9ec8c227594222eedd980cb28a6f4,bed_bath_table,1.0,mid-high
 c4da45171b79b56a287b15b9796be783,electronics,1.0,budget
 c4dbc6ab9e1f0956b571a9e89dd78e75,perfumery,1.0,mid-high
 c4dc608f01a1f50ac458d2ed8c1c01d4,watches_gifts,1.0,low
@@ -49924,8 +49924,8 @@ c602b245df5ba83a335cc0145581ced8,health_beauty,1.0,mid-high
 c6045f53afca3e0afbdf8db95e7e1b96,watches_gifts,1.0,mid-high
 c60519fbe3add880c770ba0f9cf4112e,baby,1.0,high
 c605aae623959a370392cacd48e7359a,computers_accessories,1.0,budget
-c60635e3c36e27ff9222fdac1ef3e17f,health_beauty,0.5,mid
-c60635e3c36e27ff9222fdac1ef3e17f,perfumery,0.5,mid
+c60635e3c36e27ff9222fdac1ef3e17f,health_beauty,0.5,mid-high
+c60635e3c36e27ff9222fdac1ef3e17f,perfumery,0.5,mid-high
 c606e02ba9f28ba37d77a9f5d57b1c8b,telephony,1.0,low
 c6080d7c75651477a3fd06a4315d5f81,housewares,1.0,mid-high
 c608482cbf5fa63b6ff231e2b91e97ad,housewares,1.0,budget
@@ -50103,8 +50103,8 @@ c6abdb335cf117fb7fe0bb9bc1365586,construction_tools_construction,1.0,mid-high
 c6ae2f5339ac5bb838d44815b405f998,pet_shop,1.0,mid
 c6af131586aa14ce8832bae84f60768c,furniture_decor,1.0,mid
 c6b2942cded5b2da47e32cf285b6d8b5,garden_tools,1.0,low
-c6b2ccbe75ac5addb40fcff5db96a5c1,costruction_tools_tools,0.5,mid
-c6b2ccbe75ac5addb40fcff5db96a5c1,auto,0.5,mid
+c6b2ccbe75ac5addb40fcff5db96a5c1,costruction_tools_tools,0.5,high
+c6b2ccbe75ac5addb40fcff5db96a5c1,auto,0.5,high
 c6b3df119c42584bc85be61315294b90,stationery,1.0,budget
 c6b482cd350f5dc9a48ec4c1292c72bd,computers_accessories,1.0,budget
 c6b51845f27053a7f956039660c1f539,cool_stuff,1.0,high
@@ -51542,7 +51542,7 @@ cc3c59bf00ad116276de76e154b866a1,books_general_interest,1.0,low
 cc3db54bae11167976708abdc66729eb,watches_gifts,1.0,low
 cc3e3512bd101778a2eb0f9911df0916,perfumery,1.0,mid-high
 cc3e86b0063b3d846909c1f7a007bd37,auto,1.0,budget
-cc3f5d537772957f90b7f15f1fb70316,bed_bath_table,1.0,mid
+cc3f5d537772957f90b7f15f1fb70316,bed_bath_table,1.0,mid-high
 cc434c101482125acee3ac19bf01d98c,sports_leisure,1.0,low
 cc438a8c7120027da70eafaf8c3727f8,construction_tools_safety,1.0,mid
 cc43afb2cacf53ca901e965da60a42f8,health_beauty,1.0,budget
@@ -52044,8 +52044,8 @@ ce4f81243f70a7247635d20682a5f697,sports_leisure,1.0,mid
 ce5007556ca6f785f4d43f910c733700,health_beauty,1.0,mid-high
 ce50e5df45ae2b03bef59d46feea8803,bed_bath_table,1.0,mid
 ce51f8fa433d7ff12e7ac5384c6145aa,sports_leisure,1.0,high
-ce53d0436a0b5d49e67638cb97d715fb,stationery,0.5,mid
-ce53d0436a0b5d49e67638cb97d715fb,health_beauty,0.5,mid
+ce53d0436a0b5d49e67638cb97d715fb,stationery,0.5,mid-high
+ce53d0436a0b5d49e67638cb97d715fb,health_beauty,0.5,mid-high
 ce55473dcf00a375c93446d1f86b64de,health_beauty,1.0,low
 ce57886c45ed2f903d3b45b0283f507e,cool_stuff,1.0,mid-high
 ce57c0acd13c5d9d052950d98492df93,cool_stuff,1.0,budget
@@ -52055,8 +52055,8 @@ ce5c267bd53f4e6683c66f7cb5c5c067,bed_bath_table,1.0,mid
 ce5c89c2ee6feb314a1e61ac31295650,bed_bath_table,1.0,mid
 ce5d073fa3e86d122735100c7cda589e,telephony,1.0,budget
 ce5e89ef785b6b3fa8b7816d835220f0,health_beauty,1.0,low
-ce6160651998b40db0a0f3b9d69f7f3d,auto,0.5,mid
-ce6160651998b40db0a0f3b9d69f7f3d,construction_tools_safety,0.5,mid
+ce6160651998b40db0a0f3b9d69f7f3d,auto,0.5,mid-high
+ce6160651998b40db0a0f3b9d69f7f3d,construction_tools_safety,0.5,mid-high
 ce6615af482d0efa24602ebc67fbfc9e,bed_bath_table,1.0,mid
 ce66235f3ae695c2290c503c5bd108d1,housewares,1.0,low
 ce673045c4daded52134073c2e661fb1,sports_leisure,1.0,mid-high
@@ -52178,8 +52178,8 @@ cee2ed186cb6976d3af335d97f28973c,garden_tools,1.0,budget
 cee37411e96a6fba271f19f7986578f4,sports_leisure,1.0,mid-high
 cee4572dc8f36e1feb2bd57d255df5ed,consoles_games,1.0,low
 cee4b4591e7b82254d2c518cc30333a3,health_beauty,1.0,mid-high
-cee4e6509d99d45518c65d26971c1cbb,air_conditioning,0.5,mid
-cee4e6509d99d45518c65d26971c1cbb,sports_leisure,0.5,mid
+cee4e6509d99d45518c65d26971c1cbb,air_conditioning,0.5,mid-high
+cee4e6509d99d45518c65d26971c1cbb,sports_leisure,0.5,mid-high
 cee506c9d151dd5cf62c8f49be451f79,health_beauty,1.0,budget
 cee6fa72fb403ef9554b41581108084b,health_beauty,1.0,low
 cee6fc50cd8532df9815d2077c2ffe42,furniture_decor,1.0,budget
@@ -52251,7 +52251,7 @@ cf27807d5b502af80b4e1c4d309e332f,telephony,1.0,mid
 cf284d76da3e8a82e869e5bc424cbe83,health_beauty,1.0,mid
 cf29ae0eabcf658a4e05fd731983de04,pet_shop,1.0,mid
 cf2ab9fc5ad6668597ee514bb2ff4db1,perfumery,1.0,low
-cf2c9ff6ae4eebe3a21b152f21cdd3e3,bed_bath_table,1.0,mid
+cf2c9ff6ae4eebe3a21b152f21cdd3e3,bed_bath_table,1.0,mid-high
 cf2d114c5b839e414ffe9fb32acc7421,cool_stuff,1.0,mid-high
 cf2e05ce00780dd66ddf509bb04cc95e,bed_bath_table,1.0,low
 cf30949fd7be59e0a2bc640745ba5165,baby,1.0,low
@@ -52487,7 +52487,7 @@ cfff680665b1eb83311d43392f708efc,health_beauty,1.0,low
 cfffb20cea7b66ffd6fd1217b4605628,toys,1.0,low
 d000e5a1b2667359f49641aa1ad6211e,watches_gifts,1.0,mid-high
 d001b42d69010adba394b4a986b6cb41,watches_gifts,1.0,high
-d001f22d6b7e8e3b4c322cc83d77495a,bed_bath_table,1.0,mid
+d001f22d6b7e8e3b4c322cc83d77495a,bed_bath_table,1.0,mid-high
 d002a7e7acfdc762f4b61621b2c9aa64,stationery,1.0,low
 d0056bd9d4087f8278028e3251a6b2e9,watches_gifts,1.0,mid
 d006d6b9951bc8e4dc6953e57e050cf2,housewares,1.0,budget
@@ -52590,8 +52590,8 @@ d05a3c50bb0c2502af86b39bd26f0c1b,sports_leisure,1.0,mid
 d05cec6e9bfb374346a4dfe6a0dedd38,watches_gifts,1.0,mid-high
 d05ee49e975c7a5831c5c242c83efc13,fashion_shoes,1.0,mid
 d05f3f809c89f1a915e8f534452b5c95,health_beauty,1.0,budget
-d05fdf65460ea1bf8735cd5843c3d97d,sports_leisure,0.5,mid
-d05fdf65460ea1bf8735cd5843c3d97d,computers_accessories,0.5,mid
+d05fdf65460ea1bf8735cd5843c3d97d,sports_leisure,0.5,mid-high
+d05fdf65460ea1bf8735cd5843c3d97d,computers_accessories,0.5,mid-high
 d0609a36bb71a14bffd247f7201fffb2,watches_gifts,1.0,mid-high
 d06152bc8dc8482c9aaf5c2e86bff946,housewares,1.0,low
 d0617e96d9e1d5a652ebd86dff10d557,furniture_decor,1.0,mid
@@ -52711,8 +52711,8 @@ d0c3d127d7625fd56ae5527224a6503a,bed_bath_table,1.0,mid
 d0c3e4c736d2c8a157a86f567a87d0e7,health_beauty,1.0,mid-high
 d0c426fc235a98b904f5f7132046dd91,sports_leisure,1.0,budget
 d0c437f172b9c527c0d196815b92c5ce,cool_stuff,1.0,low
-d0c62583f73531eba6338b2390e7a861,stationery,0.5,mid
-d0c62583f73531eba6338b2390e7a861,perfumery,0.5,mid
+d0c62583f73531eba6338b2390e7a861,stationery,0.5,mid-high
+d0c62583f73531eba6338b2390e7a861,perfumery,0.5,mid-high
 d0c64aa48d68b29ec0c891e1090266ad,electronics,1.0,budget
 d0ca0850700932098a90d5f7c87ededb,home_confort,1.0,mid
 d0cceb06b81f83e06c5cb63c3f9cb8d3,sports_leisure,1.0,mid-high
@@ -54016,8 +54016,8 @@ d5b0b41b463cc37fee0a750a76243750,computers_accessories,1.0,mid-high
 d5b0cc21590758cf76d4b6123c7802f5,garden_tools,1.0,low
 d5b17926c20e098f4d47c3b9a0e3fde3,telephony,1.0,budget
 d5b4d6bddd4a2de14d87e623cd2b4df0,furniture_decor,1.0,low
-d5b4fce33a7ef8e6025bff334e6bbf1d,furniture_decor,0.5,mid
-d5b4fce33a7ef8e6025bff334e6bbf1d,sports_leisure,0.5,mid
+d5b4fce33a7ef8e6025bff334e6bbf1d,furniture_decor,0.5,mid-high
+d5b4fce33a7ef8e6025bff334e6bbf1d,sports_leisure,0.5,mid-high
 d5b6b0a6a0374781527d7e29b7830062,health_beauty,1.0,mid
 d5b734ecc9e1a1382c6826921ee9368d,office_furniture,1.0,mid
 d5b838b5c341f1957cea18610d054ac6,electronics,1.0,mid
@@ -54468,8 +54468,8 @@ d7a7fcfd963d57dbb3063730285c5d95,health_beauty,1.0,budget
 d7a801b795e0248a1ec4ae4397fa9c34,bed_bath_table,1.0,mid-high
 d7a827cf81ecfb347df3eedd1df46e90,housewares,1.0,low
 d7a85949be9138c6975830637e482e50,watches_gifts,1.0,low
-d7a86208b8dd2e697ddf825c386a0402,computers_accessories,0.5,mid
-d7a86208b8dd2e697ddf825c386a0402,toys,0.5,mid
+d7a86208b8dd2e697ddf825c386a0402,computers_accessories,0.5,mid-high
+d7a86208b8dd2e697ddf825c386a0402,toys,0.5,mid-high
 d7a9f47a1c943e087a775dc2f9d43eb3,toys,0.5,budget
 d7a9f47a1c943e087a775dc2f9d43eb3,construction_tools_construction,0.5,budget
 d7aa50b85cb81e36ab94fdd9aa295996,auto,1.0,low
@@ -54523,7 +54523,7 @@ d7d4e1242eb41db3ab9405de02f2f699,consoles_games,1.0,mid-high
 d7d6084a07809ee2a00e58005e9469dc,furniture_decor,1.0,mid
 d7d8a56a3f33816ae339683ca6968bff,bed_bath_table,1.0,mid
 d7da0f34317690055136ea1ff8f73e8f,bed_bath_table,1.0,mid-high
-d7dae4f93f4e804e66ba98e51e3efaf4,books_imported,1.0,mid
+d7dae4f93f4e804e66ba98e51e3efaf4,books_imported,1.0,mid-high
 d7dbbc7712693c0578ead69f29911162,telephony,1.0,budget
 d7dc081e3898c4cdf7adf2190e50a99c,home_appliances,1.0,mid
 d7dca5075c207d22e930c7ab977c80e5,health_beauty,1.0,mid
@@ -55307,8 +55307,8 @@ dad83f2ce374cdd39c4f3684d660c787,furniture_decor,1.0,mid
 dad8c024c41519dc2146f4a88d5a91d5,cool_stuff,1.0,low
 dad8e6ee3b60a473f7bdb3af19b78899,computers_accessories,1.0,low
 dad9a329c3cdcdbcde7531336ad04c60,electronics,1.0,mid
-dad9e634284872d012677965e512b57d,home_appliances,0.5,mid
-dad9e634284872d012677965e512b57d,health_beauty,0.5,mid
+dad9e634284872d012677965e512b57d,home_appliances,0.5,mid-high
+dad9e634284872d012677965e512b57d,health_beauty,0.5,mid-high
 dad9f89f7c208c05e6ba051d344bcd5c,health_beauty,1.0,mid-high
 dadd086a97139ac80c52955f11c6bd80,bed_bath_table,1.0,mid
 dadd69bfdceeadee0f68a0307d76ea45,toys,1.0,mid-high
@@ -55513,7 +55513,7 @@ dba44fa5bb77dcc2c8014bc23c16779a,sports_leisure,1.0,low
 dba4ad448aa28c20665f6e71ec2a54e0,bed_bath_table,1.0,mid
 dba5683c4fe467ed8da0dc897b8d29f5,garden_tools,1.0,low
 dba58e78b6cba1f49548601e86a3963f,bed_bath_table,1.0,low
-dba63d24ca222a17945a6aeb6e6c0ef1,furniture_decor,1.0,mid
+dba63d24ca222a17945a6aeb6e6c0ef1,furniture_decor,1.0,mid-high
 dba70adafbba5fd446cad12d2c588638,computers_accessories,1.0,mid-high
 dbab7e7f2f9001c2afd509d4116ca726,toys,1.0,mid
 dbaf90a340588b6b0d35609707c9e28e,garden_tools,1.0,low
@@ -55700,7 +55700,7 @@ dc673187e91a799814e3ba58243200f5,toys,1.0,mid-high
 dc6870f2da15c0651516051df0e768bc,bed_bath_table,1.0,mid
 dc68cd1aea7c3484f80d9aaa38c0c8d3,cool_stuff,1.0,budget
 dc691fc6a36871dce71e9b32490a4362,watches_gifts,1.0,mid-high
-dc6ac849aa384fa44fc33be6201fbd0c,auto,1.0,mid
+dc6ac849aa384fa44fc33be6201fbd0c,auto,1.0,mid-high
 dc6b143305939187ecd5f0302d4dbaf0,auto,1.0,low
 dc6da86086ea05abb979ecc24ae1d500,bed_bath_table,1.0,low
 dc6e5518ceb6ee64c37635e3515ea380,food,1.0,budget
@@ -55818,8 +55818,8 @@ dccd1a4751f4983ea37c63167df47a34,computers_accessories,1.0,mid
 dccf2045ca8a94692a1896f0c08dab81,audio,1.0,mid
 dcd05c6270b396f7e09322ef1c6436a5,telephony,1.0,budget
 dcd14a3f297d7d1caf4f6bbbfb12b2a4,fashion_bags_accessories,1.0,low
-dcd27efb93b723b301f8bac00e5d7e01,watches_gifts,0.5,mid
-dcd27efb93b723b301f8bac00e5d7e01,furniture_decor,0.5,mid
+dcd27efb93b723b301f8bac00e5d7e01,watches_gifts,0.5,mid-high
+dcd27efb93b723b301f8bac00e5d7e01,furniture_decor,0.5,mid-high
 dcd4940b3f96a3e2b73d8f73387230cf,bed_bath_table,1.0,low
 dcd4e167f75f636f80f687ae0b41254b,telephony,1.0,budget
 dcd5b4583ea40a6ea31c583e964e7046,watches_gifts,1.0,budget
@@ -56619,7 +56619,7 @@ e00e0e31632b3e92dd4bc3010cd7e604,bed_bath_table,1.0,budget
 e00e8d6baa14e557360a8680eace8b45,books_general_interest,1.0,budget
 e00ff363b36712bdb3e05c7cda218272,fashion_bags_accessories,1.0,budget
 e0114238af7a9aac7fcea56cf2e43cb9,construction_tools_construction,1.0,budget
-e011d3558e6f309aad38358a8fba3bf8,bed_bath_table,1.0,mid
+e011d3558e6f309aad38358a8fba3bf8,bed_bath_table,1.0,mid-high
 e015aa99a5c509c4aac63a2b6150d0c8,baby,1.0,mid
 e016365b624d1755f3e2d0e8f1631ebb,health_beauty,0.8,low
 e016365b624d1755f3e2d0e8f1631ebb,bed_bath_table,0.2,low
@@ -57686,7 +57686,7 @@ e43e7031cd89dd0ac61dd44b840c311f,electronics,1.0,budget
 e43ef1f367067fb817d8b34f618f44b0,telephony,1.0,budget
 e44042afcb452182c8285d83e0d8cfc7,perfumery,1.0,low
 e440787673386c80d6a962882c5eddac,health_beauty,1.0,low
-e44110c2ff342e5bbda6c2224d94bbe6,furniture_decor,1.0,mid-high
+e44110c2ff342e5bbda6c2224d94bbe6,furniture_decor,1.0,high
 e4419ca71e493f57fce5809d2039e9ba,fashion_bags_accessories,1.0,budget
 e4435b5c7fe9595de302159fb575e171,construction_tools_construction,1.0,low
 e4448533ef66ef633b36b10d6a00e5f2,food_drink,1.0,low
@@ -58056,7 +58056,7 @@ e5b9ae4a58ec637282dec8b52f2852db,auto,1.0,low
 e5b9fcd5cf8ebeb211073f3619ed73a5,bed_bath_table,1.0,low
 e5ba6038a6e49172ae4d7c0a66e930b8,sports_leisure,1.0,mid
 e5bcb7daa146eef209d64b3a9742f31f,bed_bath_table,1.0,mid-high
-e5bdbd18812e42788e7cbad7058fc0ab,sports_leisure,1.0,mid
+e5bdbd18812e42788e7cbad7058fc0ab,sports_leisure,1.0,mid-high
 e5be4ac6d2046988ffaf9ef6321bda6b,watches_gifts,1.0,mid-high
 e5bee76940f29eab0876f6d14bec736b,cool_stuff,1.0,low
 e5c080a674f1c1610f4c1385a394ae60,sports_leisure,1.0,mid-high
@@ -58280,8 +58280,8 @@ e699d1f2b24e717b2ddf0d6846756ee6,construction_tools_construction,1.0,budget
 e69c664cef877ebf383baaad71573e5e,health_beauty,1.0,mid-high
 e69d9607b68fc2c352c2ff451d0e1f0b,construction_tools_lights,1.0,low
 e69e0e94670b725665d272fe2fcc050a,sports_leisure,1.0,mid-high
-e69e2b2ce493d7d2307b2588fd1614bd,sports_leisure,0.5,mid
-e69e2b2ce493d7d2307b2588fd1614bd,stationery,0.5,mid
+e69e2b2ce493d7d2307b2588fd1614bd,sports_leisure,0.5,mid-high
+e69e2b2ce493d7d2307b2588fd1614bd,stationery,0.5,mid-high
 e69f2718de164c3f1a592ec3f3e68dd3,housewares,1.0,mid-high
 e69f35058039ed1d8824876e47a49b42,computers_accessories,1.0,low
 e6a1301f4dae77d4d17ad19cdaf513a7,bed_bath_table,1.0,mid
@@ -58492,7 +58492,7 @@ e773a42bacfb194f0f480d9e52d0f688,bed_bath_table,1.0,mid
 e77535f614df4b48210f6288f8cea161,cool_stuff,1.0,high
 e77723abebdc6d6b95814047f75c2aab,pet_shop,1.0,mid-high
 e7775fe4dd09fa9853f6869ea2e4a047,bed_bath_table,1.0,low
-e779db0c222c66daea0527e24c4a05e1,bed_bath_table,1.0,mid-high
+e779db0c222c66daea0527e24c4a05e1,bed_bath_table,1.0,high
 e77a118717779cdc2cd4f9a5c3865952,home_appliances,1.0,budget
 e77bbaae2e466b411e98cb9bed821a06,health_beauty,1.0,low
 e77e0fcb06b07a1f448569c27fc6675d,perfumery,1.0,low
@@ -58598,7 +58598,7 @@ e7e71f4e4180338d304ccaafc862e16d,garden_tools,1.0,low
 e7e7d721fbd6e06b5639641d7c653b20,bed_bath_table,1.0,budget
 e7e84072c5730f21d38aea4e37d531f0,toys,0.5,budget
 e7e84072c5730f21d38aea4e37d531f0,fashion_bags_accessories,0.5,budget
-e7ea4c3049b0ffcb326d8fcf44a06c05,health_beauty,1.0,mid
+e7ea4c3049b0ffcb326d8fcf44a06c05,health_beauty,1.0,mid-high
 e7ecabec7c3df7ee00d6ac4a80ff1f00,furniture_decor,1.0,low
 e7ee519ccf757ed03c39349a328b80e5,perfumery,1.0,low
 e7f05599a82aa0ff9745e92f4b9a9188,garden_tools,1.0,low
@@ -58773,8 +58773,8 @@ e89fed84ed8b2024c15f83cb33b95d39,housewares,1.0,budget
 e8a195f60d266e458b02b0e57e85815d,furniture_decor,1.0,low
 e8a2dad9972d90985fec118534589519,baby,1.0,budget
 e8a37d42b44d35a579e25d8d1c5b919c,telephony,1.0,low
-e8a425f2b5d885c380a80386d64277b8,health_beauty,0.5,mid
-e8a425f2b5d885c380a80386d64277b8,sports_leisure,0.5,mid
+e8a425f2b5d885c380a80386d64277b8,health_beauty,0.5,mid-high
+e8a425f2b5d885c380a80386d64277b8,sports_leisure,0.5,mid-high
 e8a450b1f0ac1a53c7a7871f4a54b7e4,baby,1.0,low
 e8a53ce0baadcfc115cd0ab29a5e9122,garden_tools,1.0,low
 e8a5bf81555db20be69859ce27ebf286,housewares,1.0,mid
@@ -59538,7 +59538,7 @@ eba92d13f186ced1cabfca7dff665f4e,housewares,1.0,budget
 eba95c4194cfabd51ed78f00dad89815,bed_bath_table,1.0,low
 ebaa549e2bb94d334c05921f2519d434,furniture_decor,1.0,low
 ebad8517c448bbd20ca1910bf1a33819,bed_bath_table,1.0,mid
-ebae6aad9c8140364bfdb8625127aba8,bed_bath_table,1.0,mid
+ebae6aad9c8140364bfdb8625127aba8,bed_bath_table,1.0,mid-high
 ebb2fb4cc1c833966769d0e2c04cf334,computers_accessories,1.0,low
 ebb3596c57229b75de3e4d11c5fec489,watches_gifts,1.0,mid-high
 ebb739182e7dcfd922128e714581ce1c,auto,1.0,mid-high
@@ -59807,7 +59807,7 @@ ecc372d277dfbc7eaae444c3839f95d4,toys,1.0,low
 ecc3bfc3b4e96b792b65523328baf92f,sports_leisure,1.0,mid-high
 ecc3d4eb9b17d2f0865d21f2abecc51c,home_construction,1.0,mid-high
 ecc4e8ea65bee089e9fda7474da7a8a4,housewares,1.0,mid
-ecc693b513a0c362c8da8e6beeeb545a,bed_bath_table,1.0,mid
+ecc693b513a0c362c8da8e6beeeb545a,bed_bath_table,1.0,mid-high
 ecc6d0f3eb9435df737e1f0d9a1c6d3f,bed_bath_table,1.0,mid-high
 ecc6e5e96fe666e11c6a983d667121b3,sports_leisure,1.0,mid-high
 ecc79411bf35aa8d224e66ca9ca5d4ef,toys,1.0,mid-high
@@ -59841,8 +59841,8 @@ ece615479d7e846c0623b008aa38df66,garden_tools,1.0,mid
 ece739fca0be9c9a1df2d13257c298c9,computers_accessories,1.0,mid-high
 ece8fc191a00edb90d32f45d67a3a178,computers_accessories,1.0,mid
 ece905d3c9bb0dc1665e13caa84ab302,perfumery,1.0,low
-ece908ca0502def5dd56deca8a5c67d5,pet_shop,0.5,mid
-ece908ca0502def5dd56deca8a5c67d5,home_construction,0.5,mid
+ece908ca0502def5dd56deca8a5c67d5,pet_shop,0.5,mid-high
+ece908ca0502def5dd56deca8a5c67d5,home_construction,0.5,mid-high
 ece98a5dccb1e985d69a38d4e0f054e5,computers_accessories,1.0,low
 eceb1256610892e77f328ca3d8a54dee,sports_leisure,1.0,high
 eceb50042675f24ba84998de4520465d,auto,1.0,high
@@ -60012,8 +60012,8 @@ ed8447bf08c6b1fb83408eb0eec608a4,construction_tools_lights,1.0,mid-high
 ed86e9dd7c8d0fe11e7fc8e31d96d675,fashion_bags_accessories,1.0,low
 ed873efbae1f165689d2e836f7a45a20,garden_tools,1.0,budget
 ed88bc440d530e4a7cca8bb4f2c110d6,health_beauty,1.0,mid
-ed891ac9ea39363e127dd2e4e3875416,perfumery,0.5,mid
-ed891ac9ea39363e127dd2e4e3875416,electronics,0.5,mid
+ed891ac9ea39363e127dd2e4e3875416,perfumery,0.5,mid-high
+ed891ac9ea39363e127dd2e4e3875416,electronics,0.5,mid-high
 ed8abc098e98f7b927c9f8ab8243d867,auto,1.0,low
 ed8d3a85dcebf694f8dde843f3cef35a,fixed_telephony,1.0,mid-high
 ed8f9f65799b0844c21b87c0ad74f57f,garden_tools,1.0,low
@@ -60127,8 +60127,8 @@ edfeb6381b626b0dae9b2f5516734dbc,auto,1.0,budget
 edff2828480e1c9896fbce0c17e00e4b,watches_gifts,1.0,mid-high
 ee0441e49d6a79a3b60f0d56ad879175,electronics,1.0,budget
 ee0452d8929c4ad07cf1bde10dcbab4b,cool_stuff,1.0,low
-ee04cc9bca4c9198bec5c54c2542dd3b,housewares,0.5,mid
-ee04cc9bca4c9198bec5c54c2542dd3b,baby,0.5,mid
+ee04cc9bca4c9198bec5c54c2542dd3b,housewares,0.5,mid-high
+ee04cc9bca4c9198bec5c54c2542dd3b,baby,0.5,mid-high
 ee0642319e3d9508055057679269f3b1,perfumery,1.0,mid-high
 ee07acbbdcae6527297281fbd36774e3,electronics,1.0,mid-high
 ee081c6f1ab9c715d54a763eed4f0028,health_beauty,1.0,mid-high
@@ -60219,7 +60219,7 @@ ee632237c180e9c0ff81eecd16a164c0,bed_bath_table,1.0,low
 ee656a283b87c7587160f80be0469d54,bed_bath_table,1.0,mid-high
 ee672c145b39e6ec374964128f22adb8,electronics,1.0,mid
 ee688b708ac82b5117738cedfa6c09f2,sports_leisure,1.0,mid-high
-ee68a25b07d4c5813cc293bb22da79fb,health_beauty,1.0,mid-high
+ee68a25b07d4c5813cc293bb22da79fb,health_beauty,1.0,high
 ee6a2866f7155fed1d03b15ca4e234f4,furniture_decor,1.0,mid-high
 ee6b9e543e69a0c368e0d0d98258488d,furniture_decor,1.0,mid
 ee6daddc64b275135bc326be1a7bf8d7,housewares,1.0,budget
@@ -60236,7 +60236,7 @@ ee7c8776ca249426d1d17e6d48b622ea,computers_accessories,1.0,budget
 ee81133709716b9c4a5141bd6c2af68f,health_beauty,1.0,mid
 ee817fb6892963601874bd9a5b0ef55e,furniture_decor,1.0,low
 ee83474625e350390d32a6815483c405,telephony,1.0,mid-high
-ee8378c69767aecc3ce2743d62173ff5,signaling_and_security,1.0,mid
+ee8378c69767aecc3ce2743d62173ff5,signaling_and_security,1.0,mid-high
 ee8436246016d74854f12810cc105ce0,computers_accessories,1.0,mid-high
 ee857c5838a5bd6a7e338ccdcdc76b9e,sports_leisure,1.0,budget
 ee85e754a2564a0e5ead5d2e06fb93f6,bed_bath_table,1.0,low
@@ -60307,7 +60307,7 @@ eed149db664684d4c477897cb874b390,industry_commerce_and_business,1.0,mid-high
 eed1d0133ff77d7305e9006448d35997,electronics,1.0,low
 eed29848d751a23718be0a1e022b601b,housewares,1.0,budget
 eed3d9c8e42c6b95338e0a8b675640e6,garden_tools,1.0,low
-eed4189bfc1ea0c708e927cf93d63bdf,sports_leisure,1.0,mid-high
+eed4189bfc1ea0c708e927cf93d63bdf,sports_leisure,1.0,high
 eed42da7ee2f3ce26ab52758e63d855f,health_beauty,1.0,budget
 eed8b3defc3647d353488c63623ae0dc,sports_leisure,1.0,budget
 eed928b8e9367862e039a6fc6b99b193,furniture_living_room,1.0,mid
@@ -60482,8 +60482,8 @@ ef79ebde1eb712518ec4e9d8e3bee689,electronics,1.0,budget
 ef7a55345030be613a86bf41640447b0,consoles_games,1.0,mid
 ef7bbc96acc16599dbd8461a8eed42f6,bed_bath_table,1.0,mid
 ef7c34bf0d4dddef8838454208706360,garden_tools,1.0,low
-ef7ccf8e6acbf1ac71af305967e708c3,computers_accessories,0.5,mid
-ef7ccf8e6acbf1ac71af305967e708c3,health_beauty,0.5,mid
+ef7ccf8e6acbf1ac71af305967e708c3,computers_accessories,0.5,mid-high
+ef7ccf8e6acbf1ac71af305967e708c3,health_beauty,0.5,mid-high
 ef7e5232545bebbb4cb612859324ba36,books_general_interest,1.0,mid-high
 ef7e621d7461d199cb905471587e4ed5,food,1.0,mid-high
 ef7e769061a29b011ad2e707a7124ecc,health_beauty,1.0,low
@@ -60605,7 +60605,7 @@ effbcd5686486e99ce71e00e0087e8d2,cool_stuff,1.0,mid
 effbebdf9854a4a1fa1783211054115e,toys,1.0,mid
 effdafe34c3a8fd08ce7678cfb73e675,fashion_bags_accessories,1.0,mid
 effe217698e14116c79fb70aeede3b9a,home_appliances,1.0,low
-effecf2e702b13058b6ca07a0a649691,health_beauty,1.0,mid
+effecf2e702b13058b6ca07a0a649691,health_beauty,1.0,mid-high
 effeef4e9a3764d15b3e88e7d7ebbe95,art,1.0,low
 effeff65379529bfaebb80de582626a5,watches_gifts,1.0,mid
 f00177dfaaeaca9de3df9e6f2600346f,telephony,1.0,budget
@@ -60890,8 +60890,8 @@ f122700f4988b15159336b7a1d29cb41,perfumery,1.0,mid
 f122b89a0e1303f7e0481cfb926f787d,health_beauty,1.0,mid-high
 f1236fdb8932b2aa1cebcc082b8fef62,perfumery,1.0,mid-high
 f127a7f533042f257b45c2e3df20360b,computers_accessories,1.0,high
-f129ee560484c2c2f35abe2ea5c3e166,cool_stuff,0.5,mid
-f129ee560484c2c2f35abe2ea5c3e166,bed_bath_table,0.5,mid
+f129ee560484c2c2f35abe2ea5c3e166,cool_stuff,0.5,mid-high
+f129ee560484c2c2f35abe2ea5c3e166,bed_bath_table,0.5,mid-high
 f12c12749c4b7c7d8716f9bd166a14f4,health_beauty,1.0,low
 f12c93eefdc001a3f589d98ca8df71d2,construction_tools_construction,1.0,mid-high
 f12cfa9263ca5dd51027f902d1d05321,home_construction,1.0,mid
@@ -60958,7 +60958,7 @@ f1709454be7d021433c7563edbc55d2c,bed_bath_table,1.0,low
 f171039a67a78b3d57475168802da70a,telephony,1.0,budget
 f17157bff18a06db593ed76323701583,watches_gifts,1.0,mid
 f17169fc46e5d11b668fbee3a458a0de,stationery,1.0,mid
-f171ed8245bab7739027b65bf7f4345d,bed_bath_table,1.0,mid
+f171ed8245bab7739027b65bf7f4345d,bed_bath_table,1.0,mid-high
 f17282fcc276ccc743717c0c08c7670f,furniture_decor,1.0,low
 f172c33b146e90b95ee12499eb6632cb,telephony,1.0,budget
 f172e87cb8cd89e4e34bce37f28ce713,bed_bath_table,1.0,mid
@@ -61250,7 +61250,7 @@ f2993a5e8702bb0803b0dd4a0ea6613a,health_beauty,1.0,mid-high
 f29d39e1f3bf25b0a4998540baf4e7ad,watches_gifts,1.0,high
 f29dc7dbef145344331f4cc7bdcedf38,housewares,1.0,low
 f29e3450543a53a40c9c5f9d23d3c929,garden_tools,1.0,low
-f29f2553228477390f58da04a5c3cb8a,bed_bath_table,1.0,mid
+f29f2553228477390f58da04a5c3cb8a,bed_bath_table,1.0,mid-high
 f2a1c4621acc0bd77c6323284e41a586,garden_tools,1.0,low
 f2a84e3bcb9db0d7ae7f66c23f6a390d,sports_leisure,1.0,budget
 f2a9551380c53ba8f5950fe1534b37a5,pet_shop,1.0,mid-high
@@ -61727,8 +61727,8 @@ f48ef7d049a41b86550533b5a914fe82,pet_shop,1.0,low
 f490b0fe9e3fbe4bca2885d739b9f3bf,sports_leisure,1.0,mid-high
 f491087d01a37428ba96de3897bf6814,garden_tools,1.0,low
 f49120b9ad722f4972c5c2a601df6685,computers_accessories,1.0,low
-f491ee1c8b179ef20bf46bf58085b51a,bed_bath_table,0.5,mid
-f491ee1c8b179ef20bf46bf58085b51a,home_confort,0.5,mid
+f491ee1c8b179ef20bf46bf58085b51a,bed_bath_table,0.5,mid-high
+f491ee1c8b179ef20bf46bf58085b51a,home_confort,0.5,mid-high
 f492b25a76d30d8bfb4e12ddc7df7c95,housewares,1.0,low
 f4951067ecd74d19acc4e6ecbe519258,toys,1.0,mid
 f495d4e398dcb42bb1d1da6c47a532da,fashion_male_clothing,1.0,low
@@ -61736,7 +61736,7 @@ f496bd3a1bae2e70a700111ba8ee8109,sports_leisure,1.0,budget
 f497801658db70e1b18c76268001e944,housewares,0.5,low
 f497801658db70e1b18c76268001e944,musical_instruments,0.5,low
 f497dd3ee9e4ef33b42acd82713e4bf3,home_appliances,1.0,budget
-f498e66a64908ad6fce1e90a0c1515ad,health_beauty,1.0,mid
+f498e66a64908ad6fce1e90a0c1515ad,health_beauty,1.0,mid-high
 f499e2267aa2b626fde8602746d1a299,bed_bath_table,1.0,mid
 f49c3ad9a1e9dddece89ba0d8840467f,watches_gifts,1.0,high
 f49d3bc3db1dc7f576f4814a8ab09643,audio,1.0,low
@@ -61801,7 +61801,7 @@ f4d1502ace38b0df6f052a5544add9f4,fashion_bags_accessories,0.5,low
 f4d1ea62b8dc58a9fe1bd141080d624d,small_appliances,1.0,mid-high
 f4d29fabe2a1639d5ddabbc4c32617c8,computers_accessories,1.0,mid
 f4d5909a89b4ce6940bdc49e9cb2567b,health_beauty,1.0,mid
-f4d5dbff0ff56deb045c6ee80b7d5fcc,sports_leisure,1.0,mid
+f4d5dbff0ff56deb045c6ee80b7d5fcc,sports_leisure,1.0,mid-high
 f4d632afad2a733913d5d41b16620db5,watches_gifts,1.0,mid
 f4d7e33c14af99a4adf5113e4f70abf9,food_drink,1.0,mid-high
 f4d86b3696c4fd8f185f9304bcff3449,health_beauty,1.0,low
@@ -62322,8 +62322,8 @@ f6ce56125dd12927a023b879008a5ced,telephony,1.0,budget
 f6ce59662fa24ba7ccc289430b580a7e,auto,1.0,budget
 f6d113e0d47098366091e5e65be0794d,toys,1.0,mid-high
 f6d542c63daee6bf582e288e075a8f32,perfumery,1.0,budget
-f6d97b059c6d1feb6c63e6fb765d0e58,fixed_telephony,0.5,mid
-f6d97b059c6d1feb6c63e6fb765d0e58,food,0.5,mid
+f6d97b059c6d1feb6c63e6fb765d0e58,fixed_telephony,0.5,mid-high
+f6d97b059c6d1feb6c63e6fb765d0e58,food,0.5,mid-high
 f6d9da147a1feafa65e8d57c51cea44a,health_beauty,1.0,low
 f6da5ed92e9091f6dc98d4f3aeac6a60,auto,1.0,mid-high
 f6db9c2162ee3658e5520c00a090b7c4,computers_accessories,1.0,mid-high
@@ -63177,7 +63177,7 @@ fa458c3a05d049490dbdc2164dc0ecb5,perfumery,1.0,low
 fa47246d4e7ab6183d88baf976c590b9,fashion_bags_accessories,1.0,mid
 fa47a4f98e223465e39628dbbe6ecd00,garden_tools,1.0,low
 fa48193455b8343f70c496fb93062213,home_construction,1.0,low
-fa494e4132e6539d70a8478f1d0cf3e3,computers_accessories,1.0,mid
+fa494e4132e6539d70a8478f1d0cf3e3,computers_accessories,1.0,mid-high
 fa4c7ddeb699d802565b474387ee1119,computers_accessories,1.0,mid-high
 fa4e306b45610d74345f126a61045581,furniture_decor,1.0,mid
 fa4e9b1063a89e1ba99cecbaa7879a6e,perfumery,1.0,low
