@@ -4,12 +4,8 @@ import uuid
 import os
 import hashlib
 from datetime import datetime
- 
-BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT  = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
-NEW_USER_DIR  = os.path.join(PROJECT_ROOT, "new_user_data")
-USERS_CSV     = os.path.join(NEW_USER_DIR, "users.csv")
-INTERACTION_CSV = os.path.join(NEW_USER_DIR, "interaction.csv")
+import gspread
+from google.oauth2.service_account import Credentials
  
 USERS_COLS = [
     "user_id", "name", "email", "password_hash",
@@ -24,6 +20,11 @@ INTERACTION_COLS = [
  
 PRICE_LABELS = ["budget", "low", "mid", "mid-high", "high", "premium"]
  
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive"
+]
+ 
  
 def _hash_password(password: str) -> str:
     return hashlib.sha256(password.strip().encode()).hexdigest()
@@ -32,40 +33,105 @@ def _hash_password(password: str) -> str:
 class UserManager:
  
     def __init__(self):
-        os.makedirs(NEW_USER_DIR, exist_ok=True)
-        self._init_csv(USERS_CSV, USERS_COLS)
-        self._init_csv(INTERACTION_CSV, INTERACTION_COLS)
+        self._gc     = None
+        self._sheet  = None
+        self._ws_users = None
+        self._ws_inter = None
+        self._connect()
  
-    def _init_csv(self, path, columns):
-        if not os.path.exists(path):
-            pd.DataFrame(columns=columns).to_csv(path, index=False)
-        else:
-            df = pd.read_csv(path, dtype=str)
-            for col in columns:
-                if col not in df.columns:
-                    df[col] = ""
-            df.to_csv(path, index=False)
+    def _connect(self):
+        try:
+            import streamlit as st
+            creds_dict = dict(st.secrets["gcp_service_account"])
+            creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+            self._gc    = gspread.authorize(creds)
+            sheet_id    = st.secrets["SHEET_ID"]
+            self._sheet = self._gc.open_by_key(sheet_id)
+ 
+            # Users worksheet
+            try:
+                self._ws_users = self._sheet.worksheet("Users")
+            except gspread.WorksheetNotFound:
+                self._ws_users = self._sheet.add_worksheet("Users", rows=1000, cols=20)
+                self._ws_users.append_row(USERS_COLS)
+ 
+            # Interactions worksheet
+            try:
+                self._ws_inter = self._sheet.worksheet("Interactions")
+            except gspread.WorksheetNotFound:
+                self._ws_inter = self._sheet.add_worksheet("Interactions", rows=5000, cols=20)
+                self._ws_inter.append_row(INTERACTION_COLS)
+ 
+            # Add headers if sheet is empty
+            if not self._ws_users.get_all_values():
+                self._ws_users.append_row(USERS_COLS)
+            if not self._ws_inter.get_all_values():
+                self._ws_inter.append_row(INTERACTION_COLS)
+ 
+        except Exception as e:
+            print(f"Google Sheets connection error: {e}")
  
     def _load_users(self):
-        df = pd.read_csv(USERS_CSV, dtype=str)
-        if df.empty:
+        try:
+            data = self._ws_users.get_all_records()
+            if not data:
+                return pd.DataFrame(columns=USERS_COLS)
+            df = pd.DataFrame(data)
+            for col in USERS_COLS:
+                if col not in df.columns:
+                    df[col] = ""
+            df["total_interactions"] = pd.to_numeric(
+                df["total_interactions"], errors="coerce"
+            ).fillna(0).astype(int)
+            return df
+        except Exception as e:
+            print(f"Error loading users: {e}")
             return pd.DataFrame(columns=USERS_COLS)
-        df["total_interactions"] = pd.to_numeric(
-            df["total_interactions"], errors="coerce"
-        ).fillna(0).astype(int)
-        return df
  
-    def _save_users(self, df):
-        df.to_csv(USERS_CSV, index=False)
+    def _save_user_row(self, row_dict):
+        """Append a new user row to Google Sheet."""
+        try:
+            row = [str(row_dict.get(col, "")) for col in USERS_COLS]
+            self._ws_users.append_row(row)
+        except Exception as e:
+            print(f"Error saving user: {e}")
+ 
+    def _update_user_row(self, user_id, updates: dict):
+        """Update specific fields for a user in Google Sheet."""
+        try:
+            data = self._ws_users.get_all_values()
+            headers = data[0]
+            for i, row in enumerate(data[1:], start=2):
+                if row[headers.index("user_id")] == user_id:
+                    for key, val in updates.items():
+                        col_idx = headers.index(key) + 1
+                        self._ws_inter  # just to keep reference
+                        self._ws_users.update_cell(i, col_idx, str(val))
+                    break
+        except Exception as e:
+            print(f"Error updating user: {e}")
  
     def _load_interactions(self):
-        df = pd.read_csv(INTERACTION_CSV, dtype=str)
-        if df.empty:
+        try:
+            data = self._ws_inter.get_all_records()
+            if not data:
+                return pd.DataFrame(columns=INTERACTION_COLS)
+            df = pd.DataFrame(data)
+            for col in INTERACTION_COLS:
+                if col not in df.columns:
+                    df[col] = ""
+            return df
+        except Exception as e:
+            print(f"Error loading interactions: {e}")
             return pd.DataFrame(columns=INTERACTION_COLS)
-        return df
  
-    def _save_interactions(self, df):
-        df.to_csv(INTERACTION_CSV, index=False)
+    def _save_interaction_row(self, row_dict):
+        """Append a new interaction row to Google Sheet."""
+        try:
+            row = [str(row_dict.get(col, "")) for col in INTERACTION_COLS]
+            self._ws_inter.append_row(row)
+        except Exception as e:
+            print(f"Error saving interaction: {e}")
  
     def _get_segment(self, total):
         if total == 0:   return "A"
@@ -93,14 +159,12 @@ class UserManager:
             "joined_date"        : datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "customer_unique_id" : ""
         }
-        df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-        self._save_users(df)
+        self._save_user_row(new_row)
         return {"status": "success", "user_id": user_id,
                 "message": f"Welcome {name}! Account ban gaya!"}
  
     # ── Register Existing Customer ─────────────────────────────────────────
     def register_existing_customer(self, customer_unique_id, name, email, password, category_prefs, price_pref, csv_path):
-        # Step 1: Verify customer_unique_id in dataset & get actual purchase count
         try:
             df_raw = pd.read_csv(csv_path, usecols=["customer_unique_id", "order_status"])
             customer_rows = df_raw[df_raw["customer_unique_id"] == customer_unique_id.strip()]
@@ -109,7 +173,6 @@ class UserManager:
                 return {"status": "not_found", "user_id": None,
                         "message": "Yeh Customer ID dataset mein nahi mili. Check karo."}
  
-            # Sirf delivered orders count karo
             actual_interactions = len(customer_rows[customer_rows["order_status"] == "delivered"])
             actual_segment      = self._get_segment(actual_interactions)
  
@@ -117,7 +180,6 @@ class UserManager:
             return {"status": "error", "user_id": None,
                     "message": f"Dataset verify nahi ho saka: {str(e)}"}
  
-        # Step 2: Check if already registered
         df = self._load_users()
         if not df.empty:
             if email.strip().lower() in df["email"].str.lower().values:
@@ -127,7 +189,6 @@ class UserManager:
                 return {"status": "exists", "user_id": None,
                         "message": "Yeh Customer ID already registered hai. Please login."}
  
-        # Step 3: Create account with actual segment
         user_id = "USR-" + str(uuid.uuid4())[:8].upper()
         new_row = {
             "user_id"            : user_id,
@@ -141,8 +202,7 @@ class UserManager:
             "joined_date"        : datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "customer_unique_id" : customer_unique_id.strip()
         }
-        df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-        self._save_users(df)
+        self._save_user_row(new_row)
  
         return {
             "status"       : "success",
@@ -188,7 +248,6 @@ class UserManager:
  
     # ── Log Interaction ────────────────────────────────────────────────────
     def log_interaction(self, user_id, product_id, category, price, action_type="click"):
-        interactions = self._load_interactions()
         new_row = {
             "interaction_id" : "INT-" + str(uuid.uuid4())[:8].upper(),
             "user_id"        : user_id,
@@ -198,19 +257,19 @@ class UserManager:
             "action_type"    : action_type,
             "timestamp"      : datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
-        interactions = pd.concat(
-            [interactions, pd.DataFrame([new_row])], ignore_index=True
-        )
-        self._save_interactions(interactions)
+        self._save_interaction_row(new_row)
  
-        users = self._load_users()
-        idx   = users[users["user_id"] == user_id].index
+        # Update user segment
+        df = self._load_users()
+        idx = df[df["user_id"] == user_id].index
         if not idx.empty:
-            i = idx[0]
-            total = int(users.at[i, "total_interactions"]) + 1
-            users.at[i, "total_interactions"] = total
-            users.at[i, "segment"]            = self._get_segment(total)
-            self._save_users(users)
+            i     = idx[0]
+            total = int(df.at[i, "total_interactions"]) + 1
+            seg   = self._get_segment(total)
+            self._update_user_row(user_id, {
+                "total_interactions": total,
+                "segment": seg
+            })
         return True
  
     def get_user_interactions(self, user_id):
@@ -240,13 +299,10 @@ class UserManager:
         return user.get("price_pref", "mid")
  
     def update_user_prefs(self, user_id, category_prefs, price_pref):
-        users = self._load_users()
-        idx   = users[users["user_id"] == user_id].index
-        if idx.empty: return False
-        i = idx[0]
-        users.at[i, "category_pref"] = ",".join(category_prefs)
-        users.at[i, "price_pref"]    = price_pref
-        self._save_users(users)
+        self._update_user_row(user_id, {
+            "category_pref": ",".join(category_prefs),
+            "price_pref"   : price_pref
+        })
         return True
  
     def get_all_users(self):
