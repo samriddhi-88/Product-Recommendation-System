@@ -6,6 +6,7 @@ import hashlib
 from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
+import streamlit as st
  
 USERS_COLS = [
     "user_id", "name", "email", "password_hash",
@@ -33,17 +34,28 @@ def _hash_password(password: str) -> str:
 class UserManager:
  
     def __init__(self):
-        self._gc     = None
-        self._sheet  = None
-        self._ws_users = None
-        self._ws_inter = None
+        self._gc        = None
+        self._sheet     = None
+        self._ws_users  = None
+        self._ws_inter  = None
+        self._error     = None
         self._connect()
  
     def _connect(self):
         try:
-            import streamlit as st
-            creds_dict = dict(st.secrets["gcp_service_account"])
-            creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+            creds_info = {
+                "type"                        : st.secrets["gcp_service_account"]["type"],
+                "project_id"                  : st.secrets["gcp_service_account"]["project_id"],
+                "private_key_id"              : st.secrets["gcp_service_account"]["private_key_id"],
+                "private_key"                 : st.secrets["gcp_service_account"]["private_key"],
+                "client_email"                : st.secrets["gcp_service_account"]["client_email"],
+                "client_id"                   : st.secrets["gcp_service_account"]["client_id"],
+                "auth_uri"                    : st.secrets["gcp_service_account"]["auth_uri"],
+                "token_uri"                   : st.secrets["gcp_service_account"]["token_uri"],
+                "auth_provider_x509_cert_url" : st.secrets["gcp_service_account"]["auth_provider_x509_cert_url"],
+                "client_x509_cert_url"        : st.secrets["gcp_service_account"]["client_x509_cert_url"],
+            }
+            creds       = Credentials.from_service_account_info(creds_info, scopes=SCOPES)
             self._gc    = gspread.authorize(creds)
             sheet_id    = st.secrets["SHEET_ID"]
             self._sheet = self._gc.open_by_key(sheet_id)
@@ -62,14 +74,20 @@ class UserManager:
                 self._ws_inter = self._sheet.add_worksheet("Interactions", rows=5000, cols=20)
                 self._ws_inter.append_row(INTERACTION_COLS)
  
-            # Add headers if sheet is empty
+            # Add headers if empty
             if not self._ws_users.get_all_values():
                 self._ws_users.append_row(USERS_COLS)
             if not self._ws_inter.get_all_values():
                 self._ws_inter.append_row(INTERACTION_COLS)
  
         except Exception as e:
-            print(f"Google Sheets connection error: {e}")
+            self._error = str(e)
+ 
+    def is_connected(self):
+        return self._ws_users is not None
+ 
+    def get_error(self):
+        return self._error
  
     def _load_users(self):
         try:
@@ -85,31 +103,28 @@ class UserManager:
             ).fillna(0).astype(int)
             return df
         except Exception as e:
-            print(f"Error loading users: {e}")
+            self._error = str(e)
             return pd.DataFrame(columns=USERS_COLS)
  
     def _save_user_row(self, row_dict):
-        """Append a new user row to Google Sheet."""
         try:
             row = [str(row_dict.get(col, "")) for col in USERS_COLS]
             self._ws_users.append_row(row)
         except Exception as e:
-            print(f"Error saving user: {e}")
+            self._error = str(e)
  
     def _update_user_row(self, user_id, updates: dict):
-        """Update specific fields for a user in Google Sheet."""
         try:
-            data = self._ws_users.get_all_values()
+            data    = self._ws_users.get_all_values()
             headers = data[0]
             for i, row in enumerate(data[1:], start=2):
                 if row[headers.index("user_id")] == user_id:
                     for key, val in updates.items():
                         col_idx = headers.index(key) + 1
-                        self._ws_inter  # just to keep reference
                         self._ws_users.update_cell(i, col_idx, str(val))
                     break
         except Exception as e:
-            print(f"Error updating user: {e}")
+            self._error = str(e)
  
     def _load_interactions(self):
         try:
@@ -122,16 +137,15 @@ class UserManager:
                     df[col] = ""
             return df
         except Exception as e:
-            print(f"Error loading interactions: {e}")
+            self._error = str(e)
             return pd.DataFrame(columns=INTERACTION_COLS)
  
     def _save_interaction_row(self, row_dict):
-        """Append a new interaction row to Google Sheet."""
         try:
             row = [str(row_dict.get(col, "")) for col in INTERACTION_COLS]
             self._ws_inter.append_row(row)
         except Exception as e:
-            print(f"Error saving interaction: {e}")
+            self._error = str(e)
  
     def _get_segment(self, total):
         if total == 0:   return "A"
@@ -141,6 +155,10 @@ class UserManager:
  
     # ── Register New User ──────────────────────────────────────────────────
     def register_user(self, name, email, password, category_prefs, price_pref):
+        if not self.is_connected():
+            return {"status": "error", "user_id": None,
+                    "message": f"Google Sheets connection failed: {self._error}"}
+ 
         df = self._load_users()
         if not df.empty and email.strip().lower() in df["email"].str.lower().values:
             return {"status": "exists", "user_id": None,
@@ -160,22 +178,27 @@ class UserManager:
             "customer_unique_id" : ""
         }
         self._save_user_row(new_row)
+ 
+        if self._error:
+            return {"status": "error", "user_id": None,
+                    "message": f"Save failed: {self._error}"}
+ 
         return {"status": "success", "user_id": user_id,
                 "message": f"Welcome {name}! Account ban gaya!"}
  
     # ── Register Existing Customer ─────────────────────────────────────────
     def register_existing_customer(self, customer_unique_id, name, email, password, category_prefs, price_pref, csv_path):
+        if not self.is_connected():
+            return {"status": "error", "user_id": None,
+                    "message": f"Google Sheets connection failed: {self._error}"}
         try:
             df_raw = pd.read_csv(csv_path, usecols=["customer_unique_id", "order_status"])
             customer_rows = df_raw[df_raw["customer_unique_id"] == customer_unique_id.strip()]
- 
             if len(customer_rows) == 0:
                 return {"status": "not_found", "user_id": None,
                         "message": "Yeh Customer ID dataset mein nahi mili. Check karo."}
- 
             actual_interactions = len(customer_rows[customer_rows["order_status"] == "delivered"])
             actual_segment      = self._get_segment(actual_interactions)
- 
         except Exception as e:
             return {"status": "error", "user_id": None,
                     "message": f"Dataset verify nahi ho saka: {str(e)}"}
@@ -203,7 +226,6 @@ class UserManager:
             "customer_unique_id" : customer_unique_id.strip()
         }
         self._save_user_row(new_row)
- 
         return {
             "status"       : "success",
             "user_id"      : user_id,
@@ -214,6 +236,9 @@ class UserManager:
  
     # ── Login ──────────────────────────────────────────────────────────────
     def login_user(self, email, password):
+        if not self.is_connected():
+            return {"status": "error", "user": None,
+                    "message": f"Google Sheets connection failed: {self._error}"}
         df = self._load_users()
         email = email.strip().lower()
         match = df[df["email"] == email]
@@ -259,8 +284,7 @@ class UserManager:
         }
         self._save_interaction_row(new_row)
  
-        # Update user segment
-        df = self._load_users()
+        df  = self._load_users()
         idx = df[df["user_id"] == user_id].index
         if not idx.empty:
             i     = idx[0]
@@ -268,7 +292,7 @@ class UserManager:
             seg   = self._get_segment(total)
             self._update_user_row(user_id, {
                 "total_interactions": total,
-                "segment": seg
+                "segment"           : seg
             })
         return True
  
