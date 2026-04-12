@@ -254,10 +254,6 @@ for k,v in [("logged_in",False),("current_user",None),
 um        = get_um()
 artifacts = load_artifacts()
  
-# ── Google Sheets Connection Check ────────────────────────────────────────────
-if not um.is_connected():
-    st.error(f"❌ Google Sheets Connection Failed: {um.get_error()}")
- 
  
 # ════════════════════════════════════════════════════════════════════════════
 #  LOGIN / REGISTER PAGE
