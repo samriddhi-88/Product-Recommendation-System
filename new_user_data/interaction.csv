@@ -1,3 +1,4 @@
 interaction_id,user_id,product_id,category,price,action_type,timestamp
 INT-5F9BD24A,USR-70357912,78f5f8f4547e4be0449bce34eb0557f2,furniture_decor,105.79,click,2026-04-11 22:00:10
 INT-4D403B71,USR-70357912,8b6ed41158b194711f83b8da92757544,sports_leisure,16.35,click,2026-04-11 22:00:19
+INT-0A7D3E7C,USR-8AA5535F,0a4f9f421af66d2ea061fbb8883419f7,health_beauty,110.32,click,2026-04-12 11:17:47
