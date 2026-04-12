@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import uuid
 import os
+import hashlib
 from datetime import datetime
  
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +12,7 @@ USERS_CSV     = os.path.join(NEW_USER_DIR, "users.csv")
 INTERACTION_CSV = os.path.join(NEW_USER_DIR, "interaction.csv")
  
 USERS_COLS = [
-    "user_id", "name", "email",
+    "user_id", "name", "email", "password_hash",
     "category_pref", "price_pref",
     "segment", "total_interactions", "joined_date"
 ]
@@ -21,6 +22,10 @@ INTERACTION_COLS = [
 ]
  
 PRICE_LABELS = ["budget", "low", "mid", "mid-high", "high", "premium"]
+ 
+ 
+def _hash_password(password: str) -> str:
+    return hashlib.sha256(password.strip().encode()).hexdigest()
  
  
 class UserManager:
@@ -33,6 +38,13 @@ class UserManager:
     def _init_csv(self, path, columns):
         if not os.path.exists(path):
             pd.DataFrame(columns=columns).to_csv(path, index=False)
+        else:
+            # Add missing columns if old CSV exists (migration)
+            df = pd.read_csv(path, dtype=str)
+            for col in columns:
+                if col not in df.columns:
+                    df[col] = ""
+            df.to_csv(path, index=False)
  
     def _load_users(self):
         df = pd.read_csv(USERS_CSV, dtype=str)
@@ -61,7 +73,7 @@ class UserManager:
         elif total <= 4: return "C"
         else:            return "D"
  
-    def register_user(self, name, email, category_prefs, price_pref):
+    def register_user(self, name, email, password, category_prefs, price_pref):
         df = self._load_users()
         if not df.empty and email.strip().lower() in df["email"].str.lower().values:
             return {"status": "exists", "user_id": None,
@@ -72,6 +84,7 @@ class UserManager:
             "user_id"            : user_id,
             "name"               : name.strip(),
             "email"              : email.strip().lower(),
+            "password_hash"      : _hash_password(password),
             "category_pref"      : ",".join(category_prefs),
             "price_pref"         : price_pref,
             "segment"            : "A",
@@ -81,15 +94,20 @@ class UserManager:
         df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
         self._save_users(df)
         return {"status": "success", "user_id": user_id,
-                "message": f"Welcome {name}! Tumhara ID: {user_id}"}
+                "message": f"Welcome {name}! Account ban gaya!"}
  
-    def login_user(self, user_id):
+    def login_user(self, email, password):
         df = self._load_users()
-        match = df[df["user_id"] == user_id.strip().upper()]
+        email = email.strip().lower()
+        match = df[df["email"] == email]
         if match.empty:
             return {"status": "not_found", "user": None,
-                    "message": "User ID nahi mila. Check karo ya register karo."}
+                    "message": "Email nahi mila. Pehle register karo."}
         user = match.iloc[0].to_dict()
+        stored_hash = user.get("password_hash", "")
+        if stored_hash != _hash_password(password):
+            return {"status": "wrong_password", "user": None,
+                    "message": "Password galat hai. Dobara try karo."}
         return {"status": "success", "user": user,
                 "message": f"Welcome back, {user['name']}!"}
  
@@ -181,4 +199,3 @@ class UserManager:
             "total_interactions" : len(interactions),
             "segment_counts"     : seg_counts,
         }
-    

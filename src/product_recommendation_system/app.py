@@ -247,7 +247,7 @@ for k,v in [("logged_in",False),("current_user",None),
     if k not in st.session_state:
         st.session_state[k] = v
  
-um       = get_um()
+um        = get_um()
 artifacts = load_artifacts()
  
  
@@ -265,25 +265,34 @@ if not st.session_state.logged_in:
     with col:
         tab_l, tab_r = st.tabs(["🔑 Login", "📝 Register"])
  
+        # ── LOGIN TAB ──────────────────────────────────────────────────────
         with tab_l:
-            st.subheader("Apna User ID daalo")
-            uid_inp = st.text_input("User ID", placeholder="USR-XXXXXXXX", key="login_uid")
+            st.subheader("Login karo")
+            lemail = st.text_input("Email", placeholder="aapka@email.com", key="login_email")
+            lpass  = st.text_input("Password", type="password", key="login_pass")
             if st.button("Login", type="primary", use_container_width=True):
-                if uid_inp.strip():
-                    res = um.login_user(uid_inp.strip())
-                    if res["status"]=="success":
+                if not lemail.strip():
+                    st.warning("Email daalo.")
+                elif not lpass.strip():
+                    st.warning("Password daalo.")
+                else:
+                    res = um.login_user(lemail.strip(), lpass.strip())
+                    if res["status"] == "success":
                         st.session_state.logged_in    = True
                         st.session_state.current_user = res["user"]
                         st.rerun()
+                    elif res["status"] == "wrong_password":
+                        st.error("❌ Password galat hai.")
                     else:
-                        st.error(res["message"])
-                else:
-                    st.warning("User ID daalo.")
+                        st.error("❌ " + res["message"])
  
+        # ── REGISTER TAB ───────────────────────────────────────────────────
         with tab_r:
-            st.subheader("Naya Account")
+            st.subheader("Naya Account Banao")
             rname  = st.text_input("Naam *", key="rname")
-            remail = st.text_input("Email *", key="remail")
+            remail = st.text_input("Email *", placeholder="aapka@email.com", key="remail")
+            rpass  = st.text_input("Password *", type="password", key="rpass")
+            rpass2 = st.text_input("Password Confirm karo *", type="password", key="rpass2")
             rcats  = st.multiselect(
                 "Pasandida Categories * (max 3)",
                 ALL_CATEGORIES, max_selections=3,
@@ -303,16 +312,21 @@ if not st.session_state.logged_in:
                     st.error("Naam daalo.")
                 elif not remail.strip():
                     st.error("Email daalo.")
+                elif not rpass.strip():
+                    st.error("Password daalo.")
+                elif rpass.strip() != rpass2.strip():
+                    st.error("❌ Dono passwords match nahi kar rahe!")
+                elif len(rpass.strip()) < 6:
+                    st.error("Password kam se kam 6 characters ka hona chahiye.")
                 elif not rcats:
                     st.error("Kam se kam 1 category select karo.")
                 else:
-                    res = um.register_user(rname, remail, rcats, rprice)
-                    if res["status"]=="success":
-                        st.success(res["message"])
-                        st.info(f"**Apna User ID save karo:** `{res['user_id']}`")
+                    res = um.register_user(rname, remail, rpass, rcats, rprice)
+                    if res["status"] == "success":
+                        st.success("✅ " + res["message"])
                         st.balloons()
-                    elif res["status"]=="exists":
-                        st.warning(res["message"])
+                    elif res["status"] == "exists":
+                        st.warning("⚠️ " + res["message"])
  
     st.stop()
  
