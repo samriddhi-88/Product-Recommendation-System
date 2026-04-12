@@ -118,7 +118,6 @@ def load_engine(csv_path):
     pl  = ps.set_index("product_id")["avg_price"].to_dict()
     usm = full_df.groupby("customer_unique_id")["product_id"].apply(set).to_dict()
  
-    # Popularity boost
     from sklearn.preprocessing import LabelEncoder as _LE
     _n = full_df.copy()
     _uc = _n.groupby("customer_unique_id")["product_id"].count()
@@ -163,7 +162,10 @@ def diversity(recs, cl, gt, seen=None, k=3, n=10):
 def recommend(uid, seg, eng, arts, um_obj, n=10, ob_cats=None, ob_price=None):
     cl  = eng["cl"]; pl = eng["pl"]; ps = eng["ps"]
     gt  = eng["gt"]; pop = eng["pop"]
-    seen = eng["usm"].get(uid, set())
+ 
+    # Existing customer ke liye customer_unique_id se seen products lo
+    cuid = um_obj.get_customer_unique_id(uid)
+    seen = eng["usm"].get(cuid, set()) if cuid else eng["usm"].get(uid, set())
  
     if seg=="A":
         cats  = ob_cats or []
@@ -184,8 +186,10 @@ def recommend(uid, seg, eng, arts, um_obj, n=10, ob_cats=None, ob_price=None):
  
     if seg=="D":
         nm = arts.get("ncf_model"); ue = arts.get("user_enc"); ie = arts.get("item_enc")
-        if nm and ue and ie and uid in ue.classes_:
-            ui   = ue.transform([uid])[0]
+        # NCF ke liye customer_unique_id use karo agar available ho
+        ncf_uid = cuid if cuid else uid
+        if nm and ue and ie and ncf_uid in ue.classes_:
+            ui   = ue.transform([ncf_uid])[0]
             alls = np.arange(len(ie.classes_))
             si   = {ie.transform([p])[0] for p in seen if p in ie.classes_}
             cand = np.array([i for i in alls if i not in si])
@@ -263,7 +267,7 @@ if not st.session_state.logged_in:
  
     _, col, _ = st.columns([1,2,1])
     with col:
-        tab_l, tab_r = st.tabs(["🔑 Login", "📝 Register"])
+        tab_l, tab_r, tab_e = st.tabs(["🔑 Login", "📝 Register", "🛒 Purana Customer"])
  
         # ── LOGIN TAB ──────────────────────────────────────────────────────
         with tab_l:
@@ -328,6 +332,67 @@ if not st.session_state.logged_in:
                     elif res["status"] == "exists":
                         st.warning("⚠️ " + res["message"])
  
+        # ── EXISTING CUSTOMER TAB ──────────────────────────────────────────
+        with tab_e:
+            st.subheader("Purana Customer? Account Banao")
+            st.info("💡 Agar aapne pehle humse kharida hai toh apna Customer ID daalo — aapki purchase history se personalized recommendations milenge!")
+ 
+            ecuid  = st.text_input("Customer ID *", placeholder="Dataset wala customer_unique_id", key="ecuid")
+            ename  = st.text_input("Naam *", key="ename")
+            eemail = st.text_input("Email *", placeholder="aapka@email.com", key="eemail")
+            epass  = st.text_input("Password *", type="password", key="epass")
+            epass2 = st.text_input("Password Confirm karo *", type="password", key="epass2")
+            ecats  = st.multiselect(
+                "Pasandida Categories * (max 3)",
+                ALL_CATEGORIES, max_selections=3,
+                format_func=lambda x: x.replace("_"," ").title(),
+                key="ecats"
+            )
+            eprice = st.selectbox(
+                "Budget *", PRICE_LABELS, index=3,
+                format_func=lambda x: {
+                    "budget":"Budget (< R$30)","low":"Low (R$30-60)",
+                    "mid":"Mid (R$60-100)","mid-high":"Mid-High (R$100-200)",
+                    "high":"High (R$200-500)","premium":"Premium (R$500+)"
+                }.get(x,x), key="eprice"
+            )
+            if st.button("Verify & Register", type="primary", use_container_width=True):
+                if not ecuid.strip():
+                    st.error("Customer ID daalo.")
+                elif not ename.strip():
+                    st.error("Naam daalo.")
+                elif not eemail.strip():
+                    st.error("Email daalo.")
+                elif not epass.strip():
+                    st.error("Password daalo.")
+                elif epass.strip() != epass2.strip():
+                    st.error("❌ Dono passwords match nahi kar rahe!")
+                elif len(epass.strip()) < 6:
+                    st.error("Password kam se kam 6 characters ka hona chahiye.")
+                elif not ecats:
+                    st.error("Kam se kam 1 category select karo.")
+                else:
+                    with st.spinner("Customer ID verify ho rahi hai..."):
+                        res = um.register_existing_customer(
+                            ecuid, ename, eemail, epass, ecats, eprice, CSV_PATH
+                        )
+                    if res["status"] == "success":
+                        seg_info  = res.get("segment", "A")
+                        inter     = res.get("interactions", 0)
+                        seg_label = SEGMENT_META[seg_info]["label"]
+                        seg_emoji = SEGMENT_META[seg_info]["emoji"]
+                        st.success("✅ " + res["message"])
+                        st.info(f"📊 Aapki **{inter}** delivered purchases mili — Aap **{seg_emoji} Segment {seg_info} ({seg_label})** mein hain!")
+                        if seg_info == "D":
+                            st.success("🔥 NCF model aapko personalized recommendations dega!")
+                        st.balloons()
+                    elif res["status"] == "not_found":
+                        st.error("❌ " + res["message"])
+                    elif res["status"] == "exists":
+                        st.warning("⚠️ " + res["message"])
+                    else:
+                        st.error("❌ " + res["message"])
+ 
     st.stop()
  
  
@@ -349,6 +414,9 @@ with st.sidebar:
     )
     st.caption(f"ID: `{uid}`")
     st.caption(f"Email: {user.get('email','—')}")
+    cuid = um.get_customer_unique_id(uid)
+    if cuid:
+        st.caption(f"Customer ID: `{cuid[:20]}...`")
     st.divider()
  
     total = int(user.get("total_interactions",0))
@@ -528,6 +596,9 @@ with tab_prof:
             st.markdown(f"- **User ID:** `{fu.get('user_id','—')}`")
             st.markdown(f"- **Joined:** {fu.get('joined_date','—')}")
             st.markdown(f"- **Interactions:** {fu.get('total_interactions',0)}")
+            cuid_display = fu.get('customer_unique_id','')
+            if cuid_display and str(cuid_display) != 'nan' and cuid_display != '':
+                st.markdown(f"- **Customer ID:** `{cuid_display[:25]}...`")
         with c2:
             s = fu.get("segment","A")
             m = SEGMENT_META[s]

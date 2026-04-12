@@ -14,7 +14,8 @@ INTERACTION_CSV = os.path.join(NEW_USER_DIR, "interaction.csv")
 USERS_COLS = [
     "user_id", "name", "email", "password_hash",
     "category_pref", "price_pref",
-    "segment", "total_interactions", "joined_date"
+    "segment", "total_interactions", "joined_date",
+    "customer_unique_id"
 ]
 INTERACTION_COLS = [
     "interaction_id", "user_id", "product_id",
@@ -39,7 +40,6 @@ class UserManager:
         if not os.path.exists(path):
             pd.DataFrame(columns=columns).to_csv(path, index=False)
         else:
-            # Add missing columns if old CSV exists (migration)
             df = pd.read_csv(path, dtype=str)
             for col in columns:
                 if col not in df.columns:
@@ -73,6 +73,7 @@ class UserManager:
         elif total <= 4: return "C"
         else:            return "D"
  
+    # ── Register New User ──────────────────────────────────────────────────
     def register_user(self, name, email, password, category_prefs, price_pref):
         df = self._load_users()
         if not df.empty and email.strip().lower() in df["email"].str.lower().values:
@@ -89,13 +90,69 @@ class UserManager:
             "price_pref"         : price_pref,
             "segment"            : "A",
             "total_interactions" : 0,
-            "joined_date"        : datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            "joined_date"        : datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "customer_unique_id" : ""
         }
         df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
         self._save_users(df)
         return {"status": "success", "user_id": user_id,
                 "message": f"Welcome {name}! Account ban gaya!"}
  
+    # ── Register Existing Customer ─────────────────────────────────────────
+    def register_existing_customer(self, customer_unique_id, name, email, password, category_prefs, price_pref, csv_path):
+        # Step 1: Verify customer_unique_id in dataset & get actual purchase count
+        try:
+            df_raw = pd.read_csv(csv_path, usecols=["customer_unique_id", "order_status"])
+            customer_rows = df_raw[df_raw["customer_unique_id"] == customer_unique_id.strip()]
+ 
+            if len(customer_rows) == 0:
+                return {"status": "not_found", "user_id": None,
+                        "message": "Yeh Customer ID dataset mein nahi mili. Check karo."}
+ 
+            # Sirf delivered orders count karo
+            actual_interactions = len(customer_rows[customer_rows["order_status"] == "delivered"])
+            actual_segment      = self._get_segment(actual_interactions)
+ 
+        except Exception as e:
+            return {"status": "error", "user_id": None,
+                    "message": f"Dataset verify nahi ho saka: {str(e)}"}
+ 
+        # Step 2: Check if already registered
+        df = self._load_users()
+        if not df.empty:
+            if email.strip().lower() in df["email"].str.lower().values:
+                return {"status": "exists", "user_id": None,
+                        "message": "Email already registered. Please login."}
+            if customer_unique_id.strip() in df["customer_unique_id"].values:
+                return {"status": "exists", "user_id": None,
+                        "message": "Yeh Customer ID already registered hai. Please login."}
+ 
+        # Step 3: Create account with actual segment
+        user_id = "USR-" + str(uuid.uuid4())[:8].upper()
+        new_row = {
+            "user_id"            : user_id,
+            "name"               : name.strip(),
+            "email"              : email.strip().lower(),
+            "password_hash"      : _hash_password(password),
+            "category_pref"      : ",".join(category_prefs),
+            "price_pref"         : price_pref,
+            "segment"            : actual_segment,
+            "total_interactions" : actual_interactions,
+            "joined_date"        : datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "customer_unique_id" : customer_unique_id.strip()
+        }
+        df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+        self._save_users(df)
+ 
+        return {
+            "status"       : "success",
+            "user_id"      : user_id,
+            "segment"      : actual_segment,
+            "interactions" : actual_interactions,
+            "message"      : f"Welcome back {name}! Aapka purana data mil gaya! 🎉"
+        }
+ 
+    # ── Login ──────────────────────────────────────────────────────────────
     def login_user(self, email, password):
         df = self._load_users()
         email = email.strip().lower()
@@ -111,6 +168,7 @@ class UserManager:
         return {"status": "success", "user": user,
                 "message": f"Welcome back, {user['name']}!"}
  
+    # ── Get User ───────────────────────────────────────────────────────────
     def get_user(self, user_id):
         df = self._load_users()
         match = df[df["user_id"] == user_id.strip().upper()]
@@ -118,6 +176,17 @@ class UserManager:
             return None
         return match.iloc[0].to_dict()
  
+    # ── Get customer_unique_id for NCF ────────────────────────────────────
+    def get_customer_unique_id(self, user_id):
+        user = self.get_user(user_id)
+        if user is None:
+            return None
+        cuid = user.get("customer_unique_id", "")
+        if not cuid or str(cuid) == "nan" or cuid == "":
+            return None
+        return cuid
+ 
+    # ── Log Interaction ────────────────────────────────────────────────────
     def log_interaction(self, user_id, product_id, category, price, action_type="click"):
         interactions = self._load_interactions()
         new_row = {
